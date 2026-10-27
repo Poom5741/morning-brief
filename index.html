@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Morning Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #f4efe4;
+    background-image: radial-gradient(ellipse at top, rgba(0,0,0,0.03), transparent 60%);
+    color: #1a1a1a;
+    font-family: 'Old Standard TT', serif;
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .sheet {
+    max-width: 640px; width: 100%;
+    border: 1px solid #1a1a1a;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 4px 4px 0 rgba(26,26,26,0.15);
+  }
+  .topline { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+  h1 { font-family: 'UnifrakturCook', cursive; font-size: clamp(48px, 10vw, 84px); font-weight: 700; margin: 8px 0 2px; }
+  .rule { border: none; border-top: 3px double #1a1a1a; margin: 14px 0; }
+  .edition { font-family: 'Playfair Display', serif; font-size: clamp(20px, 4vw, 28px); font-weight: 900; margin: 18px 0 10px; }
+  p.body { font-size: 17px; line-height: 1.65; margin: 0 auto 10px; max-width: 46ch; }
+  .thai { font-style: italic; color: #444; }
+  .footer { margin-top: 22px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #555; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="topline">Vol. 1 &middot; Publishing Daily &middot; Bangkok, ICT</div>
+    <h1>The Morning Brief</h1>
+    <div class="topline">Tech &middot; AI &middot; Web3 &middot; Thailand</div>
+    <hr class="rule">
+    <div class="edition">FIRST EDITION ON THE PRESSES</div>
+    <p class="body">The presses are running. Your daily newspaper-style digest — global tech, AI, Web3 and Thai headlines, compiled fresh every morning at 07:30 — will appear on this page.</p>
+    <p class="body thai">ฉบับแรกกำลังจะมา — สรุปข่าวสำคัญทุกเช้าในรูปแบบหนังสือพิมพ์ อ่านได้จากหน้านี้</p>
+    <hr class="rule">
+    <div class="footer">Published by Morning Brief &middot; github.com/Poom5741/morning-brief</div>
+  </div>
+</body>
+</html>
