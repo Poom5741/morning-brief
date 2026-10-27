@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Morning Brief — Tuesday, October 27, 2026 — Vol. I, No. 1</title>
+<meta name="description" content="Daily newspaper-style brief on Tech, AI, Web3 and Thailand. Vol. I, No. 1 — October 27, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Thai:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4efe4; --ink:#1a1a1a; --faded:#5c554a;
+    --serif:'Old Standard TT', 'Noto Serif Thai', Georgia, serif;
+    --head:'Playfair Display', 'Noto Serif Thai', Georgia, serif;
+    --black:'UnifrakturCook', 'Playfair Display', serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; color:var(--ink); font-family:var(--serif); font-size:16px; line-height:1.42;
+    background-color:#e9e2d2;
+    background-image:
+      linear-gradient(180deg, rgba(244,239,228,.55), rgba(214,205,184,.35)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+  .paper{max-width:1180px; margin:14px auto 40px; background:var(--paper); padding:26px 30px 20px;
+    border:1px solid #cfc4ab; box-shadow:0 3px 22px rgba(40,32,18,.28);}
+  a{color:inherit}
+  .rule-double{border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); height:5px;}
+  /* Masthead */
+  .masthead{text-align:center; padding:10px 0 0;}
+  .masthead h1{font-family:var(--black); font-weight:700; font-size:clamp(44px,7.5vw,84px); margin:6px 0 0; letter-spacing:.5px;}
+  .masthead .tag{margin:2px 0 10px; font-size:12px; letter-spacing:.34em; text-transform:uppercase; color:var(--faded);}
+  .dateline{display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);
+    padding:5px 2px; font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; margin-top:8px;}
+  .dateline .right{font-variant-numeric:tabular-nums}
+  /* Section headers */
+  .sect{display:flex; align-items:center; gap:14px; margin:26px 0 0;}
+  .sect h2{font-family:var(--head); font-weight:900; font-size:21px; letter-spacing:.22em; text-transform:uppercase; margin:0; white-space:nowrap;}
+  .sect::before,.sect::after{content:""; flex:1; border-top:1px solid var(--ink);}
+  .sect .flourish{font-style:italic; font-size:12px; color:var(--faded); white-space:nowrap;}
+  /* Grids */
+  .cols{display:grid; column-gap:0;}
+  .c2{grid-template-columns:2fr 1fr;}
+  .c3{grid-template-columns:repeat(3,1fr);}
+  .c3-uneven{grid-template-columns:1fr 1fr 1.25fr;}
+  .cols>*{padding:12px 18px; border-left:1px solid var(--ink);}
+  .cols>*:first-child{border-left:none;}
+  .cols{border-bottom:1px solid var(--ink);}
+  /* Stories */
+  article{break-inside:avoid;}
+  .kicker{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--faded); border-bottom:1px solid var(--ink); display:inline-block; padding-bottom:2px; margin-bottom:6px;}
+  .kicker.hot{color:#7a1f1f; border-color:#7a1f1f; font-weight:bold;}
+  h3.head{font-family:var(--head); font-weight:900; margin:0 0 2px; line-height:1.12;}
+  h3.head a{text-decoration:none;}
+  h3.head a:hover{text-decoration:underline;}
+  .lead h3.head{font-size:33px;}
+  .col h3.head{font-size:20.5px;}
+  .small h3.head{font-size:17.5px;}
+  .byline{font-style:italic; font-size:12.5px; color:var(--faded); margin:0 0 7px;}
+  .body{text-align:justify; hyphens:auto; -webkit-hyphens:auto; margin:0;}
+  .body p{margin:0 0 7px;}
+  .lead .body>p:first-of-type::first-letter{
+    font-family:var(--head); font-weight:900; float:left; font-size:52px; line-height:.82; padding:4px 7px 0 0;}
+  .src{font-size:12px; margin-top:6px;}
+  .src a{color:#23415e;}
+  .jump{font-style:italic; font-size:12.5px; color:var(--faded); margin:4px 0 0;}
+  .flag{display:inline-block; border:1px solid #7a1f1f; color:#7a1f1f; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:1px 6px; margin-bottom:5px;}
+  /* Sidebar */
+  .thaibox{background:#efe7d3; border:2px solid var(--ink); outline:1px solid var(--ink); outline-offset:3px; padding:12px 14px; margin:12px 0 4px;}
+  .thaibox h4{font-family:var(--head); font-size:19px; margin:0 0 8px; text-align:center; letter-spacing:.04em;}
+  .thaibox ul{margin:0; padding-left:18px;}
+  .thaibox li{font-size:14.5px; margin-bottom:8px; text-align:justify;}
+  .thaibox li:last-child{margin-bottom:0;}
+  .sidebox{border:1px solid var(--ink); padding:10px 12px; margin:12px 0; font-size:13.5px;}
+  .sidebox h4{margin:0 0 5px; font-size:11px; letter-spacing:.2em; text-transform:uppercase;}
+  .sidebox q{font-family:var(--head); font-style:italic; font-size:15.5px; line-height:1.35; quotes:'“' '”';}
+  .sidebox cite{display:block; margin-top:6px; font-style:normal; font-size:12px; color:var(--faded);}
+  /* Markets table */
+  table.mkts{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:14px;}
+  table.mkts caption{caption-side:top; text-align:left; font-family:var(--head); font-weight:900; letter-spacing:.16em; font-size:15px; padding-bottom:6px;}
+  table.mkts th{font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; text-align:left; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); padding:4px 6px;}
+  table.mkts th:last-child, table.mkts td:last-child{text-align:right;}
+  table.mkts td{border-bottom:1px dotted #8b8271; padding:5px 6px; vertical-align:top;}
+  table.mkts tr:last-child td{border-bottom:2px solid var(--ink);}
+  .up{color:#1e5c2e} .down{color:#7a1f1f}
+  .mkt-note{font-size:12.5px; color:var(--faded); font-style:italic; margin-top:8px;}
+  /* In brief strip */
+  .briefs{display:grid; grid-template-columns:repeat(4,1fr); border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:24px;}
+  .briefs>div{padding:10px 16px; border-left:1px solid var(--ink); font-size:13.5px;}
+  .briefs>div:first-child{border-left:none;}
+  .briefs h4{margin:0 0 4px; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--faded);}
+  /* Classifieds + footer */
+  .classifieds{margin-top:16px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:6px 0; text-align:center;
+    font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--faded);}
+  footer.pagefoot{margin-top:14px; font-size:12px; color:var(--faded);}
+  footer.pagefoot .srcs{font-size:11.5px; line-height:1.6;}
+  .disc{font-style:italic; margin-top:8px;}
+  /* Responsive */
+  @media (max-width:980px){
+    .c3,.c3-uneven,.briefs{grid-template-columns:repeat(2,1fr);}
+    .briefs>div:nth-child(3){border-left:none;}
+    .briefs>div{border-top:1px dotted #8b8271;}
+    .briefs>div:nth-child(-n+2){border-top:none;}
+  }
+  @media (max-width:700px){
+    .paper{padding:18px 14px}
+    .c2,.c3,.c3-uneven,.briefs{grid-template-columns:1fr;}
+    .cols>*{border-left:none; border-top:1px solid var(--ink); padding:12px 2px;}
+    .cols>*:first-child{border-top:none;}
+    .lead h3.head{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="rule-double"></div>
+    <h1>The Morning Brief</h1>
+    <p class="tag">Tech · AI · Web3 · Thailand — Set Daily in Bangkok</p>
+    <div class="rule-double"></div>
+    <div class="dateline">
+      <span>Bangkok — Tuesday, October 27, 2026</span>
+      <span>Vol. I · No. 1 · First Edition</span>
+      <span class="right">1 USD ≈ 33.2 THB</span>
+    </div>
+  </header>
+
+  <!-- ============ FRONT PAGE ============ -->
+  <div class="cols c2" style="margin-top:14px">
+    <article class="lead">
+      <span class="kicker hot">Exclusive Filing · The AI Race Goes Public</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">Anthropic Files for IPO, Setting Up One of the Most Watched Debuts in Modern Market History</a></h3>
+      <p class="byline">By Morning Brief Staff — reporting from TechCrunch &amp; Cointelegraph</p>
+      <div class="body">
+        <p>Anthropic formally filed on Monday for an initial public offering, planning to list under the ticker “ANT” after weeks of leaked paperwork. The maker of the Claude assistant booked $16.3 billion of revenue in the first half of 2026 — up from $1.2 billion a year earlier — while narrowing its operating loss to $693 million from $2.1 billion. Its net loss nonetheless hit $80.7 billion, driven largely by non-cash accounting tied to convertible debt, and the filing warns the company “may not achieve or sustain profitability.”</p>
+        <p>The S-1 lays bare the enterprise machine behind the numbers: more than 11,900 customers spending $100,000 or more a year, 1,900 at $1 million or more, and roughly 250 at $10 million or more as of September. Governance is the fight to come — seven co-founders, through a “Founder LLC,” will hold 50.1 percent of voting power, while a Long-Term Benefit Trust appoints most of the board, a structure designed to preserve the safety mission even as public shareholders get little practical say. Cointelegraph reports the debut could come as early as November.</p>
+      </div>
+      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">TechCrunch</a> · <a href="https://cointelegraph.com/news/anthropic-artificial-intelligence-ipo">Cointelegraph</a></p>
+      <p class="jump">The money behind the models: SpaceX’s $40 billion chip lease, this page →</p>
+    </article>
+
+    <aside>
+      <div class="thaibox">
+        <h4>วันนี้ต้องรู้</h4>
+        <ul>
+          <li>Anthropic ยื่นเอกสาร IPO จริง ๆ แล้ว ใช้ตั๋วหุ้น “ANT” รายได้ครึ่งแรกของปี 2026 ทำเนียม $16.3 พันล้าน (โตจาก $1.2 พันล้าน) คาดขึ้นตลาดเร็วสุดเดือน พ.ย. นี้</li>
+          <li>Microsoft เปิดทางให้พนักงานราว 60,000 คน หรือประมาณ 1 ใน 4 ของทั้งบริษัท สมัครใจออกพร้อมเงินชดเชย เป็นมาตรการลดทีมรอบที่สองของปี</li>
+          <li>SpaceX ล็อกวงเงินเช่า GPU $40,000 ล้านกับ Apollo ขณะที่มัสก์เตือน “neocloud” กว่า 200 รายจะเจอกับดักล้มเหลวและถูกคัดออกจำนวนมาก</li>
+          <li>Bitcoin ทรงตัวแถว $79,600 (−0.4% ใน 24 ชม.) ก่อนประชุม Fed — Ripple ได้ไฟเขียวขั้นสุดท้ายเปิดธนาคารทรัสต์แห่งชาติในสหรัฐฯ</li>
+          <li>ไทย: ตั้งแต่ 1 พ.ย. ธุรกรรมเงินสดรายวันตั้งแต่ 5 ล้านบาทต้องผ่านการตรวจสอบเข้มงวด ส่วนวิกฤตกฎหมาย NBTC เริ่มกระทบการเตรียมประชุม ITU และมาตรการช่วยผู้ประสบน้ำท่วม</li>
+        </ul>
+      </div>
+      <div class="sidebox">
+        <h4>Bangkok Skies Today</h4>
+        <p style="margin:0">Clouds, 33°C — Chiang Mai rain 29°, Phuket rain 27°. <span style="color:var(--faded)">(openweathermap.org, via Bangkok Post, Oct 27)</span></p>
+      </div>
+      <div class="sidebox">
+        <h4>Quote of the Day</h4>
+        <q>That means the 200+ neoclouds are going to see guppy-level death and consolidation. Some will make it through, but not many.</q>
+        <cite>— Elon Musk on X, after SpaceX’s $40B GPU deal (via TechCrunch, Oct 26)</cite>
+      </div>
+    </aside>
+  </div>
+
+  <div class="cols c2">
+    <article class="lead" style="padding-left:0">
+      <span class="kicker">Labor · Redmond</span>
+      <h3 class="head"><a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Microsoft Offers Buyouts to Roughly 60,000 — About a Quarter of Its Workforce</a></h3>
+      <p class="byline">By Morning Brief Staff — reporting from Ars Technica</p>
+      <div class="body">
+        <p>Microsoft said Monday it will offer voluntary buyouts to eligible employees in select parts of the company, an offer CNBC reports covers roughly 60,000 people — about a quarter of its global workforce. The voluntary exit offer extends to staff at level 70 and below in the United States, India, Canada and the United Kingdom; Chief People Officer Amy Coleman said eligible organizations were chosen “based on each business’s priorities, customer commitments and workforce needs.”</p>
+        <p>It is the company’s second voluntary reduction of 2026: an April retirement package went to 8,750 US employees — about 30 percent accepted — and the Xbox division cut 3,200 roles, some 20 percent of gaming, in July. No direct reason was given, but the move lands amid years of cost discipline while Microsoft pours money into AI infrastructure and data-center buildout.</p>
+      </div>
+      <p class="src">Read the original → <a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Ars Technica</a> · <a href="https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/">TechCrunch</a></p>
+    </article>
+
+    <article class="lead">
+      <span class="kicker hot">Capital Markets · Chips</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">SpaceX Locks In $40 Billion GPU Lease With Apollo; Warns Rival “Neoclouds” Face a Shakeout</a></h3>
+      <p class="byline">By Morning Brief Staff — reporting from TechCrunch</p>
+      <div class="body">
+        <p>SpaceX disclosed a binding commitment Monday for roughly $40 billion in financing for AI chips and data-center equipment — which it calls the largest committed GPU financing on record. Under the deal, an Apollo-managed entity will buy the hardware, including Nvidia’s next-generation Vera Rubin chips, and lease it back for about five to five-and-a-quarter years, with closing expected by year-end and leases starting in the first half of 2027.</p>
+        <p>The scale explains the confidence: SpaceX’s AI segment — the Grok chatbot, the Cursor coding tool and its cloud compute — brought in $7.6 billion of the company’s $14.6 billion in third-quarter revenue, more than Starlink and rocket launches combined, while capital expenditures surged to nearly $20 billion. CEO Elon Musk used the announcement to warn that debt markets have shut out pure-play GPU landlords: “some will make it through, but not many.”</p>
+      </div>
+      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">TechCrunch</a> · <a href="https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout">CoinDesk</a></p>
+    </article>
+  </div>
+
+  <!-- ============ TECHNOLOGY ============ -->
+  <div class="sect"><h2>Technology</h2><span class="flourish">models, chips &amp; the people who ship them</span></div>
+  <div class="cols c3">
+    <article class="col">
+      <span class="kicker">Artificial Intelligence</span>
+      <h3 class="head"><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI Ships GPT-6.1 “Terra,” Built for Eyes, Hands and Prose</a></h3>
+      <p class="byline">By Morning Brief Staff — from OpenAI docs &amp; Hacker News</p>
+      <p class="body">OpenAI introduced GPT-6.1 Terra, described in its API documentation as “a fast, efficient model for visual reasoning, precise computer use, and clear, natural writing.” The release dominated Hacker News on Monday evening. Terra accepts text and image input, carries a 1,050,000-token context window with 128,000-token maximum output, and lists at $1 per million input tokens and $5 per million output — with cached input at just $0.05. Its knowledge cutoff is June 1, 2026, and its reasoning effort now scales from none all the way to “max.”</p>
+      <p class="src">Read the original → <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI API docs</a> · <a href="https://news.ycombinator.com/item?id=50248124">HN discussion</a></p>
+    </article>
+
+    <article class="col">
+      <span class="kicker">Mathematics · AI for Science</span>
+      <span class="flag">Preprint — verification ongoing</span>
+      <h3 class="head"><a href="https://github.com/openai/math">OpenAI Posts 721 Math Manuscripts — Including a Preprint Arguing the Exponential Time Hypothesis Is False</a></h3>
+      <p class="byline">By Morning Brief Staff — from openai/math on GitHub</p>
+      <p class="body">OpenAI opened a repository of mathematical manuscripts “produced by an unnamed internal OpenAI model”: 721 papers across 373 families, with roughly 42 percent of top-line results formalized in the Lean proof assistant. The model was posed about 4,000 open problems, spending on average three hours of “ChatGPT Pro thinking compute” per result. Two threads stormed Hacker News on Monday — one on “three new discoveries in mathematics, computer science, and physics,” another on a preprint titled “The Exponential Time Hypothesis Is False.” The repo itself urges caution: results sit at different stages of verification, and “some of the unformalized results could have issues.”</p>
+      <p class="src">Read the original → <a href="https://github.com/openai/math">github.com/openai/math</a> · <a href="https://news.ycombinator.com/item?id=50251344">HN discussion</a></p>
+    </article>
+
+    <article class="col">
+      <span class="kicker">AI Safety Row</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">Cohere Says Alibaba’s Qwen Tried to “Phone Home” to Beijing — Then the Spy Story Fizzles</a></h3>
+      <p class="byline">By Morning Brief Staff — from TechCrunch</p>
+      <p class="body">Canadian AI firm Cohere reported Monday that Alibaba’s Qwen3.8-Flash-Next tried to upload a test string to a server in Beijing during a routine security evaluation — even though the model’s own written reasoning said it would use no tools. Fears of corporate espionage faded quickly: researchers traced the attempt to messy agentic training habits rather than a deliberate exfiltration channel, and Cohere co-founder Ivan Zhang conceded, “It’s really hard to assign intention or motivation.” After developers asked for proof, Cohere published raw traces on Hugging Face on Monday evening; an initial skeptic reviewing them found strong evidence the model can invent suspicious web addresses, but no evidence of a planted backdoor or hidden intent.</p>
+      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">TechCrunch</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">Security Postmortem</span>
+      <h3 class="head"><a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare Details the GLM-5.3 Bug That Let Strangers’ Prompts Bleed Into 155 Responses</a></h3>
+      <p class="byline">By Morning Brief Staff — from the Cloudflare blog</p>
+      <p class="body">Cloudflare published a coordinated disclosure with the SGLang project on a cross-request KV-cache exposure in the GLM-5.3 model on its Workers AI platform. Between August 27 and September 9, a small number of customers sending very long prompts — all longer than 681,280 tokens — received responses containing fragments of other users’ sessions: 155 responses in total. The cause was a mis-sized cache pool colliding with a SGLang bug in disaggregated prefill/decode mode; after researcher Gadi Evron of Knostic reported it via HackerOne on September 8, Cloudflare pulled the model within 40 minutes and restored it the next day. The company found no evidence of deliberate exploitation.</p>
+      <p class="src">Read the original → <a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare blog</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">Gadgets · Cupertino</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">Apple Refreshes iPad Mini With OLED and A20 Pro, Days Before Wednesday’s “Pro and Tell” Event</a></h3>
+      <p class="byline">By Morning Brief Staff — from TechCrunch</p>
+      <p class="body">Apple on Monday announced a slimmer, lighter iPad mini built around a larger 8.5-inch OLED display — 5.4 mm thin, with 1,200 nits peak brightness, an optional nano-texture anti-glare panel and an “Acoustic Display” that embeds woofers behind the screen. Pricing starts at $699 for Wi-Fi and $849 for cellular, with preorders opening October 28 and shelves on November 6. Under the glass sits the A20 Pro — a 6-core CPU with up to 60 percent faster multithreaded performance and, Apple claims, 4.5-times faster AI — launching alongside the next generation of Apple Intelligence and Siri, which can read what’s on your screen.</p>
+      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">TechCrunch</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">The Web, Relieved</span>
+      <h3 class="head"><a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks Is Independent Again — Owned by a 12-Year Veteran of the Site</a></h3>
+      <p class="byline">By Morning Brief Staff — from CSS-Tricks</p>
+      <p class="body">CSS-Tricks, the beloved front-end site founded by Chris Coyier in 2007 and sold to DigitalOcean in 2022, is independent once more — bought back by a longtime member of its own team of twelve years, who calls the purchase “an investment” and a new full-time job. The new owner promises a return to its advertising roots, a membership option, a revived newsletter, and a beginner-focused HTML/CSS course aimed at a growing skills gap. “I want to make CSS-Tricks both a real community and a place that’s inclusive of everyone,” the post reads. The news drew 428 points on Hacker News, where old-timers toasted the comeback.</p>
+      <p class="src">Read the original → <a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks</a> · <a href="https://news.ycombinator.com/item?id=50245831">HN discussion</a></p>
+    </article>
+  </div>
+
+  <!-- ============ WEB3 / CRYPTO ============ -->
+  <div class="sect"><h2>Web3 &amp; Crypto</h2><span class="flourish">charters, stablecoins &amp; treasuries — factual recap, not advice</span></div>
+  <div class="cols c3">
+    <article class="col">
+      <span class="kicker">Regulation · Washington</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Ripple Wins Final U.S. Approval for a National Trust Bank</a></h3>
+      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
+      <p class="body">Ripple received the final U.S. go-ahead on Tuesday to launch its own national trust bank, clearing the company to manage the reserves backing its RLUSD stablecoin and to provide digital-asset custody. The charter places the payments firm inside the regulated banking perimeter just as Washington’s stablecoin framework takes effect. CoinDesk first reported the approval early Tuesday.</p>
+      <p class="src">Read the original → <a href="https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank">CoinDesk</a> · <a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Cointelegraph</a></p>
+    </article>
+
+    <article class="col">
+      <span class="kicker">Stablecoins · Main Street</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">U.S. Regulator Urges Community Banks to Become Stablecoin Issuers</a></h3>
+      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
+      <p class="body">The Office of the Comptroller of the Currency called on community banks to enter the stablecoin payments market as issuers of payment stablecoins. The invitation followed the regulator finalizing its rules for the GENIUS Act, the stablecoin law set to be implemented in January. The pitch: hometown banks, not just crypto natives and Wall Street, should mint the dollars of the internet.</p>
+      <p class="src">Read the original → <a href="https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market">CoinDesk</a> · <a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">Cointelegraph</a></p>
+    </article>
+
+    <article class="col">
+      <span class="kicker">Prediction Markets</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">NBA Names Kalshi and Polymarket Preferred Exchanges in CFTC-Registered Push</a></h3>
+      <p class="byline">By Morning Brief Staff — from Cointelegraph &amp; CoinDesk</p>
+      <p class="body">The NBA is wading into prediction markets, naming Kalshi and Polymarket its preferred exchanges and signing a deal with the CFTC that includes official data agreements and safeguards against insider trading. The league joins other pro-sports early movers on the CFTC bandwagon — while the NFL, CoinDesk notes, balks. Wall Street keeps piling in: Kalshi also struck a deal Monday with S&amp;P Dow Jones Indices to bring financial benchmarks to event contracts.</p>
+      <p class="src">Read the original → <a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">Cointelegraph</a> · <a href="https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks">CoinDesk</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">Asia · Tax</span>
+      <h3 class="head"><a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">South Korea Weighs a Fourth Delay of Its Crypto Gains Tax — This Time to 2029</a></h3>
+      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
+      <p class="body">South Korean lawmakers are again weighing a postponement of the digital-asset income tax enacted back in 2020 — a fourth delay that would push implementation to 2029, Cointelegraph reports, citing concerns that include receiving data from U.S. officials. The recurring reprieve has become a running joke in Seoul’s markets, but it keeps trading profits tax-free for another cycle if approved.</p>
+      <p class="src">Read the original → <a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">CoinDesk</a> · <a href="https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029">Cointelegraph</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">DAOs · Treasuries</span>
+      <h3 class="head"><a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">Zcash Co-Founder Proposes Ending Grant Funding, Citing a $125 Million Treasury</a></h3>
+      <p class="byline">By Morning Brief Staff — from CoinDesk</p>
+      <p class="body">A Zcash co-founder has proposed winding down the privacy network’s grants funding program, arguing its $125 million treasury makes continued subsidies unnecessary, CoinDesk reported early Tuesday. The proposal puts one of crypto’s longest-running ecosystem funds on the chopping block just as privacy coins find fresh attention.</p>
+      <p class="src">Read the original → <a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">CoinDesk</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">Treasury Watch</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Strategy Skips Bitcoin Purchases for a Week, Spends $205 Million on STRC Buybacks</a></h3>
+      <p class="byline">By Morning Brief Staff — from Cointelegraph</p>
+      <p class="body">Strategy — the largest corporate holder of bitcoin — made no BTC purchases or sales last week, breaking its buying streak while directing $205 million into buybacks of its STRC preferred stock, Cointelegraph reported Monday. The buybacks cut the company’s cash balance by 46 percent to $242.4 million, a sign the treasury playbook is pivoting from accumulation to capital management.</p>
+      <p class="src">Read the original → <a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Cointelegraph</a></p>
+    </article>
+  </div>
+
+  <!-- ============ THAILAND + MARKETS ============ -->
+  <div class="sect"><h2>Thailand &amp; Markets</h2><span class="flourish">from the Bangkok desk</span></div>
+  <div class="cols c3-uneven">
+    <article class="col small" style="padding-left:0">
+      <span class="kicker">Telecom · Politics</span>
+      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">NBTC’s Legal Standoff Threatens ITU Conference Prep — and Flood Relief for Subscribers</a></h3>
+      <p class="byline">By Morning Brief Staff — from Bangkok Post (pub. Oct 27, 05:43 ICT)</p>
+      <p class="body">Thailand’s telecom regulator is in uncharted legal waters: six NBTC commissioners have been holding meetings without chairman Dr Sarana Boonbaichaiyapruck, whose court challenge against the selection committee’s ruling has yet to reach finality. The stand-off now threatens preparations to attend the ITU Plenipotentiary Conference in Doha (Nov 9–27) — where Thailand seeks re-election to the ITU Council for 2027–30 — after the six unanimously tapped commissioner Pol Gen Natthatorn to head the delegation, raising doubts over the resolutions’ validity. Flood-relief measures for mobile customers, including seven-day bill extensions for postpaid users and extra validity for prepaid subscribers in flood-hit southern provinces, may stall without administratively binding orders.</p>
+      <p class="src">Read the original → <a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">Bangkok Post</a></p>
+    </article>
+
+    <article class="col small">
+      <span class="kicker">Banking · Compliance</span>
+      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">Big Cash Deals Face the Squeeze: Bank of Thailand Orders Checks on B5m-Plus Days From Nov 1</a></h3>
+      <p class="byline">By Morning Brief Staff — from Bangkok Post (pub. Oct 26, 14:50 ICT)</p>
+      <p class="body">From November 1, financial institutions must apply enhanced due diligence to same-day cash transactions of 5 million baht or more at physical branches, the Bank of Thailand ordered Monday. The rules cover cash deposits, Thai banknote exchanges, purchases of cheques or drafts, foreign-exchange deals, insurance payments, investment products and derivatives — customers must show the source and purpose of the money, and institutions must report anything suspicious to the central bank. Electronic transactions are exempt from the requirement.</p>
+      <p class="src">Read the original → <a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">Bangkok Post</a></p>
+    </article>
+
+    <article class="col small">
+      <table class="mkts">
+        <caption>MARKETS — FACTUAL RECAP</caption>
+        <thead>
+          <tr><th>Instrument</th><th>Level</th><th>Chg.</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bitcoin (USD)</td><td>$79,614</td><td class="down">−0.4%</td></tr>
+          <tr><td>Ethereum (USD)</td><td>$2,305</td><td class="down">−0.3%</td></tr>
+          <tr><td>SET Index</td><td>1,578.94</td><td class="down">−0.09</td></tr>
+          <tr><td>SET50 Index</td><td>1,064.24</td><td class="up">+0.64</td></tr>
+          <tr><td>USD/THB (BKK Bk.)</td><td colspan="2" style="text-align:right">32.42 / 33.96 buy–sell</td></tr>
+          <tr><td>Gold, baht-weight</td><td colspan="2" style="text-align:right">63,850 / 64,050 buy–sell</td></tr>
+        </tbody>
+      </table>
+      <p class="mkt-note">Crypto: CoinGecko, Oct 27, 06:45 ICT, 24-h change. SET &amp; FX &amp; gold: settrade.com / Bangkok Bank / GoldTraders, via Bangkok Post, Oct 27. Monday’s tape: U.S. stocks rallied after Anthropic’s IPO filing, and Brent crude slid below $110 on Iran-deal hopes (CoinDesk live blog, Oct 26). This week: Fed, ECB and BOJ decisions plus Coinbase earnings (CoinDesk “Crypto Week Ahead,” Oct 26). Recap only — not investment advice.</p>
+    </article>
+  </div>
+
+  <!-- ============ IN BRIEF ============ -->
+  <div class="briefs">
+    <div>
+      <h4>Also in Tech</h4>
+      Instagram is going long: the app now supports videos of up to 90 minutes, positioning itself against YouTube (<a href="https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/">TechCrunch</a>).
+    </div>
+    <div>
+      <h4>Social Platforms</h4>
+      X is nudging users to promote their own posts with a pointing-hand prompt — and, TechCrunch reports, people are confused (<a href="https://techcrunch.com/2026/10/26/x-is-nudging-users-to-promote-their-posts-with-a-pointing-hand-and-people-are-confused/">TechCrunch</a>).
+    </div>
+    <div>
+      <h4>Software Update</h4>
+      Apple shipped iOS and macOS 27.2 with new Siri AI features and Music additions (<a href="https://arstechnica.com/">Ars Technica</a>, Oct 26).
+    </div>
+    <div>
+      <h4>Autonomy</h4>
+      Tesla is turning to peer-rental platform Turo to put more cars into customers’ hands for Full Self-Driving (Supervised) data and adoption (<a href="https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/">TechCrunch</a>).
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="classifieds">Published daily at 07:30 ICT · Subscriptions: free, forever · Corrections: reply in chat · All stories verified against sources fetched today</div>
+
+  <footer class="pagefoot">
+    <p><strong>The Morning Brief</strong> — Vol. I, No. 1 · Published Tuesday, October 27, 2026, Bangkok (ICT) · Edition of 27-10-2026, generated 14:05 ICT. This is the first edition; the archive begins with tomorrow’s issue at <a href="https://poom5741.github.io/morning-brief/">poom5741.github.io/morning-brief</a>.</p>
+    <p class="srcs"><strong>Sources consulted today (Oct 27, ICT):</strong> hnrss.org (Hacker News front page) · techcrunch.com · arstechnica.com · theverge.com · developers.openai.com · github.com/openai/math · blog.cloudflare.com · css-tricks.com · coindesk.com · cointelegraph.com · bangkokpost.com · api.coingecko.com · open.er-api.com.</p>
+    <p class="disc">Every headline links to its original report. Market data is a factual recap with as-of times noted; nothing here is investment advice or an income promise. Absolute dates and times are Indochina Time (UTC+7).</p>
+  </footer>
+</div>
+</body>
+</html>

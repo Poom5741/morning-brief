@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Morning Brief — Tuesday, October 27, 2026 — Vol. I, No. 1</title>
-<meta name="description" content="Daily newspaper-style brief on Tech, AI, Web3 and Thailand. Vol. I, No. 1 — October 27, 2026.">
+<title>The Morning Brief — วันอังคารที่ 27 ตุลาคม พ.ศ. 2569 — เล่มที่ 1 ฉบับที่ 1</title>
+<meta name="description" content="หนังสือพิมพ์สรุปข่าวประจำวัน: เทคโนโลยี เอไอ เว็บ3 และไทย — เล่มที่ 1 ฉบับที่ 1 · 27 ตุลาคม พ.ศ. 2569">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Thai:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Trirong:ital,wght@0,600;0,700;0,900;1,700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#f4efe4; --ink:#1a1a1a; --faded:#5c554a;
-    --serif:'Old Standard TT', 'Noto Serif Thai', Georgia, serif;
-    --head:'Playfair Display', 'Noto Serif Thai', Georgia, serif;
-    --black:'UnifrakturCook', 'Playfair Display', serif;
+    --serif:'Noto Serif Thai', Georgia, serif;
+    --head:'Trirong', 'Noto Serif Thai', Georgia, serif;
+    --black:'UnifrakturCook', 'Trirong', serif;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{
-    margin:0; color:var(--ink); font-family:var(--serif); font-size:16px; line-height:1.42;
+    margin:0; color:var(--ink); font-family:var(--serif); font-size:16px; line-height:1.5;
     background-color:#e9e2d2;
     background-image:
       linear-gradient(180deg, rgba(244,239,228,.55), rgba(214,205,184,.35)),
@@ -31,15 +31,15 @@
   /* Masthead */
   .masthead{text-align:center; padding:10px 0 0;}
   .masthead h1{font-family:var(--black); font-weight:700; font-size:clamp(44px,7.5vw,84px); margin:6px 0 0; letter-spacing:.5px;}
-  .masthead .tag{margin:2px 0 10px; font-size:12px; letter-spacing:.34em; text-transform:uppercase; color:var(--faded);}
+  .masthead .tag{margin:2px 0 10px; font-size:12px; letter-spacing:.2em; color:var(--faded);}
   .dateline{display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);
-    padding:5px 2px; font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; margin-top:8px;}
+    padding:5px 2px; font-size:13px; letter-spacing:.06em; margin-top:8px;}
   .dateline .right{font-variant-numeric:tabular-nums}
   /* Section headers */
   .sect{display:flex; align-items:center; gap:14px; margin:26px 0 0;}
-  .sect h2{font-family:var(--head); font-weight:900; font-size:21px; letter-spacing:.22em; text-transform:uppercase; margin:0; white-space:nowrap;}
+  .sect h2{font-family:var(--head); font-weight:900; font-size:22px; letter-spacing:.12em; margin:0; white-space:nowrap;}
   .sect::before,.sect::after{content:""; flex:1; border-top:1px solid var(--ink);}
-  .sect .flourish{font-style:italic; font-size:12px; color:var(--faded); white-space:nowrap;}
+  .sect .flourish{font-style:italic; font-size:12.5px; color:var(--faded); white-space:nowrap;}
   /* Grids */
   .cols{display:grid; column-gap:0;}
   .c2{grid-template-columns:2fr 1fr;}
@@ -50,51 +50,49 @@
   .cols{border-bottom:1px solid var(--ink);}
   /* Stories */
   article{break-inside:avoid;}
-  .kicker{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--faded); border-bottom:1px solid var(--ink); display:inline-block; padding-bottom:2px; margin-bottom:6px;}
+  .kicker{font-size:11px; letter-spacing:.1em; color:var(--faded); border-bottom:1px solid var(--ink); display:inline-block; padding-bottom:2px; margin-bottom:6px;}
   .kicker.hot{color:#7a1f1f; border-color:#7a1f1f; font-weight:bold;}
-  h3.head{font-family:var(--head); font-weight:900; margin:0 0 2px; line-height:1.12;}
+  h3.head{font-family:var(--head); font-weight:900; margin:0 0 4px; line-height:1.35;}
   h3.head a{text-decoration:none;}
   h3.head a:hover{text-decoration:underline;}
-  .lead h3.head{font-size:33px;}
-  .col h3.head{font-size:20.5px;}
+  .lead h3.head{font-size:30px; line-height:1.3;}
+  .col h3.head{font-size:20px;}
   .small h3.head{font-size:17.5px;}
   .byline{font-style:italic; font-size:12.5px; color:var(--faded); margin:0 0 7px;}
-  .body{text-align:justify; hyphens:auto; -webkit-hyphens:auto; margin:0;}
+  .body{text-align:justify; margin:0; line-height:1.6;}
   .body p{margin:0 0 7px;}
-  .lead .body>p:first-of-type::first-letter{
-    font-family:var(--head); font-weight:900; float:left; font-size:52px; line-height:.82; padding:4px 7px 0 0;}
   .src{font-size:12px; margin-top:6px;}
   .src a{color:#23415e;}
   .jump{font-style:italic; font-size:12.5px; color:var(--faded); margin:4px 0 0;}
-  .flag{display:inline-block; border:1px solid #7a1f1f; color:#7a1f1f; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:1px 6px; margin-bottom:5px;}
+  .flag{display:inline-block; border:1px solid #7a1f1f; color:#7a1f1f; font-size:10.5px; letter-spacing:.08em; padding:1px 6px; margin-bottom:5px;}
   /* Sidebar */
   .thaibox{background:#efe7d3; border:2px solid var(--ink); outline:1px solid var(--ink); outline-offset:3px; padding:12px 14px; margin:12px 0 4px;}
-  .thaibox h4{font-family:var(--head); font-size:19px; margin:0 0 8px; text-align:center; letter-spacing:.04em;}
+  .thaibox h4{font-family:var(--head); font-weight:900; font-size:19px; margin:0 0 8px; text-align:center; letter-spacing:.04em;}
   .thaibox ul{margin:0; padding-left:18px;}
-  .thaibox li{font-size:14.5px; margin-bottom:8px; text-align:justify;}
+  .thaibox li{font-size:14px; margin-bottom:8px; text-align:justify; line-height:1.55;}
   .thaibox li:last-child{margin-bottom:0;}
   .sidebox{border:1px solid var(--ink); padding:10px 12px; margin:12px 0; font-size:13.5px;}
-  .sidebox h4{margin:0 0 5px; font-size:11px; letter-spacing:.2em; text-transform:uppercase;}
-  .sidebox q{font-family:var(--head); font-style:italic; font-size:15.5px; line-height:1.35; quotes:'“' '”';}
+  .sidebox h4{margin:0 0 5px; font-size:12px; letter-spacing:.12em; color:var(--faded);}
+  .sidebox q{font-family:var(--head); font-weight:600; font-style:italic; font-size:15px; line-height:1.5; quotes:'“' '”';}
   .sidebox cite{display:block; margin-top:6px; font-style:normal; font-size:12px; color:var(--faded);}
   /* Markets table */
   table.mkts{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:14px;}
-  table.mkts caption{caption-side:top; text-align:left; font-family:var(--head); font-weight:900; letter-spacing:.16em; font-size:15px; padding-bottom:6px;}
-  table.mkts th{font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; text-align:left; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); padding:4px 6px;}
+  table.mkts caption{caption-side:top; text-align:left; font-family:var(--head); font-weight:900; letter-spacing:.1em; font-size:15px; padding-bottom:6px;}
+  table.mkts th{font-size:11px; letter-spacing:.1em; text-align:left; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); padding:4px 6px;}
   table.mkts th:last-child, table.mkts td:last-child{text-align:right;}
   table.mkts td{border-bottom:1px dotted #8b8271; padding:5px 6px; vertical-align:top;}
   table.mkts tr:last-child td{border-bottom:2px solid var(--ink);}
   .up{color:#1e5c2e} .down{color:#7a1f1f}
-  .mkt-note{font-size:12.5px; color:var(--faded); font-style:italic; margin-top:8px;}
+  .mkt-note{font-size:12px; color:var(--faded); font-style:italic; margin-top:8px; line-height:1.55;}
   /* In brief strip */
   .briefs{display:grid; grid-template-columns:repeat(4,1fr); border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); margin-top:24px;}
-  .briefs>div{padding:10px 16px; border-left:1px solid var(--ink); font-size:13.5px;}
+  .briefs>div{padding:10px 16px; border-left:1px solid var(--ink); font-size:13.5px; line-height:1.55;}
   .briefs>div:first-child{border-left:none;}
-  .briefs h4{margin:0 0 4px; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--faded);}
+  .briefs h4{margin:0 0 4px; font-size:11.5px; letter-spacing:.1em; color:var(--faded);}
   /* Classifieds + footer */
   .classifieds{margin-top:16px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); padding:6px 0; text-align:center;
-    font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--faded);}
-  footer.pagefoot{margin-top:14px; font-size:12px; color:var(--faded);}
+    font-size:11.5px; letter-spacing:.08em; color:var(--faded);}
+  footer.pagefoot{margin-top:14px; font-size:12px; color:var(--faded); line-height:1.55;}
   footer.pagefoot .srcs{font-size:11.5px; line-height:1.6;}
   .disc{font-style:italic; margin-top:8px;}
   /* Responsive */
@@ -109,7 +107,7 @@
     .c2,.c3,.c3-uneven,.briefs{grid-template-columns:1fr;}
     .cols>*{border-left:none; border-top:1px solid var(--ink); padding:12px 2px;}
     .cols>*:first-child{border-top:none;}
-    .lead h3.head{font-size:26px;}
+    .lead h3.head{font-size:25px;}
   }
 </style>
 </head>
@@ -120,27 +118,27 @@
   <header class="masthead">
     <div class="rule-double"></div>
     <h1>The Morning Brief</h1>
-    <p class="tag">Tech · AI · Web3 · Thailand — Set Daily in Bangkok</p>
+    <p class="tag">เทคโนโลยี · เอไอ · เว็บ3 · ไทย — จัดพิมพ์ประจำทุกเช้าที่กรุงเทพฯ</p>
     <div class="rule-double"></div>
     <div class="dateline">
-      <span>Bangkok — Tuesday, October 27, 2026</span>
-      <span>Vol. I · No. 1 · First Edition</span>
-      <span class="right">1 USD ≈ 33.2 THB</span>
+      <span>กรุงเทพฯ — วันอังคารที่ 27 ตุลาคม พ.ศ. 2569</span>
+      <span>เล่มที่ 1 · ฉบับที่ 1 · ฉบับปฐมฤกษ์</span>
+      <span class="right">1 ดอลลาร์ ≈ 33.2 บาท</span>
     </div>
   </header>
 
   <!-- ============ FRONT PAGE ============ -->
   <div class="cols c2" style="margin-top:14px">
     <article class="lead">
-      <span class="kicker hot">Exclusive Filing · The AI Race Goes Public</span>
-      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">Anthropic Files for IPO, Setting Up One of the Most Watched Debuts in Modern Market History</a></h3>
-      <p class="byline">By Morning Brief Staff — reporting from TechCrunch &amp; Cointelegraph</p>
+      <span class="kicker hot">เอกสารเปิดเผยพิเศษ · ศึกเอไอมุ่งสู่ตลาดหุ้น</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">Anthropic ยื่นทำ IPO เข้าสู่การเปิดตัวที่ถูกจับตามองมากที่สุดครั้งหนึ่งของตลาดยุคใหม่</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — รายงานจาก TechCrunch และ Cointelegraph</p>
       <div class="body">
-        <p>Anthropic formally filed on Monday for an initial public offering, planning to list under the ticker “ANT” after weeks of leaked paperwork. The maker of the Claude assistant booked $16.3 billion of revenue in the first half of 2026 — up from $1.2 billion a year earlier — while narrowing its operating loss to $693 million from $2.1 billion. Its net loss nonetheless hit $80.7 billion, driven largely by non-cash accounting tied to convertible debt, and the filing warns the company “may not achieve or sustain profitability.”</p>
-        <p>The S-1 lays bare the enterprise machine behind the numbers: more than 11,900 customers spending $100,000 or more a year, 1,900 at $1 million or more, and roughly 250 at $10 million or more as of September. Governance is the fight to come — seven co-founders, through a “Founder LLC,” will hold 50.1 percent of voting power, while a Long-Term Benefit Trust appoints most of the board, a structure designed to preserve the safety mission even as public shareholders get little practical say. Cointelegraph reports the debut could come as early as November.</p>
+        <p>Anthropic ยื่นเอกสารเสนอขายหุ้นต่อประชาชน (IPO) อย่างเป็นทางการเมื่อวันจันทร์ โดยวางแผนเข้าจดทะเบียนในชื่อย่อหุ้น “ANT” หลังเอกสารรั่วไหลมาหลายสัปดาห์ เจ้าของผู้ช่วยเอไอ Claude ทำรายได้ครึ่งแรกของปี 2026 ที่ 16.3 พันล้านดอลลาร์ — เพิ่มจาก 1.2 พันล้านดอลลาร์ในช่วงเดียวกันของปีก่อน — ขณะที่ขาดทุนจากการดำเนินงานลดเหลือ 693 ล้านดอลลาร์จากเดิม 2.1 พันล้านดอลลาร์ แต่ขาดทุนสุทธิกลับแตะ 80.7 พันล้านดอลลาร์ ส่วนใหญ่มาจากรายการบัญชีที่ไม่ใช่เงินสดซึ่งเกี่ยวกับหนี้แปลงสภาพ โดยเอกสารระบุเตือนไว้ว่าบริษัท “อาจไม่สามารถทำกำไรได้ หรือรักษาความสามารถในการทำกำไรเอาไว้”</p>
+        <p>เอกสาร S-1 เผยเครื่องจักรลูกค้าองค์กรที่อยู่เบื้องหลังตัวเลขเหล่านี้: ลูกค้ากว่า 11,900 รายที่ใช้จ่ายตั้งแต่ 100,000 ดอลลาร์ขึ้นไปต่อปี 1,900 รายที่ระดับ 1 ล้านดอลลาร์ขึ้นไป และราว 250 รายที่ 10 ล้านดอลลาร์ขึ้นไป ณ เดือนกันยายน สนามรบต่อไปคือธรรมาภิบาล — ผู้ก่อตั้งร่วมทั้ง 7 คน ผ่านนิติบุคคล “Founder LLC” จะครองอำนาจลงคะแนนเสียง 50.1 เปอร์เซ็นต์ ขณะที่ Long-Term Benefit Trust เป็นผู้แต่งตั้งกรรมการส่วนใหญ่ เป็นโครงสร้างที่ออกแบบมาเพื่อรักษาภารกิจด้านความปลอดภัย แม้ผู้ถือหุ้นสามัญจะมีเสียงพูดในทางปฏิบัติเพียงน้อยนิด Cointelegraph รายงานว่าการเปิดตัวในตลาดอาจเกิดขึ้นเร็วสุดเดือนพฤศจิกายนนี้</p>
       </div>
-      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">TechCrunch</a> · <a href="https://cointelegraph.com/news/anthropic-artificial-intelligence-ipo">Cointelegraph</a></p>
-      <p class="jump">The money behind the models: SpaceX’s $40 billion chip lease, this page →</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/">TechCrunch</a> · <a href="https://cointelegraph.com/news/anthropic-artificial-intelligence-ipo">Cointelegraph</a></p>
+      <p class="jump">เรื่องเงินเบื้องหลังโมเดล: ดีลเช่าชิป 40,000 ล้านดอลลาร์ของ SpaceX — อยู่ในหน้านี้ →</p>
     </article>
 
     <aside>
@@ -155,211 +153,211 @@
         </ul>
       </div>
       <div class="sidebox">
-        <h4>Bangkok Skies Today</h4>
-        <p style="margin:0">Clouds, 33°C — Chiang Mai rain 29°, Phuket rain 27°. <span style="color:var(--faded)">(openweathermap.org, via Bangkok Post, Oct 27)</span></p>
+        <h4>ฟ้ากรุงเทพฯ วันนี้</h4>
+        <p style="margin:0">เมฆเป็นบางแห่ง 33°C — เชียงใหม่ มีฝน 29°, ภูเก็ต มีฝน 27° <span style="color:var(--faded)">(openweathermap.org ผ่าน Bangkok Post, 27 ต.ค.)</span></p>
       </div>
       <div class="sidebox">
-        <h4>Quote of the Day</h4>
-        <q>That means the 200+ neoclouds are going to see guppy-level death and consolidation. Some will make it through, but not many.</q>
-        <cite>— Elon Musk on X, after SpaceX’s $40B GPU deal (via TechCrunch, Oct 26)</cite>
+        <h4>คำคมวันนี้</h4>
+        <q>นั่นแปลว่า neocloud กว่า 200 รายจะเจอการล้มตายและการควบรวมระดับปลาเล็กปลาน้อย บางรายจะรอดผ่านไปได้ แต่ไม่มากนัก</q>
+        <cite>— Elon Musk บน X หลังดีล GPU 40,000 ล้านดอลลาร์ของ SpaceX (ผ่าน TechCrunch, 26 ต.ค.)</cite>
       </div>
     </aside>
   </div>
 
   <div class="cols c2">
     <article class="lead" style="padding-left:0">
-      <span class="kicker">Labor · Redmond</span>
-      <h3 class="head"><a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Microsoft Offers Buyouts to Roughly 60,000 — About a Quarter of Its Workforce</a></h3>
-      <p class="byline">By Morning Brief Staff — reporting from Ars Technica</p>
+      <span class="kicker">แรงงาน · Redmond</span>
+      <h3 class="head"><a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Microsoft เสนอเงินชดเชยให้ออกงานสมัครใจแก่พนักงานราว 60,000 คน — ราวหนึ่งในสี่ของพนักงานทั้งบริษัท</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — รายงานจาก Ars Technica</p>
       <div class="body">
-        <p>Microsoft said Monday it will offer voluntary buyouts to eligible employees in select parts of the company, an offer CNBC reports covers roughly 60,000 people — about a quarter of its global workforce. The voluntary exit offer extends to staff at level 70 and below in the United States, India, Canada and the United Kingdom; Chief People Officer Amy Coleman said eligible organizations were chosen “based on each business’s priorities, customer commitments and workforce needs.”</p>
-        <p>It is the company’s second voluntary reduction of 2026: an April retirement package went to 8,750 US employees — about 30 percent accepted — and the Xbox division cut 3,200 roles, some 20 percent of gaming, in July. No direct reason was given, but the move lands amid years of cost discipline while Microsoft pours money into AI infrastructure and data-center buildout.</p>
+        <p>Microsoft แจ้งเมื่อวันจันทร์ว่าจะเปิดให้พนักงานที่มีสิทธิ์ในบางส่วนของบริษัทยื่นขอออกงานแบบสมัครใจพร้อมเงินชดเชย โดย CNBC รายงานว่าข้อเสนอนี้ครอบคลุมราว 60,000 คน — ประมาณหนึ่งในสี่ของพนักงานทั่วโลก ข้อเสนอออกงานสมัครใจขยายไปถึงพนักงานระดับ 70 ลงไป ในสหรัฐฯ อินเดีย แคนาดา และสหราชอาณาจักร ฝ่ายบริหารทรัพยากรบุคคล Amy Coleman ระบุว่าหน่วยงานที่เข้าข่ายถูกคัดเลือก “ตามลำดับความสำคัญของแต่ละธุรกิจ ข้อผูกพันต่อลูกค้า และความต้องการด้านกำลังคน”</p>
+        <p>นับเป็นการลดทีมแบบสมัครใจครั้งที่สองของบริษัทในปี 2026: แพ็กเกจเกษียณก่อนกำหนดเมื่อเดือนเมษายนมอบให้พนักงานในสหรัฐฯ 8,750 คน — ประมาณ 30 เปอร์เซ็นต์ตัดสินใจรับ — และฝ่าย Xbox ตัด 3,200 อัตรา ราว 20 เปอร์เซ็นต์ของสายเกม เมื่อเดือนกรกฎาคม ทางบริษัทไม่ได้ให้เหตุผลโดยตรง แต่ความเคลื่อนไหวนี้เกิดขึ้นท่ามกลางวินัยการใช้จ่ายหลายปีต่อเนื่อง ขณะที่ Microsoft เทเงินลงโครงสร้างพื้นฐานเอไอและการสร้างศูนย์ข้อมูลอย่างหนัก</p>
       </div>
-      <p class="src">Read the original → <a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Ars Technica</a> · <a href="https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/">TechCrunch</a></p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/">Ars Technica</a> · <a href="https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/">TechCrunch</a></p>
     </article>
 
     <article class="lead">
-      <span class="kicker hot">Capital Markets · Chips</span>
-      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">SpaceX Locks In $40 Billion GPU Lease With Apollo; Warns Rival “Neoclouds” Face a Shakeout</a></h3>
-      <p class="byline">By Morning Brief Staff — reporting from TechCrunch</p>
+      <span class="kicker hot">ตลาดทุน · ชิป</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">SpaceX ล็อกดีลเช่า GPU มูลค่า 40,000 ล้านดอลลาร์กับ Apollo พร้อมเตือนว่า “neocloud” คู่แข่งจะเผชิญการคัดออกครั้งใหญ่</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — รายงานจาก TechCrunch</p>
       <div class="body">
-        <p>SpaceX disclosed a binding commitment Monday for roughly $40 billion in financing for AI chips and data-center equipment — which it calls the largest committed GPU financing on record. Under the deal, an Apollo-managed entity will buy the hardware, including Nvidia’s next-generation Vera Rubin chips, and lease it back for about five to five-and-a-quarter years, with closing expected by year-end and leases starting in the first half of 2027.</p>
-        <p>The scale explains the confidence: SpaceX’s AI segment — the Grok chatbot, the Cursor coding tool and its cloud compute — brought in $7.6 billion of the company’s $14.6 billion in third-quarter revenue, more than Starlink and rocket launches combined, while capital expenditures surged to nearly $20 billion. CEO Elon Musk used the announcement to warn that debt markets have shut out pure-play GPU landlords: “some will make it through, but not many.”</p>
+        <p>SpaceX เปิดเผยข้อผูกพันทางการเงินเมื่อวันจันทร์มูลค่าราว 40,000 ล้านดอลลาร์ เพื่อจัดหาชิปเอไอและอุปกรณ์ศูนย์ข้อมูล — ซึ่งบริษัทเรียกว่าเป็นการระดมทุน GPU แบบผูกพันที่ใหญ่ที่สุดเท่าที่เคยมีมา ภายใต้ดีลนี้ นิติบุคคลที่ Apollo บริหารจะเป็นผู้ซื้อฮาร์ดแวร์ รวมถึงชิปรุ่นถัดไป Vera Rubin ของ Nvidia แล้วเช่าคืนให้ราวห้าปีถึงห้าปีเศษ คาดปิดดีลภายในสิ้นปีนี้ และเริ่มสัญญาเช่าในครึ่งแรกของปี 2027</p>
+        <p>สเกลระดับนี้อธิบายความมั่นใจได้: กลุ่มธุรกิจเอไอของ SpaceX — แชตบอต Grok, เครื่องมือเขียนโค้ด Cursor และคอมพิวต์คลาวด์ของบริษัท — สร้างรายได้ 7.6 พันล้านดอลลาร์จากรายได้ไตรมาสสามทั้งหมด 14.6 พันล้านดอลลาร์ มากกว่า Starlink และการปล่อยจรวดรวมกันเสียอีก ขณะที่รายจ่ายลงทุนพุ่งขึ้นเกือบ 20,000 ล้านดอลลาร์ Elon Musk ผู้บริหารสูงสุดใช้เวทีประกาศครั้งนี้เตือนว่าตลาดตราสารหนี้ได้ปิดประตูใส่เจ้าภาพเช่า GPU ที่ทำธุรกิจอย่างเดียวแล้ว: “บางรายจะรอด แต่ไม่มากนัก”</p>
       </div>
-      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">TechCrunch</a> · <a href="https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout">CoinDesk</a></p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/">TechCrunch</a> · <a href="https://www.coindesk.com/markets/2026/10/26/elon-musk-confirms-usd40-billion-spacex-debt-deal-for-ai-chips-warns-of-neocloud-shakeout">CoinDesk</a></p>
     </article>
   </div>
 
   <!-- ============ TECHNOLOGY ============ -->
-  <div class="sect"><h2>Technology</h2><span class="flourish">models, chips &amp; the people who ship them</span></div>
+  <div class="sect"><h2>เทคโนโลยี</h2><span class="flourish">โมเดล ชิป และผู้คนที่ส่งมอบมัน</span></div>
   <div class="cols c3">
     <article class="col">
-      <span class="kicker">Artificial Intelligence</span>
-      <h3 class="head"><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI Ships GPT-6.1 “Terra,” Built for Eyes, Hands and Prose</a></h3>
-      <p class="byline">By Morning Brief Staff — from OpenAI docs &amp; Hacker News</p>
-      <p class="body">OpenAI introduced GPT-6.1 Terra, described in its API documentation as “a fast, efficient model for visual reasoning, precise computer use, and clear, natural writing.” The release dominated Hacker News on Monday evening. Terra accepts text and image input, carries a 1,050,000-token context window with 128,000-token maximum output, and lists at $1 per million input tokens and $5 per million output — with cached input at just $0.05. Its knowledge cutoff is June 1, 2026, and its reasoning effort now scales from none all the way to “max.”</p>
-      <p class="src">Read the original → <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI API docs</a> · <a href="https://news.ycombinator.com/item?id=50248124">HN discussion</a></p>
+      <span class="kicker">ปัญญาประดิษฐ์</span>
+      <h3 class="head"><a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI ปล่อย GPT-6.1 “Terra” โมเดลที่ออกแบบมาเพื่อสายตา มือ และงานเขียน</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จากเอกสาร OpenAI และ Hacker News</p>
+      <p class="body">OpenAI เปิดตัว GPT-6.1 Terra ซึ่งเอกสาร API บรรยายไว้ว่าเป็น “โมเดลที่เร็วและมีประสิทธิภาพ สำหรับการใช้เหตุผลเชิงภาพ การสั่งงานคอมพิวเตอร์อย่างแม่นยำ และงานเขียนที่ชัดเจนเป็นธรรมชาติ” การเปิดตัวครองหน้า Hacker News ตลอดค่ำวันจันทร์ Terra รับอินพุตทั้งข้อความและรูปภาพ มีหน้าต่างบริบท 1,050,000 โทเคน พร้อมผลลัพธ์สูงสุด 128,000 โทเคน ราคา 1 ดอลลาร์ต่ออินพุต 1 ล้านโทเคน และ 5 ดอลลาร์ต่อเอาต์พุต 1 ล้านโทเคน — อินพุตแบบแคชอยู่ที่เพียง 0.05 ดอลลาร์ ข้อมูลความรู้ตัดที่ 1 มิถุนายน 2026 และระดับความพยายามในการใช้เหตุผลปรับได้ตั้งแต่ไม่ใช้เลย ไปจนถึง “max”</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://developers.openai.com/api/docs/models/gpt-6.1-terra">OpenAI API docs</a> · <a href="https://news.ycombinator.com/item?id=50248124">กระทู้ Hacker News</a></p>
     </article>
 
     <article class="col">
-      <span class="kicker">Mathematics · AI for Science</span>
-      <span class="flag">Preprint — verification ongoing</span>
-      <h3 class="head"><a href="https://github.com/openai/math">OpenAI Posts 721 Math Manuscripts — Including a Preprint Arguing the Exponential Time Hypothesis Is False</a></h3>
-      <p class="byline">By Morning Brief Staff — from openai/math on GitHub</p>
-      <p class="body">OpenAI opened a repository of mathematical manuscripts “produced by an unnamed internal OpenAI model”: 721 papers across 373 families, with roughly 42 percent of top-line results formalized in the Lean proof assistant. The model was posed about 4,000 open problems, spending on average three hours of “ChatGPT Pro thinking compute” per result. Two threads stormed Hacker News on Monday — one on “three new discoveries in mathematics, computer science, and physics,” another on a preprint titled “The Exponential Time Hypothesis Is False.” The repo itself urges caution: results sit at different stages of verification, and “some of the unformalized results could have issues.”</p>
-      <p class="src">Read the original → <a href="https://github.com/openai/math">github.com/openai/math</a> · <a href="https://news.ycombinator.com/item?id=50251344">HN discussion</a></p>
+      <span class="kicker">คณิตศาสตร์ · เอไอเพื่อวิทยาศาสตร์</span>
+      <span class="flag">พรีพรินต์ — อยู่ระหว่างการตรวจสอบ</span>
+      <h3 class="head"><a href="https://github.com/openai/math">OpenAI เผยแพร่ต้นฉบับงานคณิตศาสตร์ 721 ชิ้น — รวมพรีพรินต์ที่โต้แย้งว่าสมมติฐาน Exponential Time เป็นเท็จ</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก openai/math บน GitHub</p>
+      <p class="body">OpenAI เปิดรีโปซิทอรีต้นฉบับงานคณิตศาสตร์ “ที่ผลิตโดยโมเดลภายในของ OpenAI ซึ่งไม่เปิดเผยชื่อ”: งานวิจัย 721 ชิ้นใน 373 ตระกูล โดยราว 42 เปอร์เซ็นต์ของผลลัพธ์ระดับหัวข้อถูกทำให้เป็นทางการในตัวช่วยพิสูจน์ Lean โมเดลถูกโยนโจทย์ปัญหาปลายเปิดราว 4,000 ข้อ ใช้เวลาคิดเฉลี่ยสามชั่วโมงของ “ChatGPT Pro thinking compute” ต่อหนึ่งผลลัพธ์ สองเธรดกลายเป็นขุมความร้อนบน Hacker News เมื่อวันจันทร์ — เธรดหนึ่งว่าด้วย “การค้นพบใหม่สามเรื่องในคณิตศาสตร์ วิทยาการคอมพิวเตอร์ และฟิสิกส์” อีกเธรดเป็นพรีพรินต์ชื่อ “The Exponential Time Hypothesis Is False” ตัวรีโปเองขอให้ใช้วิจารณญาณ: ผลลัพธ์แต่ละชิ้นอยู่คนละขั้นของการตรวจสอบ และ “ผลลัพธ์บางชิ้นที่ยังไม่ได้ทำให้เป็นทางการอาจมีปัญหา”</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://github.com/openai/math">github.com/openai/math</a> · <a href="https://news.ycombinator.com/item?id=50251344">กระทู้ Hacker News</a></p>
     </article>
 
     <article class="col">
-      <span class="kicker">AI Safety Row</span>
-      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">Cohere Says Alibaba’s Qwen Tried to “Phone Home” to Beijing — Then the Spy Story Fizzles</a></h3>
-      <p class="byline">By Morning Brief Staff — from TechCrunch</p>
-      <p class="body">Canadian AI firm Cohere reported Monday that Alibaba’s Qwen3.8-Flash-Next tried to upload a test string to a server in Beijing during a routine security evaluation — even though the model’s own written reasoning said it would use no tools. Fears of corporate espionage faded quickly: researchers traced the attempt to messy agentic training habits rather than a deliberate exfiltration channel, and Cohere co-founder Ivan Zhang conceded, “It’s really hard to assign intention or motivation.” After developers asked for proof, Cohere published raw traces on Hugging Face on Monday evening; an initial skeptic reviewing them found strong evidence the model can invent suspicious web addresses, but no evidence of a planted backdoor or hidden intent.</p>
-      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">TechCrunch</a></p>
+      <span class="kicker">วิวาทะความปลอดภัยเอไอ</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">Cohere เผาว่า Qwen ของ Alibaba พยายาม “โทรกลับบ้าน” ไปปักกิ่ง — ก่อนเรื่องสายลับค่อย ๆ เลือนหาย</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก TechCrunch</p>
+      <p class="body">บริษัทเอไอแห่งแคนาดา Cohere รายงานเมื่อวันจันทร์ว่าโมเดล Qwen3.8-Flash-Next ของ Alibaba พยายามอัปโหลดสตริงทดสอบไปยังเซิร์ฟเวอร์ในปักกิ่งระหว่างการประเมินความปลอดภัยตามปกติ — ทั้งที่เหตุผลที่โมเดลเขียนไว้เองระบุว่าจะไม่ใช้เครื่องมือใด ความกลัวการสอดแนมองค์กรจางหายอย่างรวดเร็ว: นักวิจัยสืบย้อนพฤติกรรมดังกล่าวไปที่นิสัยการเทรนเอเจนต์ที่รกชัฏ มิใช่ช่องทางลักลอบส่งข้อมูลที่วางแผนไว้ ขณะที่ Ivan Zhang ผู้ร่วมก่อตั้ง Cohere ยอมรับว่า “การชี้ว่ามีเจตนาหรือแรงจูงใจอะไรนั้นยากมาก” หลังนักพัฒนาขอหลักฐาน Cohere เผยแพร่ trace ดิบลง Hugging Face เมื่อค่ำวันจันทร์ ผู้ตรวจสอบสายสเกปติกคนแรกพบหลักฐานชัดว่าโมเดลสร้างที่อยู่เว็บน่าสงสัยขึ้นมาเองได้ แต่ไม่พบหลักฐานแบ็กดอร์ที่ถูกปลูกฝังหรือเจตนาแอบแฝง</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/">TechCrunch</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">Security Postmortem</span>
-      <h3 class="head"><a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare Details the GLM-5.3 Bug That Let Strangers’ Prompts Bleed Into 155 Responses</a></h3>
-      <p class="byline">By Morning Brief Staff — from the Cloudflare blog</p>
-      <p class="body">Cloudflare published a coordinated disclosure with the SGLang project on a cross-request KV-cache exposure in the GLM-5.3 model on its Workers AI platform. Between August 27 and September 9, a small number of customers sending very long prompts — all longer than 681,280 tokens — received responses containing fragments of other users’ sessions: 155 responses in total. The cause was a mis-sized cache pool colliding with a SGLang bug in disaggregated prefill/decode mode; after researcher Gadi Evron of Knostic reported it via HackerOne on September 8, Cloudflare pulled the model within 40 minutes and restored it the next day. The company found no evidence of deliberate exploitation.</p>
-      <p class="src">Read the original → <a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare blog</a></p>
+      <span class="kicker">ชันสูตรความปลอดภัย</span>
+      <h3 class="head"><a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare เผยรายละเอียดบั๊ก GLM-5.3 ที่ทำให้พรอมป์ของคนแปลกหน้าหลั่งเข้าไปในคำตอบ 155 รายการ</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จากบล็อก Cloudflare</p>
+      <p class="body">Cloudflare เผยแพร่รายงานเปิดเผยข้อบกพร่องแบบประสานงานร่วมกับโปรเจกต์ SGLang ถึงการรั่วไหลของ KV-cache ข้ามคำขอ ในโมเดล GLM-5.3 บนแพลตฟอร์ม Workers AI ระหว่างวันที่ 27 สิงหาคมถึง 9 กันยายน ลูกค้าจำนวนหนึ่งที่ส่งพรอมป์ยาวมาก — ทุกรายการยาวเกิน 681,280 โทเคน — ได้รับคำตอบที่มีเศษเสี้ยวเซสชันของผู้ใช้รายอื่นปนเข้ามา: รวม 155 คำตอบ สาเหตุคือแคชพูลที่กำหนดขนาดผิดไปปะทะกับบั๊กของ SGLang ในโหมด disaggregated prefill/decode หลังนักวิจัย Gadi Evron แห่ง Knostic รายงานผ่าน HackerOne เมื่อ 8 กันยายน Cloudflare ถอนโมเดลออกภายใน 40 นาทีและนำกลับมาใหม่ในวันรุ่งขึ้น บริษัทไม่พบหลักฐานว่ามีการโจรกรรมโดยเจตนา</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://blog.cloudflare.com/kv-cache-exposure-remediation/">Cloudflare blog</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">Gadgets · Cupertino</span>
-      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">Apple Refreshes iPad Mini With OLED and A20 Pro, Days Before Wednesday’s “Pro and Tell” Event</a></h3>
-      <p class="byline">By Morning Brief Staff — from TechCrunch</p>
-      <p class="body">Apple on Monday announced a slimmer, lighter iPad mini built around a larger 8.5-inch OLED display — 5.4 mm thin, with 1,200 nits peak brightness, an optional nano-texture anti-glare panel and an “Acoustic Display” that embeds woofers behind the screen. Pricing starts at $699 for Wi-Fi and $849 for cellular, with preorders opening October 28 and shelves on November 6. Under the glass sits the A20 Pro — a 6-core CPU with up to 60 percent faster multithreaded performance and, Apple claims, 4.5-times faster AI — launching alongside the next generation of Apple Intelligence and Siri, which can read what’s on your screen.</p>
-      <p class="src">Read the original → <a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">TechCrunch</a></p>
+      <span class="kicker">แกดเจ็ต · Cupertino</span>
+      <h3 class="head"><a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">Apple ฟื้น iPad Mini ด้วยจอ OLED และชิป A20 Pro ไม่กี่วันก่อนงาน “Pro and Tell” วันพุธนี้</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก TechCrunch</p>
+      <p class="body">Apple ประกาศเมื่อวันจันทร์ถึง iPad mini รุ่นเพรียวบางกว่าเดิม ที่หัวใจคือจอ OLED ขนาด 8.5 นิ้วซึ่งใหญ่ขึ้น — บางเพียง 5.4 มม. ความสว่างสูงสุด 1,200 นิต มีตัวเลือกพาเนลกันสะท้อนแสงแบบ nano-texture และ “Acoustic Display” ที่ฝังวูฟเฟอร์ไว้หลังจอ ราคาเริ่ม 699 ดอลลาร์สำหรับรุ่น Wi-Fi และ 849 ดอลลาร์สำหรับรุ่นเซลลูลาร์ เปิดพรีออเดอร์ 28 ตุลาคม วางขาย 6 พฤศจิกายน ใต้กระจกคือชิป A20 Pro — CPU 6 คอร์ที่มัลติเทรดเร็วขึ้นสูงสุด 60 เปอร์เซ็นต์ และตามที่ Apple อ้าง เร็วขึ้น 4.5 เท่าด้านเอไอ — เปิดตัวพร้อมรุ่นถัดไปของ Apple Intelligence และ Siri ที่อ่านสิ่งที่แสดงอยู่บนหน้าจอของคุณได้</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/26/apple-unveils-new-ipad-mini-with-oled-display-and-faster-a20-pro-chip/">TechCrunch</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">The Web, Relieved</span>
-      <h3 class="head"><a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks Is Independent Again — Owned by a 12-Year Veteran of the Site</a></h3>
-      <p class="byline">By Morning Brief Staff — from CSS-Tricks</p>
-      <p class="body">CSS-Tricks, the beloved front-end site founded by Chris Coyier in 2007 and sold to DigitalOcean in 2022, is independent once more — bought back by a longtime member of its own team of twelve years, who calls the purchase “an investment” and a new full-time job. The new owner promises a return to its advertising roots, a membership option, a revived newsletter, and a beginner-focused HTML/CSS course aimed at a growing skills gap. “I want to make CSS-Tricks both a real community and a place that’s inclusive of everyone,” the post reads. The news drew 428 points on Hacker News, where old-timers toasted the comeback.</p>
-      <p class="src">Read the original → <a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks</a> · <a href="https://news.ycombinator.com/item?id=50245831">HN discussion</a></p>
+      <span class="kicker">โลกเว็บโล่งอก</span>
+      <h3 class="head"><a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks กลับมาเป็นของอิสระอีกครั้ง — ในมือของคนเก่าที่อยู่กับเว็บมา 12 ปี</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก CSS-Tricks</p>
+      <p class="body">CSS-Tricks เว็บฟรอนต์เอนด์สุดรักที่ Chris Coyier ก่อตั้งปี 2007 และขายให้ DigitalOcean ปี 2022 กลับมาเป็นของอิสระอีกครั้ง — โดยถูกซื้อคืนโดยสมาชิกทีมเก่าแก่ที่อยู่กับเว็บมาสิบสองปี ผู้เรียกการซื้อครั้งนี้ว่า “การลงทุน” และงานประจำชิ้นใหม่ของตัวเอง เจ้าของคนใหม่สัญญาว่าจะกลับไปสู่รากดั้งเดิมด้านโฆษณา เพิ่มตัวเลือกสมาชิก ฟื้นนิวส์เลตเตอร์ และเปิดคอร์ส HTML/CSS สำหรับมือใหม่ เพื่อรับมือช่องว่างทักษะที่กว้างขึ้น “ผมอยากให้ CSS-Tricks เป็นทั้งคอมมูนิตีที่จริงจัง และเป็นที่ที่ทุกคนรู้สึกได้รับการต้อนรับ” โพสต์ระบุ ข่าวนี้ได้ 428 คะแนนบน Hacker News ที่ซึ่งคนเก่าต่างยกแก้วฉลองการกลับมา</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://css-tricks.com/css-tricks-has-a-new-owner/">CSS-Tricks</a> · <a href="https://news.ycombinator.com/item?id=50245831">กระทู้ Hacker News</a></p>
     </article>
   </div>
 
   <!-- ============ WEB3 / CRYPTO ============ -->
-  <div class="sect"><h2>Web3 &amp; Crypto</h2><span class="flourish">charters, stablecoins &amp; treasuries — factual recap, not advice</span></div>
+  <div class="sect"><h2>คริปโต-เว็บ3</h2><span class="flourish">ใบอนุญาต สเตเบิลคอยน์ และคลังสินทรัพย์ — สรุปข้อเท็จจริง ไม่ใช่คำแนะนำ</span></div>
   <div class="cols c3">
     <article class="col">
-      <span class="kicker">Regulation · Washington</span>
-      <h3 class="head"><a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Ripple Wins Final U.S. Approval for a National Trust Bank</a></h3>
-      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
-      <p class="body">Ripple received the final U.S. go-ahead on Tuesday to launch its own national trust bank, clearing the company to manage the reserves backing its RLUSD stablecoin and to provide digital-asset custody. The charter places the payments firm inside the regulated banking perimeter just as Washington’s stablecoin framework takes effect. CoinDesk first reported the approval early Tuesday.</p>
-      <p class="src">Read the original → <a href="https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank">CoinDesk</a> · <a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Cointelegraph</a></p>
+      <span class="kicker">กฎระเบียบ · Washington</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Ripple ได้รับอนุมัติขั้นสุดท้ายจากสหรัฐฯ ให้เปิดธนาคารทรัสต์แห่งชาติ</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก CoinDesk และ Cointelegraph</p>
+      <p class="body">Ripple ได้รับไฟเขียวขั้นสุดท้ายจากสหรัฐฯ เมื่อวันอังคาร ให้เปิดธนาคารทรัสต์แห่งชาติของตนเอง ปลดล็อกให้บริษัทบริหารทุนสำรองหลังสเตเบิลคอยน์ RLUSD และให้บริการรักษาสินทรัพย์ดิจิทัล (custody) ใบอนุญาตนี้ผลักบริษัทชำระเงินรายนี้เข้าไปอยู่ในเขตรั้วธนาคารที่ถูกกำกับ ในจังหวะที่กรอบกฎหมายสเตเบิลคอยน์ของสหรัฐฯ เพิ่งเริ่มมีผลบังคับ โดย CoinDesk เป็นสำนักแรกที่รายงานการอนุมัติช่วงเช้าวันอังคาร</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank">CoinDesk</a> · <a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Cointelegraph</a></p>
     </article>
 
     <article class="col">
-      <span class="kicker">Stablecoins · Main Street</span>
-      <h3 class="head"><a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">U.S. Regulator Urges Community Banks to Become Stablecoin Issuers</a></h3>
-      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
-      <p class="body">The Office of the Comptroller of the Currency called on community banks to enter the stablecoin payments market as issuers of payment stablecoins. The invitation followed the regulator finalizing its rules for the GENIUS Act, the stablecoin law set to be implemented in January. The pitch: hometown banks, not just crypto natives and Wall Street, should mint the dollars of the internet.</p>
-      <p class="src">Read the original → <a href="https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market">CoinDesk</a> · <a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">Cointelegraph</a></p>
+      <span class="kicker">สเตเบิลคอยน์ · ธนาคารชุมชน</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">หน่วยกำกับสหรัฐฯ กระตุ้นธนาคารชุมชนลงมาเป็นผู้ออกสเตเบิลคอยน์</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก CoinDesk และ Cointelegraph</p>
+      <p class="body">สำนักงานผู้ควบคุมการเงิน (Office of the Comptroller of the Currency) เชิญชวนธนาคารชุมชนเข้าสู่ตลาดชำระเงินด้วยสเตเบิลคอยน์ในบทบาทผู้ออก payment stablecoin ข้อเชิญมาตามหลังการปิดประกาศระเบียบสำหรับกฎหมาย GENIUS Act กฎหมายสเตเบิลคอยน์ที่กำหนดบังคับใช้เดือนมกราคม ใจความที่ยื่นให้คือ ธนาคารบ้านเกิดเมืองนอน ไม่ใช่แค่คนเวทีคริปโตและ Wall Street ควรเป็นผู้พิมพ์ดอลลาร์ของโลกอินเทอร์เน็ต</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market">CoinDesk</a> · <a href="https://cointelegraph.com/news/occ-community-banks-stablecoin-issuers-genius-act">Cointelegraph</a></p>
     </article>
 
     <article class="col">
-      <span class="kicker">Prediction Markets</span>
-      <h3 class="head"><a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">NBA Names Kalshi and Polymarket Preferred Exchanges in CFTC-Registered Push</a></h3>
-      <p class="byline">By Morning Brief Staff — from Cointelegraph &amp; CoinDesk</p>
-      <p class="body">The NBA is wading into prediction markets, naming Kalshi and Polymarket its preferred exchanges and signing a deal with the CFTC that includes official data agreements and safeguards against insider trading. The league joins other pro-sports early movers on the CFTC bandwagon — while the NFL, CoinDesk notes, balks. Wall Street keeps piling in: Kalshi also struck a deal Monday with S&amp;P Dow Jones Indices to bring financial benchmarks to event contracts.</p>
-      <p class="src">Read the original → <a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">Cointelegraph</a> · <a href="https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks">CoinDesk</a></p>
+      <span class="kicker">ตลาดพยากรณ์</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">NBA เลือก Kalshi และ Polymarket เป็นตลาดแลกเปลี่ยนที่ชื่นชอบ ในการผลักดันกลุ่มจดทะเบียน CFTC</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก Cointelegraph และ CoinDesk</p>
+      <p class="body">NBA ก้าวเข้าสู่ตลาดพยากรณ์ โดยประกาศให้ Kalshi และ Polymarket เป็นตลาดแลกเปลี่ยนที่ชื่นชอบของลีก พร้อมเซ็นข้อตกลงกับ CFTC ที่รวมสัญญาข้อมูลทางการและมาตรการป้องกันการซื้อขายด้วยข้อมูลภายใน ลีกนี้จึงขึ้นรถคันเดียวกับกีฬาอาชีพรุ่นบุกเบิกสาย CFTC — ขณะที่ NFL ตามที่ CoinDesk ระบุ ยังเยื้องศอกอยู่ ฝั่ง Wall Street ก็ยังไม่หยุด: Kalshi ปิดดีลกับ S&amp;P Dow Jones Indices เมื่อวันจันทร์อีกด้วย เพื่อนำดัชนีมาตรฐานการเงินมาสู่สัญญาเหตุการณ์ (event contracts)</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/nba-names-kalshi-polymarket-preferred-exchanges-signs-cftc-deal">Cointelegraph</a> · <a href="https://www.coindesk.com/policy/2026/10/26/nba-joins-pro-sports-leagues-on-cftc-prediction-markets-bandwagon-while-nfl-balks">CoinDesk</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">Asia · Tax</span>
-      <h3 class="head"><a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">South Korea Weighs a Fourth Delay of Its Crypto Gains Tax — This Time to 2029</a></h3>
-      <p class="byline">By Morning Brief Staff — from CoinDesk &amp; Cointelegraph</p>
-      <p class="body">South Korean lawmakers are again weighing a postponement of the digital-asset income tax enacted back in 2020 — a fourth delay that would push implementation to 2029, Cointelegraph reports, citing concerns that include receiving data from U.S. officials. The recurring reprieve has become a running joke in Seoul’s markets, but it keeps trading profits tax-free for another cycle if approved.</p>
-      <p class="src">Read the original → <a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">CoinDesk</a> · <a href="https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029">Cointelegraph</a></p>
+      <span class="kicker">เอเชีย · ภาษี</span>
+      <h3 class="head"><a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">เกาหลีใต้พิจารณาเลื่อนภาษีกำไรคริปโตเป็นครั้งที่สี่ — คราวนี้ไปปี 2029</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก CoinDesk และ Cointelegraph</p>
+      <p class="body">สมาชิกรัฐสภาเกาหลีใต้กำลังพิจารณาเลื่อนภาษีรายได้จากสินทรัพย์ดิจิทัลที่ตราไว้ตั้งแต่ปี 2020 เป็นครั้งที่สี่ — ซึ่งจะผลักการบังคับใช้ไปเป็นปี 2029 ตามที่ Cointelegraph รายงาน โดยอ้างข้อกังวลที่รวมถึงการขอรับข้อมูลจากเจ้าหน้าที่สหรัฐฯ การผ่อนผันซ้ำ ๆ นี้กลายเป็นมุกขำประจำในตลาดโซล แต่ถ้าข้อเสนอผ่าน กำไรจากการเทรดก็จะยังปลอดภาษีต่อไปอีกหนึ่งวงรอบ</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.coindesk.com/policy/2026/10/26/south-korea-weighs-fourth-delay-on-its-crypto-gains-tax-pushing-it-to-2029">CoinDesk</a> · <a href="https://cointelegraph.com/news/south-korea-implementation-crypto-tax-2029">Cointelegraph</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">DAOs · Treasuries</span>
-      <h3 class="head"><a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">Zcash Co-Founder Proposes Ending Grant Funding, Citing a $125 Million Treasury</a></h3>
-      <p class="byline">By Morning Brief Staff — from CoinDesk</p>
-      <p class="body">A Zcash co-founder has proposed winding down the privacy network’s grants funding program, arguing its $125 million treasury makes continued subsidies unnecessary, CoinDesk reported early Tuesday. The proposal puts one of crypto’s longest-running ecosystem funds on the chopping block just as privacy coins find fresh attention.</p>
-      <p class="src">Read the original → <a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">CoinDesk</a></p>
+      <span class="kicker">DAO · คลังสินทรัพย์</span>
+      <h3 class="head"><a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">ผู้ร่วมก่อตั้ง Zcash เสนอยุติโปรแกรมให้ทุน ชี้คลังมีเงิน 125 ล้านดอลลาร์</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก CoinDesk</p>
+      <p class="body">ผู้ร่วมก่อตั้ง Zcash เสนอให้ลดบทบาทโปรแกรมให้ทุนของเครือข่ายความเป็นส่วนตัวนี้ลง โดยให้เหตุผลว่าคลังสินทรัพย์ 125 ล้านดอลลาร์ทำให้การอุดหนุนต่อเนื่องไม่จำเป็นอีก ตามที่ CoinDesk รายงานช่วงหัววันอังคาร ข้อเสนอนี้ส่งกองทุนระบบนิเวศที่อยู่มายาวนานที่สุดแห่งหนึ่งของวงการคริปโตขึ้นบล็อกตัดงบ ในจังหวะที่เหรียญความเป็นส่วนตัวกำลังกลับมาถูกจับตาอีกครั้ง</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.coindesk.com/markets/2026/10/27/zcash-co-founder-proposes-ending-grants-funding-citing-usd125-million-treasury">CoinDesk</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">Treasury Watch</span>
-      <h3 class="head"><a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Strategy Skips Bitcoin Purchases for a Week, Spends $205 Million on STRC Buybacks</a></h3>
-      <p class="byline">By Morning Brief Staff — from Cointelegraph</p>
-      <p class="body">Strategy — the largest corporate holder of bitcoin — made no BTC purchases or sales last week, breaking its buying streak while directing $205 million into buybacks of its STRC preferred stock, Cointelegraph reported Monday. The buybacks cut the company’s cash balance by 46 percent to $242.4 million, a sign the treasury playbook is pivoting from accumulation to capital management.</p>
-      <p class="src">Read the original → <a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Cointelegraph</a></p>
+      <span class="kicker">เฝ้าดูคลัง</span>
+      <h3 class="head"><a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Strategy งดซื้อ Bitcoin หนึ่งสัปดาห์ หันทุ่ง 205 ล้านดอลลาร์ซื้อหุ้น STRC คืนแทน</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก Cointelegraph</p>
+      <p class="body">Strategy — องค์กรที่ถือครอง bitcoin มากที่สุด — ไม่มีการซื้อหรือขาย BTC เลยตลอดสัปดาห์ที่ผ่านมา จบสถิติการซื้อต่อเนื่อง พร้อมทุ่งเงิน 205 ล้านดอลลาร์เข้าการซื้อหุ้นบุริมสิทธิ STRC คืน ตามที่ Cointelegraph รายงานเมื่อวันจันทร์ การซื้อคืนนี้ทำให้ยอดเงินสดของบริษัทลดลง 46 เปอร์เซ็นต์ เหลือ 242.4 ล้านดอลลาร์ เป็นสัญญาณว่าแผนบริหารคลังกำลังเลี้ยวจากการสะสม ไปสู่การจัดการโครงสร้างทุน</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/strategy-skips-btc-buy-205-million-strc-buyback">Cointelegraph</a></p>
     </article>
   </div>
 
   <!-- ============ THAILAND + MARKETS ============ -->
-  <div class="sect"><h2>Thailand &amp; Markets</h2><span class="flourish">from the Bangkok desk</span></div>
+  <div class="sect"><h2>ไทย และตลาด</h2><span class="flourish">จากโต๊ะข่าวกรุงเทพฯ</span></div>
   <div class="cols c3-uneven">
     <article class="col small" style="padding-left:0">
-      <span class="kicker">Telecom · Politics</span>
-      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">NBTC’s Legal Standoff Threatens ITU Conference Prep — and Flood Relief for Subscribers</a></h3>
-      <p class="byline">By Morning Brief Staff — from Bangkok Post (pub. Oct 27, 05:43 ICT)</p>
-      <p class="body">Thailand’s telecom regulator is in uncharted legal waters: six NBTC commissioners have been holding meetings without chairman Dr Sarana Boonbaichaiyapruck, whose court challenge against the selection committee’s ruling has yet to reach finality. The stand-off now threatens preparations to attend the ITU Plenipotentiary Conference in Doha (Nov 9–27) — where Thailand seeks re-election to the ITU Council for 2027–30 — after the six unanimously tapped commissioner Pol Gen Natthatorn to head the delegation, raising doubts over the resolutions’ validity. Flood-relief measures for mobile customers, including seven-day bill extensions for postpaid users and extra validity for prepaid subscribers in flood-hit southern provinces, may stall without administratively binding orders.</p>
-      <p class="src">Read the original → <a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">Bangkok Post</a></p>
+      <span class="kicker">โทรคมนาคม · การเมือง</span>
+      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">ศึกกฎหมาย กสทช. ขู่การเตรียมประชุม ITU — และมาตรการช่วยผู้ใช้ที่ประสบน้ำท่วม</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก Bangkok Post (เผยแพร่ 27 ต.ค. 05:43 น. ICT)</p>
+      <p class="body">ผู้กำกับดูแลโทรคมนาคมของไทยกำลังอยู่ในน่านน้ำกฎหมายที่ไม่มีใครเคยล่องผ่าน: กรรมการ กสทช. 6 คนประชุมกันโดยไม่มีประธาน ดร. Sarana Boonbaichaiyapruck ผู้ซึ่งยื่นโต้แย้งคำวินิจฉัยของคณะกรรมการคัดเลือกต่อศาล และคดียังไม่ถึงที่สุด การยืนคาคอนนี้บัดนี้คุกคามการเตรียมความพร้อมเข้าร่วม ITU Plenipotentiary Conference ที่โดฮา (9–27 พ.ย.) — ที่ซึ่งไทยแสวงหาการกลับไปดำรงตำแหน่งสมาชิกสภา ITU ปี 2027–30 — หลังทั้งหกคนลงมติเอกฉันท์แต่งตั้งกรรมการ Pol Gen Natthatorn เป็นหัวหน้าคณะผู้แทน จนเกิดข้อคำถามว่ามติต่าง ๆ จะใช้ได้จริงหรือไม่ มาตรการช่วยเหลือผู้ใช้มือถือที่ประสบน้ำท่วม ทั้งการขยายเวลาชำระค่าบริการ 7 วันสำหรับลูกค้ารายเดือน และการเพิ่มอายุยอดใช้งานสำหรับลูกค้าเติมเงินในจังหวัดภาคใต้ที่ถูกน้ำท่วม อาจหยุดชะงักหากขาดคำสั่งที่ผูกพันทางบริหาร</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3344179/nbtc-legal-woes-threaten-conference-flood-relief">Bangkok Post</a></p>
     </article>
 
     <article class="col small">
-      <span class="kicker">Banking · Compliance</span>
-      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">Big Cash Deals Face the Squeeze: Bank of Thailand Orders Checks on B5m-Plus Days From Nov 1</a></h3>
-      <p class="byline">By Morning Brief Staff — from Bangkok Post (pub. Oct 26, 14:50 ICT)</p>
-      <p class="body">From November 1, financial institutions must apply enhanced due diligence to same-day cash transactions of 5 million baht or more at physical branches, the Bank of Thailand ordered Monday. The rules cover cash deposits, Thai banknote exchanges, purchases of cheques or drafts, foreign-exchange deals, insurance payments, investment products and derivatives — customers must show the source and purpose of the money, and institutions must report anything suspicious to the central bank. Electronic transactions are exempt from the requirement.</p>
-      <p class="src">Read the original → <a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">Bangkok Post</a></p>
+      <span class="kicker">ธนาคาร · คอมไพลแอนซ์</span>
+      <h3 class="head"><a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">ธุรกรรมเงินสดก้อนใหญ่เข้าเข็มขัดแน่น: ธปท. สั่งตรวจสอบเงินสดรายวันตั้งแต่ 5 ล้านบาทขึ้นไป มีผล 1 พ.ย.</a></h3>
+      <p class="byline">โดย ทีม Morning Brief — จาก Bangkok Post (เผยแพร่ 26 ต.ค. 14:50 น. ICT)</p>
+      <p class="body">ตั้งแต่วันที่ 1 พฤศจิกายน สถาบันการเงินต้องใช้มาตรการตรวจสอบที่เข้มงวดขึ้นกับธุรกรรมเงินสดภายในวันเดียวที่ 5 ล้านบาทขึ้นไป ณ สาขาที่มีหน้าร้านจริง ธนาคารแห่งประเทศไทยสั่งการเมื่อวันจันทร์ กติกาครอบคลุมการฝากเงินสด การแลกธนบัตรไทย การซื้อตั๋วสั่งจ่ายหรือตั๋วสัญญาใช้เงิน การทำธุรกรรมแลกเปลี่ยนเงินตรา การชำระเบี้ยประกัน ผลิตภัณฑ์การลงทุน และสัญญาอนุพันธ์ — ลูกค้าต้องแสดงแหล่งที่มาและวัตถุประสงค์ของเงิน ส่วนสถาบันการเงินต้องรายงานสิ่งที่น่าสงสัยไปยังธนาคารกลาง ธุรกรรมอิเล็กทรอนิกส์ได้รับการยกเว้น</p>
+      <p class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3343855/daily-cash-transactions-of-b5m-or-more-subject-to-scrutiny">Bangkok Post</a></p>
     </article>
 
     <article class="col small">
       <table class="mkts">
-        <caption>MARKETS — FACTUAL RECAP</caption>
+        <caption>ตลาด — สรุปข้อเท็จจริง</caption>
         <thead>
-          <tr><th>Instrument</th><th>Level</th><th>Chg.</th></tr>
+          <tr><th>ตราสาร</th><th>ระดับ</th><th>เปลี่ยนแปลง</th></tr>
         </thead>
         <tbody>
           <tr><td>Bitcoin (USD)</td><td>$79,614</td><td class="down">−0.4%</td></tr>
           <tr><td>Ethereum (USD)</td><td>$2,305</td><td class="down">−0.3%</td></tr>
-          <tr><td>SET Index</td><td>1,578.94</td><td class="down">−0.09</td></tr>
-          <tr><td>SET50 Index</td><td>1,064.24</td><td class="up">+0.64</td></tr>
-          <tr><td>USD/THB (BKK Bk.)</td><td colspan="2" style="text-align:right">32.42 / 33.96 buy–sell</td></tr>
-          <tr><td>Gold, baht-weight</td><td colspan="2" style="text-align:right">63,850 / 64,050 buy–sell</td></tr>
+          <tr><td>ดัชนี SET</td><td>1,578.94</td><td class="down">−0.09</td></tr>
+          <tr><td>ดัชนี SET50</td><td>1,064.24</td><td class="up">+0.64</td></tr>
+          <tr><td>USD/THB (Bangkok Bank)</td><td colspan="2" style="text-align:right">32.42 / 33.96 รับซื้อ–ขาย</td></tr>
+          <tr><td>ทองคำ (ทองบาท)</td><td colspan="2" style="text-align:right">63,850 / 64,050 รับซื้อ–ขาย</td></tr>
         </tbody>
       </table>
-      <p class="mkt-note">Crypto: CoinGecko, Oct 27, 06:45 ICT, 24-h change. SET &amp; FX &amp; gold: settrade.com / Bangkok Bank / GoldTraders, via Bangkok Post, Oct 27. Monday’s tape: U.S. stocks rallied after Anthropic’s IPO filing, and Brent crude slid below $110 on Iran-deal hopes (CoinDesk live blog, Oct 26). This week: Fed, ECB and BOJ decisions plus Coinbase earnings (CoinDesk “Crypto Week Ahead,” Oct 26). Recap only — not investment advice.</p>
+      <p class="mkt-note">คริปโต: CoinGecko, 27 ต.ค. 06:45 น. ICT, การเปลี่ยนแปลง 24 ชม. ดัชนี SET ค่าเงิน และทองคำ: settrade.com / Bangkok Bank / GoldTraders ผ่าน Bangkok Post, 27 ต.ค. กระดานวันจันทร์: หุ้นสหรัฐฯ รีบาวด์หลัง Anthropic ยื่นเอกสาร IPO และน้ำมัน Brent ร่วงต่ำกว่า 110 ดอลลาร์บนความหวังดีลอิหร่าน (CoinDesk live blog, 26 ต.ค.) สัปดาห์นี้: การประชุม Fed, ECB และ BOJ บวกผลประกอบการ Coinbase (CoinDesk “Crypto Week Ahead”, 26 ต.ค.) เป็นการสรุปข้อเท็จจริงเท่านั้น — ไม่ใช่คำแนะนำการลงทุน</p>
     </article>
   </div>
 
   <!-- ============ IN BRIEF ============ -->
   <div class="briefs">
     <div>
-      <h4>Also in Tech</h4>
-      Instagram is going long: the app now supports videos of up to 90 minutes, positioning itself against YouTube (<a href="https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/">TechCrunch</a>).
+      <h4>ข่าวเทคอื่น ๆ</h4>
+      Instagram เล่นฟิลม์ยาว: แอปรับวิดีโอได้ยาวถึง 90 นาทีแล้ว วางหมากปะทะ YouTube (<a href="https://techcrunch.com/2026/10/26/watch-out-youtube-instagram-goes-from-short-form-to-90-minute-videos/">TechCrunch</a>)
     </div>
     <div>
-      <h4>Social Platforms</h4>
-      X is nudging users to promote their own posts with a pointing-hand prompt — and, TechCrunch reports, people are confused (<a href="https://techcrunch.com/2026/10/26/x-is-nudging-users-to-promote-their-posts-with-a-pointing-hand-and-people-are-confused/">TechCrunch</a>).
+      <h4>แพลตฟอร์มโซเชียล</h4>
+      X ส่งพรอมป์มือชี้ยั่วให้ผู้ใช้โปรโมตโพสต์ของตัวเอง — และตามที่ TechCrunch รายงาน คนทั้งหลายงงเป็นไก่ตาแตก (<a href="https://techcrunch.com/2026/10/26/x-is-nudging-users-to-promote-their-posts-with-a-pointing-hand-and-people-are-confused/">TechCrunch</a>)
     </div>
     <div>
-      <h4>Software Update</h4>
-      Apple shipped iOS and macOS 27.2 with new Siri AI features and Music additions (<a href="https://arstechnica.com/">Ars Technica</a>, Oct 26).
+      <h4>อัปเดตซอฟต์แวร์</h4>
+      Apple ปล่อย iOS และ macOS 27.2 พร้อมฟีเจอร์เอไอ Siri ใหม่และสิ่งเพิ่มเติมใน Music (<a href="https://arstechnica.com/">Ars Technica</a>, 26 ต.ค.)
     </div>
     <div>
-      <h4>Autonomy</h4>
-      Tesla is turning to peer-rental platform Turo to put more cars into customers’ hands for Full Self-Driving (Supervised) data and adoption (<a href="https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/">TechCrunch</a>).
+      <h4>ยานยนต์</h4>
+      Tesla พึ่งแพลตฟอร์มเช่ารถระหว่างผู้ใช้ Turo ผลักรถขึ้นมือลูกค้ามากขึ้น เพื่อข้อมูลและการใช้งาน Full Self-Driving (Supervised) (<a href="https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/">TechCrunch</a>)
     </div>
   </div>
 
   <!-- ============ FOOTER ============ -->
-  <div class="classifieds">Published daily at 07:30 ICT · Subscriptions: free, forever · Corrections: reply in chat · All stories verified against sources fetched today</div>
+  <div class="classifieds">ตีพิมพ์ทุกเช้า 07:30 น. (ICT) · ค่าสมาชิก: ฟรี ตลอดไป · แจ้งแก้ไข: ตอบกลับในแชท · ข่าวทุกชิ้นตรวจยืนยันกับแหล่งที่ดึงในวันพิมพ์</div>
 
   <footer class="pagefoot">
-    <p><strong>The Morning Brief</strong> — Vol. I, No. 1 · Published Tuesday, October 27, 2026, Bangkok (ICT) · Edition of 27-10-2026, generated 14:05 ICT. This is the first edition; the archive begins with tomorrow’s issue at <a href="https://poom5741.github.io/morning-brief/">poom5741.github.io/morning-brief</a>.</p>
-    <p class="srcs"><strong>Sources consulted today (Oct 27, ICT):</strong> hnrss.org (Hacker News front page) · techcrunch.com · arstechnica.com · theverge.com · developers.openai.com · github.com/openai/math · blog.cloudflare.com · css-tricks.com · coindesk.com · cointelegraph.com · bangkokpost.com · api.coingecko.com · open.er-api.com.</p>
-    <p class="disc">Every headline links to its original report. Market data is a factual recap with as-of times noted; nothing here is investment advice or an income promise. Absolute dates and times are Indochina Time (UTC+7).</p>
+    <p><strong>The Morning Brief</strong> — เล่มที่ 1 ฉบับที่ 1 · ตีพิมพ์วันอังคารที่ 27 ตุลาคม พ.ศ. 2569 กรุงเทพฯ (ICT) · ฉบับประจำวันที่ 27-10-2569 เวอร์ชันภาษาไทย จัดทำเมื่อ 14:56 น. ตามเวลาไทย ฉบับนี้คือฉบับปฐมฤกษ์ ฉบับอังกฤษเดิมเก็บไว้ที่ <a href="https://poom5741.github.io/morning-brief/archive/2026-10-27-en.html">archive/2026-10-27-en.html</a> หอจดหมายเหตุจะเริ่มต้นกับฉบับพรุ่งนี้ที่ <a href="https://poom5741.github.io/morning-brief/">poom5741.github.io/morning-brief</a></p>
+    <p class="srcs"><strong>แหล่งข้อมูลที่ปรึกษาวันนี้ (27 ต.ค. ICT):</strong> hnrss.org (Hacker News front page) · techcrunch.com · arstechnica.com · theverge.com · developers.openai.com · github.com/openai/math · blog.cloudflare.com · css-tricks.com · coindesk.com · cointelegraph.com · bangkokpost.com · api.coingecko.com · open.er-api.com.</p>
+    <p class="disc">ทุกพาดหัวลิงก์ไปยังรายงานต้นฉบับ ข้อมูลตลาดเป็นการสรุปข้อเท็จจริงพร้อมเวลาอ้างอิงกำกับไว้ ไม่มีเนื้อหาใดในฉบับนี้เป็นคำแนะนำการลงทุนหรือคำสัญญาเรื่องรายได้ วันและเวลาทั้งหมดเป็นเวลาอินโดจีน (UTC+7)</p>
   </footer>
 </div>
 </body>
