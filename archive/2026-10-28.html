@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Morning Brief — วันพุธที่ 28 ตุลาคม พ.ศ. 2569 — เล่มที่ 1 ฉบับที่ 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Noto+Serif+Thai:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4efe4;
+    --paper2:#efe7d5;
+    --ink:#1a1a1a;
+    --ink-soft:#3a3630;
+    --rule:#1a1a1a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(255,255,255,.35), transparent 55%),
+      linear-gradient(160deg, var(--paper) 0%, var(--paper2) 100%);
+    color:var(--ink);
+    font-family:'Noto Serif Thai','Old Standard TT','Trirong',serif;
+    line-height:1.62;
+    font-size:15px;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px;}
+
+  /* ===== Masthead ===== */
+  .topbar{
+    border-bottom:1px solid var(--rule);
+    font-size:12.5px;letter-spacing:.06em;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    padding:6px 0;color:var(--ink-soft);
+  }
+  .topbar .dot{font-style:italic;}
+  header.masthead{text-align:center;padding:18px 0 10px;}
+  header.masthead h1{
+    font-family:'Chonburi','Trirong',serif;
+    font-size:clamp(34px,6.4vw,64px);
+    font-weight:400;letter-spacing:.01em;line-height:1.08;
+  }
+  header.masthead .tagline{
+    font-style:italic;font-size:14.5px;color:var(--ink-soft);margin-top:6px;
+  }
+  .dbl-rule{border-top:3px double var(--rule);}
+  .dateline{
+    display:flex;justify-content:center;flex-wrap:wrap;gap:4px 18px;
+    padding:7px 0;font-size:13.5px;letter-spacing:.05em;
+    border-bottom:1px solid var(--rule);
+  }
+  .dateline b{font-weight:700;}
+
+  /* ===== Sections & kickers ===== */
+  section{padding:20px 0 6px;}
+  .kicker{
+    display:flex;align-items:center;gap:14px;margin-bottom:14px;
+  }
+  .kicker h2{
+    font-family:'Trirong',serif;font-weight:800;font-size:21px;letter-spacing:.14em;
+    border:2px solid var(--ink);padding:3px 14px;white-space:nowrap;
+  }
+  .kicker .line{flex:1;border-top:1px solid var(--rule);}
+  .kicker .note{font-style:italic;font-size:12.5px;color:var(--ink-soft);white-space:nowrap;}
+
+  /* ===== Story cards ===== */
+  .story h3{
+    font-family:'Trirong','Noto Serif Thai',serif;font-weight:800;line-height:1.28;
+    margin-bottom:8px;
+  }
+  .story h3 a{color:inherit;text-decoration:none;}
+  .story p{margin-bottom:10px;text-align:justify;hyphens:auto;}
+  .byline{font-style:italic;font-size:13px;color:var(--ink-soft);margin-bottom:8px;}
+  .src{font-size:13.5px;}
+  .src a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;}
+  .flag{
+    display:inline-block;border:1px solid var(--ink);padding:1px 8px;
+    font-size:11.5px;letter-spacing:.08em;margin-top:2px;margin-bottom:8px;
+  }
+
+  /* ===== Front page ===== */
+  .lede-band{display:grid;grid-template-columns:2fr 1fr;border-bottom:1px solid var(--rule);}
+  .lede-band>div{padding:18px 20px;}
+  .lede-band>div+div{border-left:1px solid var(--rule);}
+  .lead{padding-left:0 !important;padding-right:26px !important;}
+  .lead h3{font-size:clamp(27px,3.6vw,42px);}
+  .lead .dropcap::first-letter{
+    font-family:'Trirong',serif;font-weight:800;float:left;
+    font-size:3.35em;line-height:.82;padding:4px 10px 0 0;
+  }
+  .subleads{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--rule);}
+  .subleads>div{padding:16px 22px;}
+  .subleads>div+div{border-left:1px solid var(--rule);}
+  .subleads h3{font-size:clamp(20px,2.2vw,26px);}
+
+  /* ===== Sidebar box ===== */
+  .box{background:rgba(255,255,255,.35);border:2px solid var(--ink);padding:16px 16px 10px;box-shadow:4px 4px 0 rgba(26,26,26,.14);}
+  .box .box-title{
+    text-align:center;font-family:'Trirong',serif;font-weight:800;font-size:18px;letter-spacing:.12em;
+    border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:10px;
+  }
+  .box ul{list-style:none;}
+  .box li{margin-bottom:9px;padding-left:16px;position:relative;text-align:left;font-size:14.2px;}
+  .box li::before{content:"■";position:absolute;left:0;top:1px;font-size:9px;}
+  .box .box-foot{border-top:1px solid var(--rule);margin-top:6px;padding-top:8px;font-style:italic;font-size:12px;color:var(--ink-soft);text-align:center;}
+
+  /* ===== Section grids ===== */
+  .tri{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--rule);}
+  .tri>div{padding:4px 20px 14px;}
+  .tri>div:first-child{padding-left:0;}
+  .tri>div:last-child{padding-right:0;}
+  .tri>div+div{border-left:1px solid var(--rule);}
+  .tri h3{font-size:clamp(18px,1.9vw,22px);}
+
+  /* ===== Markets ===== */
+  table.markets{width:100%;border-collapse:collapse;margin:6px 0 4px;}
+  table.markets caption{caption-side:top;text-align:left;font-style:italic;font-size:13px;color:var(--ink-soft);padding-bottom:8px;}
+  table.markets th,table.markets td{border:1px solid var(--ink);padding:8px 12px;text-align:left;vertical-align:top;}
+  table.markets th{font-family:'Trirong',serif;font-weight:800;letter-spacing:.06em;background:rgba(26,26,26,.05);font-size:14px;}
+  table.markets td{font-size:14.5px;}
+  table.markets td .t{font-family:'Old Standard TT','Noto Serif Thai',serif;font-size:15.5px;}
+  .up{font-weight:700;} .down{font-weight:700;} .flat{font-weight:700;}
+  .mkt-note{font-size:12.5px;font-style:italic;color:var(--ink-soft);margin-top:8px;}
+
+  /* ===== Footer ===== */
+  footer{margin-top:26px;border-top:3px double var(--rule);padding:14px 0 30px;font-size:13px;color:var(--ink-soft);}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr;gap:20px;}
+  footer h4{font-family:'Trirong',serif;font-weight:800;color:var(--ink);letter-spacing:.1em;margin-bottom:6px;font-size:14px;}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:3px;}
+  footer a{color:var(--ink);}
+  .colophon{text-align:center;margin-top:16px;font-style:italic;border-top:1px solid var(--rule);padding-top:10px;}
+
+  /* ===== Responsive ===== */
+  @media (max-width:980px){
+    .lede-band{grid-template-columns:1fr;}
+    .lede-band>div+div{border-left:none;border-top:1px solid var(--rule);}
+    .lead{padding-right:0 !important;}
+    .tri{grid-template-columns:repeat(2,1fr);}
+    .tri>div{padding-left:16px;}
+    .tri>div:first-child{padding-left:0;}
+    .tri>div:nth-child(2n){border-left:1px solid var(--rule);}
+    .tri>div+div{border-left:none;}
+    .tri>div:nth-child(2){border-left:1px solid var(--rule);}
+    footer .cols{grid-template-columns:1fr;}
+  }
+  @media (max-width:700px){
+    body{font-size:14.5px;}
+    .subleads{grid-template-columns:1fr;}
+    .subleads>div+div{border-left:none;border-top:1px solid var(--rule);}
+    .tri{grid-template-columns:1fr;}
+    .tri>div{padding-left:0 !important;padding-right:0 !important;border-left:none !important;}
+    .tri>div+div{border-top:1px solid var(--rule);}
+    table.markets th,table.markets td{padding:6px 8px;font-size:13.5px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <span>ฉบับออนไลน์ — ออกเช้าทุกวัน 07:30 น. ตามเวลาไทย</span>
+    <span class="dot">เรียบเรียงโดย ทีม Morning Brief</span>
+  </div>
+
+  <header class="masthead">
+    <h1>The Morning Brief</h1>
+    <div class="tagline">สรุปข่าวสำคัญ เทคโนโลยี · AI · คริปโต/เว็บ3 · ไทย — รวดเดียวในตอนเช้า</div>
+  </header>
+
+  <div class="dbl-rule"></div>
+  <div class="dateline">
+    <span><b>กรุงเทพฯ</b> — วันพุธที่ 28 ตุลาคม พ.ศ. 2569</span>
+    <span>เล่มที่ 1 · ฉบับที่ 2</span>
+    <span>1 USD ≈ 33.77 THB</span>
+    <span>BTC ≈ 80,907 USD</span>
+  </div>
+
+  <!-- ===== FRONT PAGE ===== -->
+  <div class="lede-band">
+    <div class="lead story">
+      <article>
+        <h3><a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/">Google เปิดตัว &ldquo;Genie 4&rdquo; โมเดลจำลองโลกที่ทั้ง &ldquo;เห็น&rdquo; และ &ldquo;ได้ยิน&rdquo; บังคับทิศทางได้แบบทันที</a></h3>
+        <div class="byline">โดย ทีม Morning Brief</div>
+        <p class="dropcap">Google DeepMind เปิดตัว Genie 4 โมเดลจำลองโลก (world model) รุ่นใหม่ที่ยกระดับความสมจริงของสภาพแวดล้อมแบบโต้ตอบ และสร้างเสียงประกอบโลกเสมือนได้เป็นครั้งแรก TechCrunch รายงานว่ารุ่นนี้รองรับการบังคับทิศทางแบบเรียลไทม์ (real-time steering) ทำให้ผู้ใช้หมุนเหตุการณ์ในโลกจำลองได้ระหว่างที่มันกำลังเกิดขึ้น DeepMind อธิบายว่านี่คือ &ldquo;รุ่นใหม่ของการจำลองโลก&rdquo; — ข่าวนี้ครองอันดับต้น ๆ ของหน้าแรก Hacker News ด้วยคะแนนกว่า 790 คะแนน</p>
+        <p class="src">อ่านต้นฉบับ: <a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/">TechCrunch →</a> · <a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Google DeepMind →</a></p>
+      </article>
+    </div>
+    <div>
+      <aside class="box">
+        <div class="box-title">วันนี้ต้องรู้</div>
+        <ul>
+          <li>Google DeepMind เปิดตัว <b>Genie 4</b> โมเดลจำลองโลกที่เพิ่มเสียงและบังคับแบบเรียลไทม์</li>
+          <li><b>Apple</b> เปิดตัว MacBook Pro ชิป M6 แล้ว — งานแถลงรุ่น Pro &ldquo;Pro and tell&rdquo; วันนี้ (28 ต.ค.)</li>
+          <li>ช่องโหว่เฟิร์มแวร์ <b>UEFI (CVE-2026-97631)</b> รุนแรง 9.5/10 กระทบเซิร์ฟเวอร์ที่บูตผ่านเครือข่าย</li>
+          <li><b>IPO ของ Anthropic</b> มุ่งทำสถิติ มูลค่าบริษัทแตะ 1 ล้านล้านดอลลาร์</li>
+          <li><b>Bitcoin</b> เด้งกลับมายืนเหนือ 80,000 ดอลลาร์ หลังหลุดไปช่วงสั้น ๆ ขณะเฟดเริ่มประชุม</li>
+        </ul>
+        <div class="box-foot">ครบทุกเรื่องมีรายละเอียดในฉบับนี้</div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="subleads">
+    <div class="story">
+      <article>
+        <h3><a href="https://techcrunch.com/2026/10/27/apple-unveils-new-14-inch-macbook-pro-with-m6-chip/">Apple เปิดตัว MacBook Pro 14 นิ้วชิป M6 พร้อม iMac รุ่นใหม่ ก่อนงานแถลงรุ่น Pro วันนี้</a></h3>
+        <div class="byline">โดย ทีม Morning Brief</div>
+        <p>Apple เปิดตัว MacBook Pro 14 นิ้วรุ่นใหม่ที่ใช้ชิป M6 เมื่อวันที่ 27 ตุลาคม โดยรุ่นเริ่มต้นมาพร้อมชิปไร้สาย N1 ที่รองรับ Wi-Fi 7 และ Bluetooth 6 ขณะที่ iMac ก็ได้รับชิปที่แรงขึ้นเช่นกัน ด้าน Bloomberg รายงาน (ผ่าน The Verge) ว่าบริษัทเคยหารือราคา MacBook Pro จอ OLED แบบทัชสกรีนไว้ที่ 2,899 ดอลลาร์ ซึ่งคาดว่าจะประกาศในงาน &ldquo;Pro and tell&rdquo; วันนี้ (28 ตุลาคม)</p>
+        <div class="flag">รายงานเบื้องต้น ยังยืนยันไม่ได้</div>
+        <p class="src">อ่านต้นฉบับ: <a href="https://techcrunch.com/2026/10/27/apple-unveils-new-14-inch-macbook-pro-with-m6-chip/">TechCrunch →</a> · <a href="https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/">Apple Newsroom →</a></p>
+      </article>
+    </div>
+    <div class="story">
+      <article>
+        <h3><a href="https://www.bangkokpost.com/business/investment/3345085/anthropics-record-ipo-faces-some-big-questions">IPO ของ Anthropic พุ่งทำสถิติ มูลค่าบริษัทแตะ 1 ล้านล้านดอลลาร์ แต่คำถามใหญ่ยังรออยู่</a></h3>
+        <div class="byline">โดย ทีม Morning Brief</div>
+        <p>ไม่มีสตาร์ตอัปตัวใดเติบโตเร็วเท่า Anthropic — ภายในเวลาเพียงห้าปี บริษัท AI กลายเป็นยักษ์ใหญ่ที่มีมูลค่า 1 ล้านล้านดอลลาร์ และกำลังเตรียมเปิดขายหุ้น IPO ที่ทำสถิติใหม่ของวงการ ตามรายงานของ Bangkok Post TechCrunch วิเคราะห์ว่านักลงทุนรายย่อยระดับ VC จะได้เงินก้อนโต แต่ Amazon คือผู้ได้ประโยชน์มหาศาลที่สุด ขณะที่ The Verge ชี้ว่าคำถามสำคัญคือบริษัทจะยังรักษาจุดยืนเรื่อง &ldquo;AI ที่ปลอดภัยและรับผิดชอบ&rdquo; ได้จริงหรือไม่หลังเข้าตลาดหลักทรัพย์</p>
+        <p class="src">อ่านต้นฉบับ: <a href="https://www.bangkokpost.com/business/investment/3345085/anthropics-record-ipo-faces-some-big-questions">Bangkok Post →</a> · <a href="https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/">TechCrunch →</a></p>
+      </article>
+    </div>
+  </div>
+
+  <!-- ===== TECHNOLOGY ===== -->
+  <section>
+    <div class="kicker"><h2>เทคโนโลยี</h2><span class="line"></span><span class="note">ความปลอดภัย · นักพัฒนา · แพลตฟอร์ม</span></div>
+    <div class="tri">
+      <div class="story">
+        <article>
+          <h3><a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">ช่องโหว่เฟิร์มแวร์ UEFI รุนแรง 9.5/10 ล่าเซิร์ฟเวอร์ที่บูตผ่านเครือข่ายทั่วโลก</a></h3>
+          <p><b>CVE-2026-97631</b> คือช่องโหว่ memory corruption ในตัวแยกวิเคราะห์ ICMP ของ EDK II โค้ดต้นแบบ UEFI ที่ผู้ผลิตฮาร์ดแวร์และผู้ให้บริการคลาวด์เกือบทั้งหมดใช้ ผู้โจมตีที่ควบคุมเครือข่ายภายในได้สามารถสั่งรันโค้ดก่อนที่ระบบปฏิบัติการและ Secure Boot จะทำงาน Ars Technica ระบุว่าช่องโหว่นี้ฝังอยู่ในโค้ดมานานถึง 16 ปี และหลุดจังหวะเปิดเผยแบบประสานงานเพราะ AMI เผยแพตช์ออกมาก่อนกำหนด ผู้ใช้ทั่วไปที่บูตเครื่องจากดิสก์ไม่อยู่ในกลุ่มเสี่ยง ส่วน Intel และ Arm ยืนยันว่าผลิตภัณฑ์ของตนไม่ได้รับผลกระทบโดยตรง</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">Ars Technica →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/">&ldquo;JIT Go Brrr&rdquo; จบลงเงียบ ๆ — Python เตรียมถอดคอมไพเลอร์ JIT รุ่นทดลองออกจาก CPython</a></h3>
+          <p>LWN รายงานว่าคอมไพเลอร์ JIT แบบทดลองที่เพิ่มเข้า CPython ในรุ่น 3.13 เมื่อปี 2024 กำลังถูกถอดออก จุดเปลี่ยนคือเดือนมิถุนายน ที่สภากำกับ Python (steering council) สั่งพักงานบนสาขาหลักจนกว่าจะมีข้อเสนอ PEP ฉบับมาตรฐานที่อธิบายชัดเรื่องการดูแลรักษา ความเข้ากันได้ และเกณฑ์ความสำเร็จ ล่าสุดทีมผู้ดูแล JIT ได้ถอน PEP 836 (&ldquo;JIT Go Brrr: The Path to a Supported JIT Compiler for CPython&rdquo;) ออกไป ทำให้โครงการที่เคยถูกจับตามองนี้หยุดนิ่งลงในทางปฏิบัติ</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/">LWN.net →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/">Discord เปิดแชทสาธารณะให้ค้นหาผ่านเว็บตั้งแต่ 16 พ.ย. เซิร์ฟเวอร์ไหนไม่ต้องการต้องรีบปิดเอง</a></h3>
+          <p>ตั้งแต่วันที่ 16 พฤศจิกายน Discord จะเปิดหน้าเว็บสาธารณะให้เซิร์ฟเวอร์ทุกตัวในระบบ Discoverable โดยอัตโนมัติ ทำให้บทสนทนายาว ๆ อย่างกระทู้ช่วยเหลือหรือการแลกเปลี่ยนทฤษฎีที่เคยฝังอยู่ในแอป ค้นเจอได้ผ่านเครื่องมือค้นหาอย่าง Google TechCrunch รายงานว่ามีเสียงวิพากษ์เรื่องความเป็นส่วนตัวตามมา แม้ผู้ดูแลเซิร์ฟเวอร์จะยังเลือกปิดช่องทาง (channel) ที่ไม่ต้องการให้แสดงต่อสาธารณะได้ก็ตาม</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/">TechCrunch →</a> · <a href="https://cointelegraph.com/news/discord-is-making-public-chats-searchable-on-google-how-to-opt-out">Cointelegraph →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRYPTO / WEB3 ===== -->
+  <section>
+    <div class="kicker"><h2>คริปโต/เว็บ3</h2><span class="line"></span><span class="note">ตลาด · กำกับดูแล · ความปลอดภัย</span></div>
+    <div class="tri">
+      <div class="story">
+        <article>
+          <h3><a href="https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins">Bitcoin ดิ้นรอบ 80,000 ดอลลาร์ หลุดแล้วเด้ง ขณะเฟดเริ่มประชุม</a></h3>
+          <p>ราคา Bitcoin หลุดระดับ 80,000 ดอลลาร์ไปช่วงหนึ่งในวันที่ 27 ตุลาคม ท่ามกลางการเริ่มประชุมของธนาคารกลางสหรัฐฯ ก่อนค่อย ๆ ไล่ตัวกลับ CoinDesk รายงานสัญญาณการทรงตัวขึ้นพร้อมดัชนี Nasdaq ที่พุ่ง 1.2% เช้าวันนี้ (28 ต.ค. เวลาไทย) ราคายืนที่ 80,907 ดอลลาร์ บวก 1.5% ในรอบ 24 ชั่วโมง ด้านกองทุน BTC ETF สหรัฐฯ กลับมาดูดเงินเข้า 110 ล้านดอลลาร์เมื่อวันจันทร์ หลังไหลออก 774 ล้านดอลลาร์ แต่ยอดรวมทั้งเดือนตุลาคมยังติดลบราว 202 ล้านดอลลาร์</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://www.coindesk.com/markets/2026/10/27/bitcoin-drops-below-usd80-000-as-crypto-ignores-asian-tech-rally-fed-meeting-begins">CoinDesk →</a> · <a href="https://cointelegraph.com/markets/bitcoin-etf-rebound-110-million-btc-dip-below-80k">Cointelegraph →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Ripple ผ่านการอนุมัติขั้นสุดท้าย เปิดธนาคารทรัสต์ระดับชาติในสหรัฐฯ ได้แล้ว</a></h3>
+          <p>Ripple ได้รับอนุมัติขั้นสุดท้ายให้เปิดธนาคารทรัสต์ระดับชาติของสหรัฐอเมริกา โดย Cointelegraph ระบุว่าการอนุมัตินี้เปิดทางให้บริษัทดูแลทุนสำรองหลัง stablecoin RLUSD และให้บริการรับฝากดิจิทัลแอสเซต (custody) ได้ ถือเป็นหมุดหมายสำคัญของ Ripple ในตลาดสถาบัน แม้ตลาดยังตอบสนองต่อข่าวดังกล่าวค่อนข้างจำกัดตามที่ CoinDesk สังเกตว่าราคา XRP ไม่เด้งตาม</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://www.coindesk.com/markets/2026/10/27/ripple-gets-a-final-go-ahead-to-launch-its-own-u-s-national-trust-bank">CoinDesk →</a> · <a href="https://cointelegraph.com/news/ripple-wins-final-us-approval-for-national-trust-bank">Cointelegraph →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://cointelegraph.com/news/keystone-breach-deepens-hackers-stole-key-used-to-verify-wallets-as-genuine">แฮ็ก Keystone ลึกกว่าที่คิด ผู้บุกรุกขโมย &ldquo;กุญแจรับรองสินค้าแท้&rdquo; บริษัทเตรียมทำลายอุปกรณ์เกือบ 19,000 ชิ้น</a></h3>
+          <p>ผู้ผลิตกระเป๋าเงินฮาร์ดแวร์ Keystone ขยายผลเหตุถูกบุกรุกระบบภายในว่า แฮ็กเกอร์ขโมยไม่เพียงข้อมูลลูกค้า แต่รวมถึงกุญแจที่ใช้ยืนยันว่าอุปกรณ์เป็นของแท้ ซึ่งอาจถูกนำไปปลอมกระเป๋าเงินให้ผ่านการตรวจสอบความถูกต้องได้ ตามรายงานของ Cointelegraph บริษัทจึงประกาศทำลายอุปกรณ์ที่อาจได้รับผลกระทบเกือบ 19,000 ชิ้น ตามที่ CoinDesk รายงาน ขณะนี้ยังไม่มีรายงานว่าอุปกรณ์ปลอมได้แพร่สู่ตลาดจริง</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://cointelegraph.com/news/keystone-breach-deepens-hackers-stole-key-used-to-verify-wallets-as-genuine">Cointelegraph →</a> · <a href="https://www.coindesk.com/business/2026/10/27/crypto-wallet-maker-keystone-to-destroy-almost-19-000-devices-after-security-breach">CoinDesk →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THAILAND ===== -->
+  <section>
+    <div class="kicker"><h2>ไทย</h2><span class="line"></span><span class="note">เศรษฐกิจดิจิทัล · นโยบาย · แพลตฟอร์ม</span></div>
+    <div class="tri">
+      <div class="story">
+        <article>
+          <h3><a href="https://www.bangkokpost.com/business/general/3344848/push-for-thai-storage-of-cctv-footage">ไทยผลักดันให้ข้อมูลกล้องวงจรปิดและ IoT เก็บบนคลาวด์ภายในประเทศ</a></h3>
+          <p>สมาคมโทรคมนาคมไทย (TCT) กำลังนำริเริ่มโครงการความมั่นคงปลอดภัยดิจิทัลระดับชาติ ที่กำหนดให้ข้อมูลส่วนบุคคลที่เก็บจากระบบกล้องวงจรปิด (CCTV) และ Internet of Things (IoT) ทั่วประเทศ ต้องจัดเก็บบนโครงสร้างพื้นฐานคลาวด์ภายในประเทศ ตามรายงานของ Bangkok Post</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://www.bangkokpost.com/business/general/3344848/push-for-thai-storage-of-cctv-footage">Bangkok Post →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://www.bangkokpost.com/business/general/3344738/panel-voices-concerns-on-digital-trade-gap">คนไทยจ่ายเงินให้แพลตฟอร์มดิจิทัลต่างชาติกว่า 1.38 แสนล้านบาท ในครึ่งปีแรก วอร์รี &ldquo;การค้าดิจิทัลขาดดุล&rdquo;</a></h3>
+          <p>ผู้บริโภคไทยจ่ายเงินให้แพลตฟอร์มดิจิทัลต่างชาติราว 20 ราย รวมกว่า 138,000 ล้านบาท ในช่วงครึ่งปีแรกของปี 2026 ตามที่ Pawoot Pongvitayapanu ส.ส. บัญชีรายชื่อจาก People&rsquo;s Party กล่าวกับ Bangkok Post โดยชี้ความกังวลว่าสัดส่วนรายได้ส่วนใหญ่ไหลไปอยู่กับบริษัทเทคโนโลยีต่างชาติ สะท้อนช่องว่างการค้าดิจิทัลของไทย</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://www.bangkokpost.com/business/general/3344738/panel-voices-concerns-on-digital-trade-gap">Bangkok Post →</a></p>
+        </article>
+      </div>
+      <div class="story">
+        <article>
+          <h3><a href="https://www.bangkokpost.com/business/general/3344838/taobao-adds-promptpay-at-checkout-in-local-push">Taobao เพิ่มช่องจ่ายเงินผ่านพร้อมเพย์ หวังกวาดตลาดไทยซึ่งโตเร็วที่สุดในบรรดาตลาดต่างชาติ</a></h3>
+          <p>Taobao แพลตฟอร์มอีคอมเมิร์ซในเครือ Alibaba เพิ่มช่องทางชำระเงินผ่านพร้อมเพย์ (PromptPay) ของไทยในหน้าชำระเงิน หลังไทยกลายเป็นตลาดที่มีฐานผู้ใช้เติบโตเร็วที่สุดในบรรดาตลาดต่างประเทศหลายภาษาของ Taobao Tmall World ตามรายงานของ Bangkok Post การรับ &ldquo;เติมเต็ม&rdquo; ช่องทางจ่ายเงินท้องถิ่นถูกมองเป็นก้าวสำคัญของแพลตฟอร์มจีนเพื่อเจาะผู้ซื้อไทย</p>
+          <p class="src">อ่านต้นฉบับ: <a href="https://www.bangkokpost.com/business/general/3344838/taobao-adds-promptpay-at-checkout-in-local-push">Bangkok Post →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKETS ===== -->
+  <section>
+    <div class="kicker"><h2>ตลาด</h2><span class="line"></span><span class="note">สรุปข้อมูลเชิงข้อเท็จจริง · ไม่ใช่คำแนะนำการลงทุน</span></div>
+    <table class="markets">
+      <caption>ตัวเลข ณ เวลาเก็บรวบรวม เช้าวันพุธที่ 28 ตุลาคม พ.ศ. 2569 (เวลาไทย)</caption>
+      <tr><th>สินทรัพย์ / ดัชนี</th><th>ราคาล่าสุด</th><th>เปลี่ยนแปลง</th><th>หมายเหตุและแหล่งข้อมูล</th></tr>
+      <tr>
+        <td><b>Bitcoin (BTC)</b></td>
+        <td><span class="t">80,907 USD</span></td>
+        <td><span class="up">+1.5%</span> <span style="font-style:italic">(24 ชม.)</span></td>
+        <td>CoinGecko เช้า 28 ต.ค. — เมื่อวานหลุด 80,000 USD ช่วงสั้น ๆ ขณะเฟดเริ่มประชุม (CoinDesk)</td>
+      </tr>
+      <tr>
+        <td><b>Ethereum (ETH)</b></td>
+        <td><span class="t">2,353.59 USD</span></td>
+        <td><span class="up">+1.9%</span> <span style="font-style:italic">(24 ชม.)</span></td>
+        <td>CoinGecko เช้า 28 ต.ค. (เวลาไทย)</td>
+      </tr>
+      <tr>
+        <td><b>ดัชนี SET50</b></td>
+        <td><span class="t">1,063.36 จุด</span></td>
+        <td><span class="flat">ทรงตัว</span></td>
+        <td>ปิดล่าสุดตามข้อมูล Trading Economics — แม้จะทรงตัวรายเดือน −0.2% แต่ยังบวก 24.3% จากปีก่อน</td>
+      </tr>
+      <tr>
+        <td><b>USD/THB</b></td>
+        <td><span class="t">33.77 บาท/ดอลลาร์</span></td>
+        <td><span class="flat">—</span></td>
+        <td>ExchangeRate-API อัปเดตวันที่ 28 ต.ค. 2569</td>
+      </tr>
+      <tr>
+        <td><b>Nasdaq</b></td>
+        <td><span class="t">—</span></td>
+        <td><span class="up">+1.2%</span></td>
+        <td>พุ่งแรงวันที่ 27 ต.ค. ขณะที่เงินไหลเข้าสู่การลงทุน AI (CoinDesk)</td>
+      </tr>
+      <tr>
+        <td><b>กองทุน BTC ETF สหรัฐฯ</b></td>
+        <td><span class="t">+110 ล้าน USD</span></td>
+        <td><span class="down">เดือน ต.ค. −202 ล้าน USD</span></td>
+        <td>กลับมาดูดเงินวันจันทร์หลังไหลออก 774 ล้าน USD (Cointelegraph)</td>
+      </tr>
+    </table>
+    <p class="mkt-note">ตารางนี้เป็นการรวบรวมข้อมูลเชิงข้อเท็จจริงจากแหล่งที่ระบุ ณ เวลาเก็บรวบรวมเท่านั้น ราคาและดัชนีอาจเปลี่ยนแปลงไปแล้ว — ไม่ใช่คำแนะนำการลงทุน</p>
+  </section>
+
+  <footer>
+    <div class="cols">
+      <div>
+        <h4>แหล่งข่าวฉบับนี้</h4>
+        <ul>
+          <li>Hacker News (hnrss.org/frontpage) · The Verge · TechCrunch</li>
+          <li>Ars Technica · LWN.net · Google DeepMind Blog</li>
+          <li>CoinDesk · Cointelegraph</li>
+          <li>Bangkok Post · Trading Economics · CoinGecko · ExchangeRate-API</li>
+        </ul>
+      </div>
+      <div>
+        <h4>ฉบับย้อนหลัง</h4>
+        <ul>
+          <li>27 ตุลาคม 2569 — <a href="archive/2026-10-27.html">archive/2026-10-27.html</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      รวบรวมและเรียบเรียงเมื่อวันพุธที่ 28 ตุลาคม พ.ศ. 2569 เวลาประมาณ 07:30 น. ตามเวลาไทย · The Morning Brief · เผยแพร่ผ่าน GitHub Pages<br>
+      ทุกข้อความอ้างอิงจากแหล่งข่าวที่เปิดอ่านในวันเผยแพร่ · ไม่มีเนื้อหาลักษณะคำมั่นเรื่องรายได้หรือคำแนะนำการลงทุน
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
