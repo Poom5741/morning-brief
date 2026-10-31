@@ -3,351 +3,293 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morning Brief — ฉบับวันศุกร์ที่ 30 ตุลาคม พ.ศ. 2569 (เล่มที่ 1 ฉบับที่ 4)</title>
+<title>Morning Brief — วันเสาร์ที่ 31 ตุลาคม พ.ศ. 2569 (เล่มที่ 1 ฉบับที่ 5)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Noto+Serif+Thai:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:wght@500;600;700;800&family=Noto+Serif+Thai:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,500&display=swap" rel="stylesheet">
 <style>
-  :root{ --ink:#1a1a1a; --paper:#f4efe4; --paper2:#f6f1e7; --box:#ece4d2; }
-  *{ box-sizing:border-box; }
-  html{ -webkit-text-size-adjust:100%; }
-  body{
-    margin:0; color:var(--ink); background:var(--paper);
-    background-image: repeating-linear-gradient(0deg, rgba(26,26,26,.018) 0 1px, transparent 1px 3px),
-      radial-gradient(ellipse at 20% 0%, rgba(120,90,40,.06), transparent 55%),
-      radial-gradient(ellipse at 85% 100%, rgba(90,70,30,.07), transparent 50%);
-    font-family:'Noto Serif Thai','Trirong',Georgia,'Times New Roman',serif;
-    font-size:15px; line-height:1.8;
-  }
-  .paper{ max-width:1200px; margin:14px auto 26px; padding:20px 26px 26px; background:var(--paper2);
-    box-shadow:0 2px 14px rgba(60,45,20,.22), 0 0 0 1px rgba(26,26,26,.25); }
-  a{ color:var(--ink); }
-
-  /* ---------- masthead ---------- */
-  .topline{ display:flex; justify-content:space-between; font-size:12px; letter-spacing:.14em;
-    border-bottom:1px solid var(--ink); padding-bottom:4px; }
-  .masthead{ text-align:center; padding:14px 0 8px; border-bottom:4px double var(--ink); }
-  .masthead h1{ margin:0; font-family:'Chonburi','Trirong',serif; font-weight:400;
-    font-size:clamp(40px,6.5vw,72px); letter-spacing:.02em; line-height:1.1; }
-  .masthead .tag{ font-style:italic; font-size:14px; margin-top:2px; }
-  .dateline{ display:flex; flex-wrap:wrap; justify-content:center; gap:4px 18px; text-align:center;
-    font-size:13px; padding:6px 0; border-bottom:1px solid var(--ink); }
-  .dateline b{ font-weight:700; }
-
-  /* ---------- shared story bits ---------- */
-  .kicker{ font-size:12px; font-weight:700; letter-spacing:.22em; text-transform:uppercase; margin:0 0 4px; }
-  .headline{ font-family:'Trirong','Noto Serif Thai',serif; font-weight:900; line-height:1.28; margin:0 0 8px; }
-  .byline{ font-style:italic; font-size:12.5px; margin:0 0 8px; color:#3a352c; }
-  .story p{ margin:0 0 8px; text-align:justify; hyphens:auto; }
-  .more{ font-size:13px; font-weight:600; }
-  .more a{ text-decoration:none; border-bottom:1px solid var(--ink); }
-  .tag{ display:inline-block; font-size:11px; font-weight:700; border:1px solid var(--ink);
-    padding:0 6px; margin-bottom:8px; letter-spacing:.08em; }
-  .src{ color:#5a5344; }
-
-  /* ---------- front grid ---------- */
-  .front{ display:grid; grid-template-columns:2.15fr 1fr; gap:0 24px; padding-top:14px; }
-  .leads{ display:grid; grid-template-columns:1fr 1fr; gap:16px 20px; border-right:1px solid var(--ink); padding-right:24px; }
-  .lead1{ grid-column:1 / -1; border-bottom:1px solid var(--ink); padding-bottom:14px; }
-  .lead1 .headline{ font-size:clamp(26px,3.4vw,38px); }
-  .lead1 .story p:first-of-type::first-letter{ font-family:'Trirong',serif; font-weight:900;
-    float:left; font-size:3.4em; line-height:.85; padding:6px 8px 0 0; }
-  .lead2 .headline, .lead3 .headline{ font-size:clamp(19px,2vw,23px); }
-  .lead2{ padding-top:14px; }
-
-  /* ---------- sidebar ---------- */
-  .side{ padding-left:2px; }
-  .box{ border:2px solid var(--ink); background:var(--box); padding:12px 14px; margin-bottom:16px; }
-  .box h3{ margin:0 0 8px; text-align:center; font-family:'Trirong',serif; font-weight:900;
-    font-size:18px; letter-spacing:.1em; border-bottom:1px solid var(--ink); padding-bottom:6px; }
-  .box ul{ margin:0; padding-left:18px; }
-  .box li{ margin-bottom:7px; font-size:13.5px; text-align:justify; }
-  .box li:last-child{ margin-bottom:0; }
-  .box .tiny{ font-size:11.5px; color:#5a5344; margin-top:8px; text-align:center; }
-  .wx{ width:100%; border-collapse:collapse; font-size:13px; }
-  .wx td{ border-bottom:1px dotted #8a7f68; padding:3px 2px; }
-  .wx tr:last-child td{ border-bottom:none; }
-  .wx td:last-child{ text-align:right; white-space:nowrap; }
-
-  /* ---------- sections ---------- */
-  section{ margin-top:6px; }
-  .sechead{ text-align:center; margin:22px 0 12px; border-top:3px double var(--ink); border-bottom:1px solid var(--ink);
-    padding:8px 0 6px; }
-  .sechead h2{ margin:0; font-family:'Trirong',serif; font-weight:900; font-size:23px; letter-spacing:.35em; text-indent:.35em; }
-  .flow{ columns:3 300px; column-gap:26px; column-rule:1px solid var(--ink); }
-  .flow.two{ columns:2 340px; }
-  .flow .story{ break-inside:avoid; margin:0 0 16px; }
-  .flow .headline{ font-size:19px; }
-  .flow.small .headline{ font-size:16.5px; }
-  .shorts{ margin-top:4px; border-top:1px solid var(--ink); padding-top:10px; columns:3 300px; column-gap:26px; }
-  .shorts .item{ break-inside:avoid; font-size:13px; margin-bottom:8px; }
-  .shorts b{ font-family:'Trirong',serif; }
-  .hnbox{ border:1px solid var(--ink); background:var(--box); padding:10px 14px; margin-top:14px; font-size:13px; }
-  .hnbox b{ font-family:'Trirong',serif; letter-spacing:.08em; }
-
-  /* ---------- markets ---------- */
-  .markets-wrap{ display:grid; grid-template-columns:1.35fr 1fr; gap:0 26px; margin-top:6px; }
-  table.markets{ width:100%; border-collapse:collapse; font-size:13.5px; }
-  table.markets caption{ caption-side:top; text-align:left; font-style:italic; font-size:12px; padding-bottom:6px; color:#3a352c; }
-  table.markets th{ font-family:'Trirong',serif; text-align:right; border-bottom:2px solid var(--ink); padding:4px 6px; font-size:13px; }
-  table.markets th:first-child{ text-align:left; }
-  table.markets td{ border-bottom:1px solid #9a8f78; padding:5px 6px; text-align:right; white-space:nowrap; }
-  table.markets td:first-child{ text-align:left; white-space:normal; font-weight:600; }
-  td.neg{ color:#7a1616; font-weight:700; }
-  .mnotes{ border-left:1px solid var(--ink); padding-left:24px; }
-  .mnotes h4{ margin:0 0 6px; font-family:'Trirong',serif; font-size:16px; letter-spacing:.12em; border-bottom:1px solid var(--ink); padding-bottom:4px; }
-  .mnote{ font-size:12.8px; margin-bottom:10px; text-align:justify; }
-  .mnote b{ font-family:'Trirong',serif; }
-
-  /* ---------- footer ---------- */
-  footer{ margin-top:24px; border-top:4px double var(--ink); padding-top:10px; font-size:12.5px; }
-  footer .cols{ display:flex; flex-wrap:wrap; gap:6px 26px; justify-content:space-between; }
-  footer a{ text-decoration:none; border-bottom:1px solid var(--ink); }
-
-  @media (max-width:1000px){
-    .front{ grid-template-columns:1fr; }
-    .leads{ border-right:none; padding-right:0; }
-    .side{ border-top:1px solid var(--ink); margin-top:16px; padding-top:14px; }
-    .markets-wrap{ grid-template-columns:1fr; }
-    .mnotes{ border-left:none; padding-left:0; border-top:1px solid var(--ink); padding-top:12px; }
-  }
-  @media (max-width:700px){
-    .paper{ padding:14px; margin:6px; }
-    .flow, .flow.two, .shorts{ columns:1; }
-    .leads{ grid-template-columns:1fr; }
-    .lead1{ border-bottom:none; padding-bottom:0; }
-    .lead2{ border-top:1px solid var(--ink); }
-    .lead3{ border-top:1px solid var(--ink); padding-top:14px; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#cfc6b2;font-family:'Noto Serif Thai','Playfair Display',serif;color:#1a1a1a;line-height:1.62}
+  .paper{max-width:1180px;margin:18px auto;background:#f4efe4;background-image:radial-gradient(ellipse at top,rgba(255,255,255,.5),rgba(0,0,0,.04) 70%),repeating-linear-gradient(0deg,rgba(0,0,0,.012) 0 2px,transparent 2px 4px);box-shadow:0 2px 24px rgba(0,0,0,.35);padding:34px 40px 26px}
+  a{color:#1a1a1a}
+  /* masthead */
+  .masthead{text-align:center;border-bottom:1px solid #1a1a1a;padding-bottom:10px}
+  .rule-double{border-top:3px double #1a1a1a;border-bottom:1px solid #1a1a1a;height:6px;margin-bottom:12px}
+  .masthead h1{font-family:'Chonburi','Trirong',serif;font-size:56px;letter-spacing:.02em;line-height:1.05}
+  .tagline{font-size:13px;font-style:italic;margin-top:4px}
+  .dateline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:5px 2px;font-size:12.5px;letter-spacing:.04em;margin-bottom:20px;font-family:'Noto Serif Thai',serif}
+  /* kickers + headlines */
+  .kicker{font-size:11.5px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:#1a1a1a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;display:inline-block;padding:2px 8px;margin-bottom:8px}
+  h2.headline{font-family:'Trirong','Playfair Display',serif;font-weight:700}
+  .src{font-size:12px;font-style:italic;margin-top:6px}
+  .src a{text-decoration:none;border-bottom:1px dotted #1a1a1a}
+  .story p{font-size:14.5px;text-align:justify;hyphens:auto;margin-top:8px}
+  .badge{display:inline-block;border:1px solid #1a1a1a;font-size:11px;font-style:italic;padding:1px 7px;margin:6px 0 0}
+  /* front grid */
+  .front{display:grid;grid-template-columns:2fr 1fr;gap:0 26px;margin-bottom:22px}
+  .lead h2{font-size:38px;line-height:1.18;margin-bottom:4px}
+  .lead p{font-size:15.5px}
+  .lead p.first::first-letter{font-family:'Trirong',serif;font-size:3.6em;font-weight:700;float:left;line-height:.8;padding:4px 8px 0 0}
+  .side{border-left:1px solid #1a1a1a;padding-left:26px}
+  .box{border:2px solid #1a1a1a;padding:12px 14px;background:#efe8d8}
+  .box h3{font-family:'Trirong',serif;font-size:17px;text-align:center;border-bottom:1px solid #1a1a1a;padding-bottom:6px;margin-bottom:8px;letter-spacing:.08em}
+  .box ul{list-style:none}
+  .box li{font-size:13px;text-align:justify;margin-bottom:8px;padding-left:14px;position:relative}
+  .box li::before{content:"▪";position:absolute;left:0;top:1px;font-size:11px}
+  .weather{margin-top:14px;border:1px solid #1a1a1a;padding:10px 12px;font-size:12.5px;background:#efe8d8}
+  .weather b{font-family:'Trirong',serif;font-size:14px;display:block;text-align:center;letter-spacing:.1em;border-bottom:1px solid #1a1a1a;margin-bottom:6px;padding-bottom:4px}
+  /* rows */
+  .row{display:grid;gap:0 24px;margin-bottom:22px}
+  .row3{grid-template-columns:repeat(3,1fr)}
+  .row2{grid-template-columns:2fr 1fr}
+  .row > .story{padding-right:2px}
+  .row > .story + .story{border-left:1px solid #1a1a1a;padding-left:24px}
+  .lead2 h2{font-size:23px}
+  .story h2{font-size:19px;line-height:1.25}
+  .story h2.mini{font-size:16.5px}
+  .stack > .story{margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid #1a1a1a}
+  .stack > .story:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+  /* section headers */
+  .section{margin:8px 0 16px;text-align:center}
+  .section .name{display:inline-block;font-family:'Trirong',serif;font-weight:800;font-size:26px;letter-spacing:.28em;padding:0 22px;border-top:3px double #1a1a1a;border-bottom:3px double #1a1a1a;padding-top:6px;padding-bottom:6px}
+  /* markets */
+  table.markets{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:4px}
+  table.markets caption{font-family:'Trirong',serif;font-weight:700;font-size:16px;letter-spacing:.12em;border-bottom:1px solid #1a1a1a;padding-bottom:6px;margin-bottom:0;caption-side:top}
+  table.markets th{font-size:12px;letter-spacing:.14em;border-bottom:2px solid #1a1a1a;padding:6px 8px;text-align:left}
+  table.markets td{border-bottom:1px solid #8d8574;padding:6px 8px;vertical-align:top}
+  table.markets td.num{font-family:'Playfair Display','Trirong',serif;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .down{font-weight:700}
+  .mnote{font-size:12px;font-style:italic;margin-top:8px}
+  /* footer */
+  .footer{border-top:3px double #1a1a1a;margin-top:10px;padding-top:12px;font-size:12.5px}
+  .footer .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:0 26px}
+  .footer h4{font-family:'Trirong',serif;font-size:14px;letter-spacing:.14em;border-bottom:1px solid #1a1a1a;margin-bottom:6px;padding-bottom:3px}
+  .footer ul{list-style:none}
+  .footer li{margin-bottom:3px}
+  .credit{text-align:center;margin-top:14px;font-style:italic;font-size:12px}
+  @media(max-width:760px){
+    .paper{padding:22px 18px;margin:8px}
+    .front,.row3,.row2,.footer .cols{grid-template-columns:1fr}
+    .side{border-left:none;padding-left:0;margin-top:16px}
+    .row > .story + .story{border-left:none;padding-left:0;border-top:1px solid #1a1a1a;padding-top:16px;margin-top:16px}
+    .lead h2{font-size:30px}
+    .masthead h1{font-size:40px}
   }
 </style>
 </head>
 <body>
 <div class="paper">
 
-  <div class="topline">
-    <span>ฉบับภาษาไทย · ออกเช้าทุกวัน 07:30 น.</span>
-    <span>เทคโนโลยี · ปัญญาประดิษฐ์ · คริปโต/เว็บ3 · ไทย</span>
-    <span>ราคา 5 บาท (มุกหนังสือพิมพ์)</span>
-  </div>
-
-  <header class="masthead">
+  <div class="masthead">
+    <div class="rule-double"></div>
     <h1>Morning Brief</h1>
-    <div class="tag">หนังสือพิมพ์สรุปข่าวเทคโนโลยี ปัญญาประดิษฐ์ คริปโต และไทย — ฉบับรายวัน</div>
-  </header>
+    <div class="tagline">หนังสือพิมพ์สรุปข่าวเทคโนโลยี · คริปโต/เว็บ3 · ไทย — จัดพิมพ์ทุกเช้า 07:30 น. ตามเวลาไทย</div>
+  </div>
 
   <div class="dateline">
-    <b>กรุงเทพฯ</b>
-    <span>วันศุกร์ที่ 30 ตุลาคม พ.ศ. 2569</span>
-    <span>เล่มที่ 1 ฉบับที่ 4</span>
-    <span>USD/THB 32.47–34.01</span>
-    <span>กรุงเทพฯ ฝน 29°</span>
+    <span>กรุงเทพฯ — วันเสาร์ที่ 31 ตุลาคม พ.ศ. 2569</span>
+    <span>เล่มที่ 1 · ฉบับที่ 5</span>
+    <span>1 USD ≈ 33.2 THB (ธนาคารกรุงเทพ 30 ต.ค.)</span>
   </div>
 
-  <!-- ================= FRONT PAGE ================= -->
+  <!-- FRONT PAGE -->
   <div class="front">
-    <div class="leads">
-
-      <article class="story lead1">
-        <p class="kicker">คริปโต/เว็บ3 · ข่าวเด่นหน้าหนึ่ง</p>
-        <h2 class="headline">Binance ระงับการถอนเงิน หลังถูกสงสัยแฮ็กเงินคริปโตหลายพันล้านดอลลาร์ — เร่งแช่แข็งทรัพย์สินแล้ว 2,540 ล้านดอลลาร์</h2>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก TechCrunch และ Cointelegraph</p>
-        <p>สถานีซื้อขายคริปโต Binance ประกาศระงับการถอนสินทรัพย์ หลังมีรายงานการโอนเงินมูลค่าหลายพันล้านดอลลาร์ออกจากกระเป๋าที่เชื่อมโยงกับสถานีอย่างน่าสงสัย ฝ่ายบริษัทยืนยันว่าได้แช่แข็งทรัพย์สินไว้แล้วราว 2,540 ล้านดอลลาร์ และแจ้งว่าอาจมีการแช่แข็งเพิ่มเติมขณะติดตามร่องรอยเงิน แรงกระเพื่อมเข้าทันทีเมื่อราคา BNB ร่วงราว 7% ตลาดคริปโตโดยรวมหดลง 3.3% และ Bitcoin ก็สไลด์ตาม</p>
-        <p>เบื้องหลังเหตุแฮ็ก ผู้บริหารบริษัทความปลอดภัยบล็อกเชน Blockaid คาดว่าอาจเกี่ยวกับการใช้กุญแจส่วนตัว (private key) ในทางมิชอบ โดยผู้ไม่หวังดีอาจแอบแทรกแซงระบบลงนามธุรกรรมของ Binance ท่าคล้ายกรณี Bybit ที่ผ่านมา</p>
-        <span class="tag">รายงานเบื้องต้น ยังยืนยันไม่ได้</span>
-        <p class="more"><a href="https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/">อ่านต้นฉบับที่ TechCrunch →</a>&ensp;·&ensp;<a href="https://cointelegraph.com/news/binance-linked-wallet-faces-possible-exploit-blockchain-researcher-warns">Cointelegraph (ข่าวสด) →</a>&ensp;·&ensp;<a class="src" href="https://cointelegraph.com/news/binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo">ความเห็น Blockaid →</a></p>
-      </article>
-
-      <article class="story lead2">
-        <p class="kicker">เทคโนโลยี · ผลประกอบการ</p>
-        <h2 class="headline">Amazon: คลาวด์โตแรงแต่ภาพรวมไม่ถึงคาด — Jassy วางเป้า AWS แตะ 1 ล้านล้านดอลลาร์</h2>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก TechCrunch และ The Verge</p>
-        <p>Amazon เปิดเผยผลไตรมาส 3 โดยรายได้รวมอยู่ที่ 201,900 ล้านดอลลาร์ ธุรกิจคลาวด์ AWS เติบโตแข็งแรงเป็นจุดขาย แต่ตัวเลขภาพรวมยังต่ำกว่าที่ตลาดคาด Andy Jassy ซีอีโอระบุว่า AWS จะเป็นธุรกิจมูลค่า 1 ล้านล้านดอลลาร์ แต่ต้องเริ่มจากการลงทุนขนาดใหญ่ก่อน พร้อมชี้ว่า Prime Video กำลังมุ่งไปสู่รายได้ระดับ “หลายสิบพันล้านดอลลาร์” และเสริมว่าในอีก 5–10 ปีบริษัทอาจมีธุรกิจระดับล้านล้านดอลลาร์ถึงสองธุรกิจ จากไลน์ใหม่อย่างร้านขายของชำ เภสัชกรรม Amazon Leo และ Zoox</p>
-        <p class="more"><a href="https://techcrunch.com/2026/10/29/amazon-reported-booming-cloud-revenue-but-otherwise-missed-expectations/">อ่านต้นฉบับที่ TechCrunch →</a>&ensp;·&ensp;<a href="https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/">AWS 1 ล้านล้าน →</a></p>
-      </article>
-
-      <article class="story lead3">
-        <p class="kicker">ปัญญาประดิษฐ์ · ตลาดหุ้น</p>
-        <h2 class="headline">Google ยอมรับการค้นหาแบบ AI ทำรายได้น้อยกว่าเดิม — หุ้นร่วงหนักเป็นประวัติการณ์รอบประกาศผล</h2>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Ars Technica และ The Verge</p>
-        <p>Alphabet รายงานรายได้ไตรมาส 3 (กรกฎาคม–กันยายน) เพิ่มขึ้นอย่างแข็งแรง แต่ราคาหุ้นกลับร่วงแรงจนนับเป็นหนึ่งในการร่วงหลังประกาศผลประกอบการที่รุนแรงที่สุดในประวัติศาสตร์บริษัท ประเด็นที่ตลาดจับตาคือการยอมรับว่าการค้นหาผ่าน AI ยังทำรายได้น้อยกว่าการค้นหาแบบเดิม ขณะที่บริษัทยังคาดใช้จ่ายด้าน AI เพิ่มขึ้นอีกในปีหน้า Philipp Schindler ผู้บริหารฝ่ายพาณิชย์บอกว่าการทดลองใส่โฆษณาใน AI Mode ให้ผลลัพธ์ที่ส่งใจ และ Google จะขยายโฆษณาใน AI Mode ไปยังประเทศใหม่ พร้อมเปิดในการค้นหาคำถามต่อเนื่องในสหรัฐ</p>
-        <p class="more"><a href="https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/">อ่านต้นฉบับที่ Ars Technica →</a></p>
-      </article>
-
+    <div class="story lead">
+      <span class="kicker">ตลาดหุ้นสหรัฐ · ชิป</span>
+      <h2 class="headline">Intel ดิ่งราว 28% หนึ่งในวันที่แย่ที่สุดเท่าที่เคยมี หลังคาดการณ์ไตรมาสหน้าต่ำกว่าคาด — มูลค่าหุ้นที่รัฐบาลสหรัฐถือหายไป 12,000 ล้านดอลลาร์</h2>
+      <div class="src">โดย ทีม Morning Brief · ที่มา: TechCrunch (30 ต.ค. 2569)</div>
+      <p class="first">หุ้น Intel ร่วงราว 28% เมื่อวันศุกร์ (30 ต.ค.) หลังบริษัทเตือนว่ารายได้ไตรมาสที่ 4 จะอยู่ที่ 15,000–16,000 ล้านดอลลาร์ ต่ำกว่าที่นักวิเคราะห์คาดไว้ราว 17,000 ล้านดอลลาร์ พร้อมระบุว่าอัตรากำไรขั้นต้นจะหดจาก 43% เหลือ 37% และเพราะลงทุนหนัก บริษัทคาดว่าจะยังไม่มีกระแสเงินสดเป็นบวก CNBC รายงานว่าเหตุการณ์นี้ทำให้มูลค่าหุ้น Intel ที่รัฐบาลสหรัฐถืออยู่ 10% หายไปราว 12,000 ล้านดอลลาร์ ขณะที่ Nvidia ซึ่งลงทุนใน Intel ด้วยเช่นกันก็ร่วงเล็กน้อยตามไป</p>
+      <p>CEO Lip-Bu Tan อธิบายว่าปัญหาหลักคือตลาดพีซีช้าลง เมื่ออุตสาหกรรม AI แย่งหน่วยความจำและชิ้นส่วนจนราคาเครื่องสูงขึ้นและกดดันงบประมาณไอที จุดสว่างคือรายได้กลุ่มศูนย์ข้อมูลโต 78% จากไตรมาสเดียวกันของปีก่อน แต่กำลังผลิตยังเป็นข้อจำกัด — แฟบใหม่ในแอริโซนาเริ่มเดินเครื่องแล้ว ส่วนอีกแห่งคาดว่าจะออนไลน์ไม่เร็วกว่าปี 2028 รวมถึงต้องแข่งกับ TSMC ด้านลูกค้าภายนอก อย่างไรก็ตามหุ้น Intel ยังบวกตลอดปีกว่า 70% แม้จะลดลงจากระดับสูงช่วงฤดูร้อนที่ผ่านมา</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/">TechCrunch</a></div>
     </div>
 
-    <aside class="side">
+    <div class="side">
       <div class="box">
         <h3>วันนี้ต้องรู้</h3>
         <ul>
-          <li>Binance ระงับถอนเงินและแช่แข็งทรัพย์สินแล้ว 2,540 ล้านดอลลาร์ หลังโดนแฮ็กหลายพันล้านดอลลาร์ — BNB ร่วง 7% ตลาดคริปโตรวม −3.3%</li>
-          <li>เฟดคงดอกเบี้ยแบบเข้มงวดท่ามกลางเงินเฟ้อเร่งตัว ตลาดกางโอกาส 78% ว่าจะขึ้นดอกเบี้ยรอบธันวาคม</li>
-          <li>ธปท. ปรับเพิ่มคาดการณ์ GDP ปี 2569–2570 เชื่อภาคส่งออกและการลงทุนเอกชนแข็งแรงขึ้น</li>
-          <li>หุ้นเทคใหญ่สองรายร่วงหลังประกาศผล: Amazon ไม่ถึงคาดทั้งที่คลาวด์โตแรง ส่วน Google เผชิญแรงขายจากคำตอบเรื่องรายได้ AI Search</li>
-          <li>SET ปิด 1,544.60 (−21.50) · USD/THB 32.47–34.01 · ทองแท่ง 64,200–64,400 บาท/บาททอง</li>
+          <li><b>Intel ดิ่ง ~28%</b> หลังคาดการณ์ไตรมาส 4 ต่ำกว่าคาด — มูลค่าหุ้นที่รัฐบาลสหรัฐถือหายไป 12,000 ล้านดอลลาร์</li>
+          <li><b>แฮ็ก Binance 6,300 ล้านดอลลาร์</b> โจรกรรมคริปโตใหญ่สุดในประวัติศาสตร์ — แช่แข็งได้ราว 3,000 ล้าน FBI/Secret Service ร่วมสืบสวน</li>
+          <li><b>ส่วนขยาย Claude Code บน Cursor</b> ถูกแทรกโค้ดทุจริตเกือบ 12 ชม. กระทบผู้ใช้สูงสุด 5,000 คน</li>
+          <li><b>หุ้น Reddit ร่วง 29%</b> หนักสุดตั้งเข้าตลาดปี 2024 — โทษ Google AI Search ไม่ส่งทราฟฟิกกลับ</li>
+          <li><b>Binance ไทยยืนยันสินทรัพย์ลูกค้าปลอดภัย</b> · SET ปิด 1,518.59 ลบ 26.01 แต้ม</li>
         </ul>
       </div>
-      <div class="box">
-        <h3>อากาศวันนี้</h3>
-        <table class="wx">
-          <tr><td>กรุงเทพฯ</td><td>ฝน 29°C</td></tr>
-          <tr><td>เชียงใหม่</td><td>เมฆมาก 32°C</td></tr>
-          <tr><td>พัทยา</td><td>เมฆมาก 27°C</td></tr>
-          <tr><td>ภูเก็ต</td><td>เมฆมาก 26°C</td></tr>
-          <tr><td>กาญจนบุรี</td><td>ฝน 29°C</td></tr>
-        </table>
-        <div class="tiny">ที่มา: openweathermap.org ผ่าน Bangkok Post (29 ต.ค. 2569)</div>
+      <div class="weather">
+        <b>สภาพอากาศวันนี้ (31 ต.ค.)</b>
+        กรุงเทพฯ ฝนตก 29°C · เชียงใหม่ เมฆมาก 25°C · ภูเก็ต เมฆมาก 26°C<br>
+        <span style="font-size:11px;font-style:italic">ที่มา: openweathermap ผ่าน Bangkok Post</span>
       </div>
-    </aside>
+    </div>
   </div>
 
-  <!-- ================= เทคโนโลยี ================= -->
-  <section>
-    <div class="sechead"><h2>เทคโนโลยี</h2></div>
-    <div class="flow">
-
-      <article class="story">
-        <p class="kicker">ปัญญาประดิษฐ์</p>
-        <h3 class="headline">Mistral เปิดตัว Large 4 เวอร์ชันเต็ม โมเดลโอเพนเวตล้านล้านพารามิเตอร์ที่ถ่วงน้ำหนักงานไซเบอร์</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก TechCrunch และ The Verge</p>
-        <p>Mistral AI ปล่อยน้ำหนักโมเดล (weights) ของ Large 4 — โมเดลขนาดล้านล้านพารามิเตอร์ — ให้สาธารณะ หลังเปิดให้ทดลองช่วงต้นเดือนนี้ บริษัทอ้างว่านี่คือโมเดลโอเพนเวตที่เก่งงานเขียนโค้ดที่สุด พร้อมความสามารถเฉพาะด้านไซเบอร์ เช่น การเขียนแพตช์ปิดช่องโหว่และการจำลองช่องโหว่เพื่อศึกษา โดยตัวโมเดลจะปฏิเสธคำขอที่มีเจตนาทำร้ายมากกว่าโมเดลเปิดรุ่นอื่น</p>
-        <p class="more"><a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/">อ่านต้นฉบับที่ TechCrunch →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">แพลตฟอร์มโซเชียล</p>
-        <h3 class="headline">Reddit เตรียมเดินหน้าสู่โหมดล็อกอินเท่านั้น CEO ยืนยันในจดหมายถึงผู้ถือหุ้น</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Ars Technica และ TechCrunch</p>
-        <p>Steve Huffman ซีอีโอ Reddit เผยในจดหมายรอบผลประกอบการไตรมาส 3 ว่าแพลตฟอร์มกำลังเปลี่ยนไปเป็นประสบการณ์ที่ต้องล็อกอินเป็นหลัก เหตุผลคือสัญญาณโฆษณาแม่นยำขึ้น ผู้ใช้มีส่วนร่วมมากขึ้น และช่วยปกป้องคลังข้อมูลอันมีค่าของชุมชนจากการเก็บเกี่ยวโดยภายนอก TechCrunch มองว่าการขยับนี้สอดคล้องกับทราฟฟิกจากเสิร์ชที่แห้งลง ขณะที่ Huffman ย้ำว่า Reddit ยังเป็นคำค้นยอดนิยมบน Google อยู่</p>
-        <p class="more"><a href="https://arstechnica.com/gadgets/2026/10/reddit-will-require-you-to-log-in-eventually-ceo-confirms/">อ่านต้นฉบับที่ Ars Technica →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">ชิปและฮาร์ดแวร์</p>
-        <h3 class="headline">Samsung เตือนภาวะแรมตึงตัวจะยืดเยื้อถึงอย่างน้อยปี 2028 จากดีมานด์ AI</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก The Verge</p>
-        <p>เจจูน คิม (Jaejune Kim) ผู้บริหารสายหน่วยความจำของ Samsung ระบุในคอลผลประกอบการว่าภาวะอุปทานตึงตัวจะยังคงอยู่ในปี 2028 ขับเคลื่อนด้วยความต้องการจากงาน AI บริษัทรายงานรายได้ไตรมาสล่าสุดสูงสุดเป็นประวัติการณ์ที่ 195.3 ล้านล้านวอน (ราว 146,300 ล้านดอลลาร์) และแจ้งว่าอุปทานแรม HBM ของปี 2027 ถูกจองคิวหมดแล้ว</p>
-        <p class="more"><a href="https://www.theverge.com/">อ่านต้นฉบับที่ The Verge →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">กำกับดูแล</p>
-        <h3 class="headline">FCC สั่งห้ามห้องทดสอบในจีนตรวจแกดเจ็ตที่จะขายในสหรัฐ</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก The Verge</p>
-        <p>เบรนแดน คาร์ (Brendan Carr) ประธาน FCC ประกาศว่าอีกสองปีข้างหน้าจะอนุญาตเฉพาะห้องแล็บทดสอบอุปกรณ์ที่ตั้งอยู่ในสหรัฐหรือประเทศแบบ “Reciprocal Economies” ที่ยอมรับผลทดสอบจากสหรัฐเท่านั้น ข้อสังเกตคือห้องแล็บปัจจุบันกระจุกอยู่ในจีน เพราะเป็นฐานการผลิตแกดเจ็ตหลักของโลก การเปลี่ยนนี้จึงอาจกระทบต้นทุนและจังหวะวางจำหน่ายผลิตภัณฑ์ทั่วอุตสาหกรรม</p>
-        <p class="more"><a href="https://www.theverge.com/">อ่านต้นฉบับที่ The Verge →</a></p>
-      </article>
-
+  <div class="row row3">
+    <div class="story">
+      <span class="kicker">ความปลอดภัยไซเบอร์</span>
+      <h2 class="headline lead2">ส่วนขยาย Claude Code บน Cursor ถูกแทรกโค้ดทุจริตเกือบ 12 ชั่วโมง กระทบผู้ใช้สูงสุด 5,000 คน</h2>
+      <p>เวอร์ชัน 2.1.313 ของส่วนขยายทางการของ Anthropic ถูกขึ้นบนมาร์เก็ตเพลสของ Cursor ในช่วงเช้าวันพฤหัสฯ ถึงบ่ายวันศุกร์ (เวลา ET) และมีโค้ดที่เก็บข้อมูลอย่างชื่อเครื่อง ชื่อผู้ใช้ ระบบปฏิบัติการ พาธโฮมไดเรกทอรี และ IP สาธารณะ Cursor ระบุว่าลบส่วนขยายตัวร้ายออกแล้ว และตรวจสอบแล้วว่าไม่มีส่วนขยายอื่นถูกแตะต้อง ขณะที่เวอร์ชันแก้ไข 2.1.314 ถูกปล่อยออกมาภายในไม่กี่ชั่วโมง</p>
+      <p>ทว่ายังไม่มีคำอธิบายจากทั้ง Cursor และ Anthropic ว่าผู้โจมตีเข้าควบคุมบัญชีทางการได้อย่างไร และรายงานระบุว่า Anthropic ยังไม่ได้ออกประกาศเตือนลูกค้าโดยตรง</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/">Ars Technica</a> · <a href="https://www.theverge.com/">The Verge</a></div>
     </div>
-    <div class="hnbox">
-      <b>จาก Hacker News:</b> ทีมอดีตวิศวกรเฟิร์มแวร์จาก Neuralink และ Tesla เปิดตัว Simantic ชั้นจำลองไมโครคอนโทรลเลอร์ที่เขียนด้วย Rust ให้วิศวกรและ AI agents ทดสอบเฟิร์มแวร์ได้ในไม่กี่วินาทีโดยไม่ต้องแฟลชบอร์ดจริง — ใช้กับงานโดรนบิน ยานยนต์ หุ่นยนต์ และดาวเทียม <a href="https://news.ycombinator.com/item?id=50291116">อ่านต้นฉบับ →</a>
+    <div class="story">
+      <span class="kicker">บริษัทเทคโนโลยี</span>
+      <h2 class="headline lead2">หุ้น Reddit ร่วง 29% หนักสุดตั้งแต่เข้าตลาด หลังทราฟฟิกค้นหาลดลง — CEO โทษ AI Search ของ Google</h2>
+      <p>หุ้น Reddit ร่วง 29% เมื่อวันศุกร์ หลังผลประกอบการล่าสุดอ่อนแรง บริษัทแจ้งเมื่อวันพฤหัสฯ ว่าทราฟฟิกจากการค้นหา "ลดลงอย่างมีนัยสำคัญ" โดย CEO Steve Huffman ระบุว่าโหมดค้นหาที่ใช้ AI ของ Google ไม่ได้ "ส่งต่อทราฟฟิก" กลับมาให้</p>
+      <p>CNBC รายงานว่านี่คือวันที่หุ้น Reddit ร่วงหนักที่สุดตั้งแต่เข้าจดทะเบียนในตลาดหุ้นสหรัฐปี 2024</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://www.theverge.com/">The Verge</a></div>
     </div>
-  </section>
-
-  <!-- ================= คริปโต/เว็บ3 ================= -->
-  <section>
-    <div class="sechead"><h2>คริปโต/เว็บ3</h2></div>
-    <div class="flow two">
-
-      <article class="story">
-        <p class="kicker">แพลตฟอร์มพยากรณ์</p>
-        <h3 class="headline">Polymarket ระงับการเทรดชั่วคราว หลังผู้ใช้รายงานว่าเงินในบัญชีถูกระบาย</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Cointelegraph และ The Verge</p>
-        <p>Polymarket ระงับการซื้อขายชั่วคราว “เพื่อความระมัดระวัง” หลังพบว่าพาร์ตเนอร์บุคคลที่สามรายหนึ่งถูกละเมิดระบบ โดยมีผู้ใช้บางส่วนรายงานว่าเงินในบัญชีหายไปก่อนการระงับ บริษัทแถลงว่าจะรับผิดชอบและชดเชยเต็มจำนวนให้ผู้เทรดที่ได้รับผลกระทบทุกราย</p>
-        <p class="more"><a href="https://cointelegraph.com/news/polymarket-suspends-trading-user-funds-compromised">อ่านต้นฉบับที่ Cointelegraph →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">ตลาดพยากรณ์ · กฎหมาย</p>
-        <h3 class="headline">ยูทาห์ฟ้องอาญาผู้บริหาร Kalshi 13 ข้อหา ขณะฝ่ายทรัมป์ฟ้องคืนเพื่อช่วยแพลตฟอร์ม</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Ars Technica</p>
-        <p>อัยการสูงสุดยูทาห์ เดรก บราวน์ (Derek Brown) ยื่นฟ้องอาญาต่อ KalshiEX และผู้ก่อตั้ง ทาเร็ก มานซูร์ กับลูอานา โลเปซ ลารา ในข้อหาละเมิดกฎหมายการพนัน 13 ข้อหาอาญาและ 1 ข้อหาลหุโทษ จากการเสนอพนันกีฬาช่วง 13–24 กันยายน โดยออกหมายเรียกเข้าศาลเขตซอลต์เลกแทนหมายจับ ด้านรัฐบาลสหรัฐฟ้องยูทาห์เพื่อขวางการบังคับใช้กฎหมายห้ามพนันกับแพลตฟอร์ม นับเป็นรัฐที่ 10 ที่ถูกหน่วยงานกำกับตลาดพยากรณ์ฟ้อง</p>
-        <p class="more"><a href="https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/">อ่านต้นฉบับที่ Ars Technica →</a></p>
-      </article>
-
+    <div class="story">
+      <span class="kicker">เทคโนโลยี · ยานยนต์</span>
+      <h2 class="headline lead2">Toyota ประกอบ SUV bZ4X ติดตั้งระบบ Waymo ในสายผลิตที่ญี่ปุ่น ก่อนเปิดโรโบแท็กซี่โตเกียว–สหราชอาณาจักร</h2>
+      <p>Toyota จะประกอบรถ SUV ไฟฟ้า bZ4X ที่ติดตั้งชุดขับขี่อัตโนมัติของ Waymo ลงบนสายการผลิตในญี่ปุ่นโดยตรง เพื่อรองรับแผนเปิดบริการโรโบแท็กซี่ที่โตเกียวและสหราชอาณาจักร</p>
+      <p>Waymo เผยแผนเดิมผ่านการประกาศความร่วมมือกับ Toyota สำหรับตลาดญี่ปุ่นและสหราชอาณาจักร ซึ่งยกระดับกำลังผลิตรถไร้คนขับของบริษัทออกไปนอกสหรัฐฯ เป็นครั้งสำคัญ</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/30/waymos-next-robotaxi-will-be-a-toyota-bz4x-destined-for-japan-and-the-uk/">TechCrunch</a> · <a href="https://www.theverge.com/">The Verge</a></div>
     </div>
-  </section>
+  </div>
 
-  <!-- ================= ไทย ================= -->
-  <section>
-    <div class="sechead"><h2>ไทย</h2></div>
-    <div class="flow">
-
-      <article class="story">
-        <p class="kicker">เศรษฐกิจ</p>
-        <h3 class="headline">ธปท. ปรับเพิ่มคาดการณ์ GDP ปีนี้และปีหน้า หนุนส่งออก–ลงทุนเอกชน</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Bangkok Post</p>
-        <p>ธนาคารแห่งประเทศไทยปรับเพิ่มคาดการณ์การเติบโตทางเศรษฐกิจสำหรับปี 2569 และปี 2570 จากโมเมนตัมของภาคส่งออกและการลงทุนภาคเอกชนที่แข็งแรงขึ้น การปรับเพิ่มครั้งนี้มาในช่วงที่ภาคธุรกิจยังจับตาทิศทางเศรษฐกิจโลกและอัตราดอกเบี้ยสหรัฐ</p>
-        <p class="more"><a href="https://www.bangkokpost.com/business/general/3345445/bank-of-thailand-upgrades-2026-gdp-forecast">อ่านต้นฉบับที่ Bangkok Post →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">อีคอมเมิร์ซ</p>
-        <h3 class="headline">Lazada–Shopee–TikTok Shop ลดค่าธรรมเนียมให้ SME เป็นเวลา 6 เดือน</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Bangkok Post</p>
-        <p>สามแพลตฟอร์มอีคอมเมิร์ซรายใหญ่ประกาศตัดค่าธรรมเนียม gross profit (GP) สำหรับผู้ขายรายย่อยและ SME เป็นเวลา 6 เดือน ตั้งแต่ 1 ธันวาคม 2569 ถึง 31 พฤษภาคม 2570 หลังเผชิญเสียงวิจารณ์เรื่องการขึ้นค่าธรรมเนียมซ้ำแล้วซ้ำเล่า การขยับครั้งนี้ถือเป็นการผ่อนค่าใช้จ่ายให้ผู้ค้าออนไลน์ช่วงไฮซีซันปลายปี</p>
-        <p class="more"><a href="https://www.bangkokpost.com/business/general/3345450/platforms-agree-to-6month-fee-rollback-for-small-firms">อ่านต้นฉบับที่ Bangkok Post →</a></p>
-      </article>
-
-      <article class="story">
-        <p class="kicker">ท่องเที่ยว</p>
-        <h3 class="headline">กลัวน้ำท่วมซ้ำ การจองโรงแรมหาดใหญ่ปลายปีช้ากว่าปกติ</h3>
-        <p class="byline">โดย ทีม Morning Brief — รายงานจาก Bangkok Post</p>
-        <p>การจองห้องพักล่วงหน้าช่วงพฤศจิกายน–ธันวาคมของหาดใหญ่ช้ากว่าปกติ เพราะนักท่องเที่ยวยังวิตกกับความเสียหายจากอุทกภัยครั้งใหญ่เมื่อปีก่อน ผู้ประกอบการท่องเที่ยวจึงผลักดันให้รัฐบาลลงทุนโครงสร้างพื้นฐานการบริหารจัดการน้ำระยะยาว เพื่อฟื้นความเชื่อมั่นและรักษาโมเมนตัมการท่องเที่ยวที่เพิ่งกลับมา</p>
-        <p class="more"><a href="https://www.bangkokpost.com/business/general/3345530/flood-fears-threaten-hat-yai-tourism-resurgence">อ่านต้นฉบับที่ Bangkok Post →</a></p>
-      </article>
-
+  <!-- เทคโนโลยี -->
+  <div class="section"><span class="name">เทคโนโลยี</span></div>
+  <div class="row row3">
+    <div class="story">
+      <span class="kicker">ธุรกิจ</span>
+      <h2 class="headline mini">Salesforce เดินหน้ากว้านซื้อ — รายงานดีล 375 ล้านดอลลาร์คว้า Rune สตาร์ตอัปเทคโนโลยีกลาโหม</h2>
+      <span class="badge">รายงานเบื้องต้น ยังยืนยันไม่ได้</span>
+      <p>TechCrunch รายงานอ้างแหล่งข่าวว่า Salesforce กำลังตกลงซื้อกิจการ Rune สตาร์ตอัปด้านเทคโนโลยีกลาโหม ด้วยมูลค่าราว 375 ล้านดอลลาร์ ต่อเนื่องจากความเคลื่อนไหวด้านการซื้อกิจการอย่างต่อเนื่องของบริษัท ยังไม่มีการยืนยันอย่างเป็นทางการจากทั้งสองฝ่าย ณ เวลาตีพิมพ์</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/">TechCrunch</a></div>
     </div>
-    <div class="shorts">
-      <div class="item"><b>ขายโรงแรม 5,300 ล้านบาท</b> — ผู้ถือหน่วยลงทุน GROREIT อนุมัติขาย Royal Orchid Sheraton ให้นักลงทุนรายใหม่ ปัดข้อเสนอซื้อคืนราคาต่ำกว่าจากเจ้าของเดิม Royal Orchid Hotel <a href="https://www.bangkokpost.com/business/general/3345750/b53bn-sale-of-royal-orchid-sheraton-approved">อ่านต่อ →</a></div>
-      <div class="item"><b>SCBAM ตั้งเป้า AUM 2.5 ล้านล้านบาทใน 3 ปี</b> — แม้กองตราสารหนี้มีเงินไหลออก 30,000–40,000 ล้านบาทจนหลุดจากที่หนึ่งของอุตสาหกรรม <a href="https://www.bangkokpost.com/business/general/3345505/scbam-eyes-25-increase-in-assets-within-3-years">อ่านต่อ →</a></div>
-      <div class="item"><b>Tata Steel (Thailand) งัดข้อรัฐ</b> — เรียกร้องให้เร่งลงทุนโครงสร้างพื้นฐานเพื่อกระตุ้นการบริโภคเหล็กในประเทศหลังอุตสาหกรรมฝืด <a href="https://www.bangkokpost.com/business/general/3345455/steelmaker-calls-for-infrastructure-push">อ่านต่อ →</a></div>
+    <div class="story">
+      <span class="kicker">ธุรกิจ</span>
+      <h2 class="headline mini">Apple ซื้อกิจการ Ascend.io สตาร์ตอัปด้าน agentic data engineering</h2>
+      <p>Apple เปิดเผยการซื้อกิจการ Ascend.io ภายใต้การรายงานตามพระราชบัญญัติ Digital Markets Act ของสหภาพยุโรป โดยจะเสนอตำแหน่งงานและรับพนักงานบางส่วนของสตาร์ตอัปดังกล่าวที่เชี่ยวชาญด้าน agentic data engineering</p>
+      <p>เว็บไซต์ของ Ascend.io ประกาศว่าบริษัทกำลังปิดการดำเนินงานเพื่อ "เตรียมพร้อมสำหรับการผจญภัยครั้งใหม่"</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://www.theverge.com/">The Verge</a></div>
     </div>
-  </section>
+    <div class="story">
+      <span class="kicker">อุตสาหกรรม</span>
+      <h2 class="headline mini">Boom Supersonic เบนเข็มผลิตกังหันแก๊สให้ศูนย์ข้อมูล AI — CEO United แฉเครื่องบินเหนือเสียงไม่ทันปี 2029</h2>
+      <p>Boom Supersonic เปิดตัวโรงงานในโคโลราโด้เพื่อผลิตกังหันแก๊สธรรมชาติสำหรับศูนย์ข้อมูล AI ขณะที่ Scott Kirby ซีอีโอ United Airlines ซึ่งเป็นลูกค้ารายแรก ๆ ระบุว่ากำหนดส่งมอบเครื่องบินโดยสารเหนือเสียง Overture ปี 2029 "จะไม่เกิดขึ้นในปี 29 — ต้องใช้เวลานานกว่านั้น"</p>
+      <p>ความเคลื่อนไหวนี้สะท้อนว่าคลื่นเงินลงทุน AI กำลังดึงทรัพยากรและผู้สนับสนุนออกจากโครงการฮาร์ดแวร์ระยะยาวหลายแขนง</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://arstechnica.com/gadgets/2026/10/united-airlines-ceo-doubts-supersonic-airliner-from-boom-will-be-ready-by-2029/">Ars Technica</a></div>
+    </div>
+  </div>
 
-  <!-- ================= ตลาด ================= -->
-  <section>
-    <div class="sechead"><h2>ตลาด</h2></div>
-    <div class="markets-wrap">
-      <div>
-        <table class="markets">
-          <caption>สรุปตัวเลขจริงปิดวันที่ 29 ต.ค. 2569 — บันทึกข้อมูลเชิงข้อเท็จจริง ไม่ใช่คำแนะนำการลงทุน</caption>
-          <tr><th>รายการ</th><th>ล่าสุด</th><th>เปลี่ยนแปลง / ซื้อ–ขาย</th><th>ที่มา</th></tr>
-          <tr><td>ดัชนี SET</td><td>1,544.60</td><td class="neg">−21.50</td><td>settrade.com</td></tr>
-          <tr><td>ดัชนี SET50</td><td>1,045.91</td><td class="neg">−12.12</td><td>settrade.com</td></tr>
-          <tr><td>ดัชนี SET100</td><td>2,252.02</td><td class="neg">−27.29</td><td>settrade.com</td></tr>
-          <tr><td>USD/THB (ซื้อ–ขาย)</td><td>32.47 / 34.01</td><td>—</td><td>Bangkok Bank</td></tr>
-          <tr><td>ทองคำแท่ง 96.5% (บาททองละ)</td><td>64,200 / 64,400</td><td>ซื้อ–ขาย</td><td>GoldTraders</td></tr>
-          <tr><td>ทองรูปสัญฐาน 96.5% (บาททองละ)</td><td>62,914 / 65,200</td><td>ซื้อ–ขาย</td><td>GoldTraders</td></tr>
-          <tr><td>BNB</td><td>—</td><td class="neg">ราว −7%</td><td>Cointelegraph</td></tr>
-          <tr><td>ตลาดคริปโตโดยรวม</td><td>—</td><td class="neg">−3.3%</td><td>Cointelegraph</td></tr>
-        </table>
-        <p class="tiny" style="font-size:11.5px;color:#5a5344;">ตัวเลข SET และอัตราแลกเปลี่ยน/ทองคำ อ้างอิงหน้าแรก Bangkok Post ที่รวบรวมจาก settrade.com, Bangkok Bank และ GoldTraders ณ 29 ต.ค. 2569</p>
+  <!-- คริปโต/เว็บ3 -->
+  <div class="section"><span class="name">คริปโต/เว็บ3</span></div>
+  <div class="row row2">
+    <div class="story">
+      <span class="kicker">คริปโต</span>
+      <h2 class="headline lead2">แฮ็ก Binance 6,300 ล้านดอลลาร์ — โจรกรรมคริปโตใหญ่ที่สุดในประวัติศาสตร์ FBI/Secret Service ลงมือ แช่แข็งได้แล้วราว 3,000 ล้าน</h2>
+      <div class="src">โดย ทีม Morning Brief · ที่มา: Cointelegraph · TechCrunch (30 ต.ค. 2569)</div>
+      <p>การโจรกรรมครั้งใหญ่ที่สุดในประวัติศาสตร์คริปโตเกิดขึ้นแล้ว เมื่อ Binance ซึ่งเป็นหนึ่งในผู้ถือครองบทบาทสำคัญที่สุดของตลาด ยอมรับเหตุถูกแฮ็กมูลค่า 6,300 ล้านดอลลาร์ โดย TechCrunch รายงานว่าถูกโทษว่าเป็นฝีมือแฮ็กเกอร์เกาหลีเหนือกลุ่ม TraderTraitor รายละเอียดจาก Cointelegraph ระบุว่าผู้โจมตีเร่งแปลงสเตเบิลคอยน์ที่ขโมยได้เป็นคริปโตที่ผู้ออกไม่สามารถแช่แข็งได้ แต่อุตสาหกรรมอย่าง Tether และ Circle ก็เคลื่อนไหวล็อกสินทรัพย์หลายพันล้านดอลลาร์ทันเวลา</p>
+      <p>ล่าสุด Binance ระบุว่าแช่แข็งเงินได้ราว 3,000 ล้านดอลลาร์ พร้อมตั้งทุนชดเชยเกิน 6,340 ล้านดอลลาร์ รวมถึงถือโทเคนคู่สำรองมูลค่า 5,000 ล้านดอลลาร์เพื่อครอบคลุมความเสียหาย และจะรวมสินทรัพย์ชุดนี้ในรายงาน proof-of-reserves ฉบับถัดไป FBI และ Secret Service ของสหรัฐฯ เข้าร่วมสืบสวนและช่วยตามรอยทรัพย์สิน รายงานระบุผู้โจมตีเคยถือ BTC ถึง 18,270 หน่วย ซึ่งมากกว่าสินทรัพย์ BTC ในบัญชีบริษัทของ Coinbase พร้อม ETH เกิน 500,000 หน่วย ด้านผู้เชี่ยวชาญด้านความปลอดภัยชี้ว่ามาตรฐาน EIP-7702 ของ Ethereum ไม่ใช่สาเหตุของการแฮ็ก แต่อาจช่วยให้ผู้โจมตีบายพาสมาตรการป้องกันการถอนได้มากขึ้น</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/recap-binances-record-63b-hack-unfolded">Cointelegraph (สรุปเหตุการณ์)</a> · <a href="https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/">TechCrunch</a> · <a href="https://cointelegraph.com/news/binance-fbi-recover-assets-hack">Cointelegraph (FBI/Secret Service)</a></div>
+    </div>
+    <div class="story">
+      <span class="kicker">ตลาดคริปโต</span>
+      <h2 class="headline mini">Coinbase นำหุ้นกลุ่มคริปโตดิ่ง — BTC ผันแถว 76,000–77,000 ดอลลาร์ เสี่ยงปิดเดือน ต.ค. แย่สุดในรอบ 12 ปี</h2>
+      <p>หุ้นที่ผูกกับคริปโตร่วงหนักเมื่อวันศุกร์ นำโดย Coinbase ตามด้วย Circle และ Strategy หลัง Binance ยืนยันเหตุแฮ็กมูลค่า 6,300 ล้านดอลลาร์ ด้านราคา BTC ผันตัวแถว 76,000–77,000 ดอลลาร์ ท่ามกลางการบานเลิกตำแหน่งซื้อขายกว่า 1,600 ล้านดอลลาร์หลังเหตุแฮ็ก</p>
+      <p>Cointelegraph ระบุว่า Bitcoin เสี่ยงปิดเดือนตุลาคมแย่ที่สุดในรอบ 12 ปี ขณะที่คลื่นขายหุ้นเทคโนโลยีสหรัฐฯ ยังลากไปถึงราคาทองคำที่หลุดต่ำสุดในรอบปี แม้ดัชนีบางตัวชี้สัญญาณรีบาวด์ได้</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/markets/coinbase-leads-crypto-stock-selloff-shares-tumble">Cointelegraph (หุ้นดิ่ง)</a> · <a href="https://cointelegraph.com/markets/bitcoin-risks-worst-october-in-12-years-as-tech-sell-off-spreads-to-gold">Cointelegraph (ต.ค. แย่สุดรอบ 12 ปี)</a></div>
+    </div>
+  </div>
+  <div class="row row3">
+    <div class="story">
+      <span class="kicker">สเตเบิลคอยน์</span>
+      <h2 class="headline mini">Tether เงินสำรองส่วนเกินเกือบเท่าตัวสู่ 8,000 ล้านดอลลาร์ กำไรไตรมาส 3 ราว 1,500 ล้าน</h2>
+      <p>ผู้ออกสเตเบิลคอยน์ USDT เปิดเผยว่าเงินสำรองส่วนเกินเพิ่มขึ้นเกือบเท่าตัวสู่ราว 8,000 ล้านดอลลาร์ พร้อมกำไรไตรมาส 3 ราว 1,500 ล้านดอลลาร์ โดยมีสำรอง BTC มูลค่า 8,370 ล้านดอลลาร์ ณ สิ้นเดือนกันยายน และการถือพันธบัตรรัฐบาลสหรัฐฯ ในระดับเทียบเคียงผู้ถือรายใหญ่ต่างชาติ</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/tethers-excess-reserves-nearly-double-to-8b-as-q3-profit-hits-15b">Cointelegraph</a></div>
+    </div>
+    <div class="story">
+      <span class="kicker">เว็บ3</span>
+      <h2 class="headline mini">THORChain RUNE พุ่ง 13% หลังแฮ็ก Binance ท่ามกลางเสียงเรียกร้องให้โปรโตคอลเข้าแทรกแซง</h2>
+      <p>โทเคน RUNE ของ THORChain พุ่ง 13% หลังเหตุแฮ็ก เนื่องจากแฮ็กเกอร์เกาหลีเหนือเคยใช้โปรโตคอลนี้ย้ายเงินที่ปล้นมาจาก Bybit และ Bitget มาก่อน ทำให้มีการจับตาว่าเงินจากเหตุการณ์ครั้งนี้จะไหลผ่านช่องทางเดียวกันหรือไม่ พร้อมเสียงเรียกร้องให้โปรโตคอลเข้าแทรกแซงระหว่างการตามล่าทรัพย์สิน</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/markets/rune-token-surges-binance-hack">Cointelegraph</a></div>
+    </div>
+    <div class="story">
+      <span class="kicker">ความปลอดภัยเว็บ3</span>
+      <h2 class="headline mini">Trezor เตือนผู้ซื้อกระเป๋าจากร้าน CryptoBilis ให้ย้ายเงินทันที หลังพบข้อสงสัยชิปฝังตัวร้าย</h2>
+      <p>Trezor เรียกลูกค้าที่ซื้ออุปกรณ์จาก CryptoBilis ตั้งแต่เดือนมีนาคมเป็นต้นไป ให้รีบย้ายเงินออกจากกระเป๋า หลังมีรายงานข้อสงสัยว่าอุปกรณ์บางเครื่องอาจถูกฝังฮาร์ดแวร์ตัวร้ายมาตั้งแต่ต้นทาง</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/trezor-cryptobilis-wallet-implant-funds-warning">Cointelegraph</a></div>
+    </div>
+  </div>
+
+  <!-- ไทย -->
+  <div class="section"><span class="name">ไทย</span></div>
+  <div class="row row3">
+    <div class="story">
+      <span class="kicker">ไทย · คริปโต</span>
+      <h2 class="headline mini">Binance ไทยย้ำ "สินทรัพย์ลูกค้าไทยปลอดภัย" หลังบริษัทแม่โดนแฮ็กสถิติโลก</h2>
+      <p>บริษัทลูกของ Binance ในประเทศไทยออกแถลงยืนยันว่าสินทรัพย์ของลูกค้าไทยยังคงปลอดภัย หลังบริษัทแม่ถูกแฮ็กเป็นมูลค่า 6,300 ล้านดอลลาร์ ซึ่งถูกเรียกว่าเป็นโจรกรรมคริปโตครั้งใหญ่ที่สุดในประวัติศาสตร์ ขณะที่เหตุการณ์ดังกล่าวเริ่มถูกหน่วยงานไทยจับตามอง</p>
+      <div class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3345716/binance-hack-prompts-thai-scrutiny">Bangkok Post</a></div>
+    </div>
+    <div class="story stack">
+      <div class="story">
+        <span class="kicker">ไทย · พลังงาน</span>
+        <h2 class="headline mini">เดินหน้า net-zero เร่งพลังงานหมุนเวียน แต่เจ้าหน้าที่พลังงานกังวลเสถียรภาพระบบไฟฟ้า</h2>
+        <p>แผนมุ่งสู่การปล่อยคาร์บอนสุทธิเป็นศูนย์ของไทย ควบคู่การขยายกำลังผลิตพลังงานหมุนเวียนอย่างก้าวกระโดด ทำให้เจ้าหน้าที่ด้านพลังงานเริ่มกังวลว่าประเทศจะรักษาเสถียรภาพการจ่ายไฟฟ้าได้หรือไม่</p>
+        <div class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3345926/netzero-drive-causes-reliability-concerns">Bangkok Post</a></div>
       </div>
-      <div class="mnotes">
-        <h4>หมายเหตุตลาด</h4>
-        <div class="mnote"><b>เฟดคงดอกเบี้ย</b> — ธนาคารกลางสหรัฐยึดอัตราดอกเบี้ยเดิมท่ามกลางเงินเฟ้อเร่งตัว ไม่กี่วันก่อนเลือกตั้งกลางภาค <a href="https://www.bangkokpost.com/business/general/3345698/us-fed-holds-interest-rates-steady-despite-surging-inflation">Bangkok Post →</a> ท่าทีเข้มงวด (hawkish) ทำให้นักเทรดกางโอกาส 78% ว่าจะขึ้นดอกเบี้ยรอบธันวาคม <a href="https://cointelegraph.com/markets/bitcoin-faces-fresh-pressure-after-feds-hawkish-rate-hold-analysts">Cointelegraph →</a></div>
-        <div class="mnote"><b>Bitcoin ETF กลับมาบวก</b> — กองทุน ETF ดัชนี Bitcoin ดูดเงินเข้า 137 ล้านดอลลาร์ รวมสามวัน 424 ล้านดอลลาร์ ดันยอดสุทธิของเดือนตุลาคมกลับมาบวก 111 ล้านดอลลาร์ <a href="https://cointelegraph.com/markets/bitcoin-etf-137-million-october-back-green">อ่านต่อ →</a></div>
-        <div class="mnote"><b>แนวรับ–แนวต้านที่นักวิเคราะห์จับตา</b> — รายงานของ Glassnode ระบุโซนต้นทุนของผู้ถือระยะยาวมีเส้นล่างที่ 85,000 ดอลลาร์ โดยเห็นความเสี่ยงขายเมื่อราคาขึ้นเหนือระดับนี้ <a href="https://cointelegraph.com/markets/bitcoin-long-term-resistance-in-focus-as-analysis-sees-selling-risk-above-85k">อ่านต่อ →</a></div>
-        <div class="mnote"><b>Lagarde ประกาศลาตำแหน่ง</b> — ธนาคารกลางยุโรป (ECB) แถลงว่า Christine Lagarde จะพ้นตำแหน่งประธานในเดือนกุมภาพันธ์ พ.ศ. 2570 (ก.พ. 2027) ก่อนวาระสิ้นสุดเดือนตุลาคมปีนั้น <a href="https://www.bangkokpost.com/business/investment/3345905/ecb-chief-christine-lagarde-to-step-down-in-february">Bangkok Post →</a></div>
+      <div class="story">
+        <span class="kicker">ไทย · พลังงาน</span>
+        <h2 class="headline mini">อนุมัติงบกองทุนอนุรักษ์พลังงาน 6,700 ล้านบาท ช่วยคุมราคาน้ำมัน</h2>
+        <p>รัฐบาลอนุมัติใช้เงิน 6,700 ล้านบาท จากกองทุนอนุรักษ์พลังงาน เพื่อช่วยบรรเทาราคาน้ำมันที่ปรับตัวสูงขึ้น ตามการเปิดเผยของเจ้าหน้าที่ด้านพลังงานที่คุ้นเคยกับเรื่องนี้</p>
+        <div class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3345841/extra-b67bn-fuel-subsidy-to-come-from-energy-fund">Bangkok Post</a></div>
       </div>
     </div>
-  </section>
+    <div class="story stack">
+      <div class="story">
+        <span class="kicker">ไทย · ธุรกิจ</span>
+        <h2 class="headline mini">Asset World นำแบรนด์ Ruby เข้าไทย จับมือ IHG — ก้าวแรกในเอเชียแปซิฟิก</h2>
+        <p>Asset World Corp (AWC) บริษัทจดทะเบียนในตลาด SET เตรียมเปิดตัวแบรนด์โรงแรมไลฟ์สไตล์ระดับพรีเมียม Ruby ในไทย ผ่านความร่วมมือกับ IHG Hotels &amp; Resorts นับเป็นการขึ้นฝั่งเอเชียแปซิฟิกครั้งแรกของแบรนด์นี้</p>
+        <div class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3345384/asset-world-adds-ruby-to-hotel-portfolio">Bangkok Post</a></div>
+      </div>
+      <div class="story">
+        <span class="kicker">ไทย · ท่องเที่ยว</span>
+        <h2 class="headline mini">ททท. หวังแคมเปญท่องเที่ยวปลายปีสร้างรายได้ 630 ล้านบาท</h2>
+        <p>การท่องเที่ยวแห่งประเทศไทย (ททท.) คาดว่าแคมเปญปลายปีสามรายการหลักจะสร้างรายได้ท่องเที่ยวในประเทศราว 630 ล้านบาท สอดคล้องภาพรวมทั้งปีที่คาดว่าคนไทยจะเที่ยวในประเทศ 206 ล้านเที่ยว มูลค่าราว 1.1 ล้านล้านบาท</p>
+        <div class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3345335/yearend-tourism-campaigns-expected-to-generate-b630m">Bangkok Post</a></div>
+      </div>
+    </div>
+  </div>
 
-  <footer>
+  <!-- ตลาด -->
+  <div class="section"><span class="name">ตลาด</span></div>
+  <div style="text-align:center">
+  <table class="markets">
+    <caption>ตารางสรุปตลาด — ข้อมูลตามที่แหล่งอ้างอิงเผยแพร่</caption>
+    <tr><th>ดัชนี / สินทรัพย์</th><th>ราคาล่าสุด</th><th>เปลี่ยนแปลง</th><th>อ้างอิง</th></tr>
+    <tr><td>SET</td><td class="num">1,518.59</td><td class="num down">−26.01 แต้ม (−1.68%)</td><td>settrade.com (31 ต.ค.)</td></tr>
+    <tr><td>SET50</td><td class="num">1,033.66</td><td class="num down">−12.25 แต้ม</td><td>settrade.com (31 ต.ค.)</td></tr>
+    <tr><td>USD/THB</td><td class="num">รับซื้อ 32.41 / ขายออก 33.95</td><td>—</td><td>ธนาคารกรุงเทพ (30 ต.ค.)</td></tr>
+    <tr><td>ทองคำแท่ง 96.5% (บาททองละ)</td><td class="num">รับซื้อ 63,550 / ขายออก 63,750 บาท</td><td>—</td><td>GoldTraders (31 ต.ค.)</td></tr>
+    <tr><td>BTC</td><td class="num">ราว 76,000–77,000 USD</td><td>ผันตัวหลังเหตุแฮ็ก Binance</td><td>Cointelegraph (30 ต.ค.)</td></tr>
+    <tr><td>Nasdaq</td><td class="num">ปิดลบ</td><td class="num down">ร่วงกว่า 2% วันศุกร์ ตามผลประกอบการเทคที่ต่ำกว่าคาด</td><td>Bangkok Post (30 ต.ค.)</td></tr>
+  </table>
+  <p class="mnote">หมายเหตุ: ตารางนี้เป็นการรวบรวมเชิงข้อเท็จจริง ณ เวลาตีพิมพ์เท่านั้น ไม่ใช่คำแนะนำการลงทุน · ธนาคารแห่งประเทศญี่ปุ่นแถลงว่าเงินเฟ้อแตะเป้า 2% แล้วเป็นครั้งแรกในรอบกว่า 13 ปี (Bangkok Post, 30 ต.ค.)</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
     <div class="cols">
       <div>
-        <b>Morning Brief</b> — เล่มที่ 1 ฉบับที่ 4 · รวบรวมเมื่อ 07:37 น. ตามเวลาไทย วันศุกร์ที่ 30 ตุลาคม พ.ศ. 2569<br>
-        แหล่งข่าว (เข้าถึง 30 ต.ค. 2569): Hacker News · TechCrunch · The Verge · Ars Technica · Cointelegraph · Bangkok Post<br>
-        เนื้อหาทั้งหมดเรียบเรียงเพื่อสาระข่าวสาร ไม่ใช่คำแนะนำการลงทุน และไม่มีคำสัญญาเรื่องรายได้
+        <h4>แหล่งข่าวฉบับนี้</h4>
+        <ul>
+          <li><a href="https://techcrunch.com/feed/">TechCrunch</a> · <a href="https://feeds.arstechnica.com/arstechnica/index">Ars Technica</a> · <a href="https://www.theverge.com/">The Verge</a></li>
+          <li><a href="https://cointelegraph.com/rss">Cointelegraph</a> · <a href="https://www.bangkokpost.com/rss/data/business.xml">Bangkok Post (Business)</a> · <a href="https://www.bangkokpost.com/">Bangkok Post (หน้าแรก)</a></li>
+          <li>ตัวเลขตลาด: settrade.com · ธนาคารกรุงเทพ · GoldTraders · openweathermap (ผ่านหน้าแรก Bangkok Post)</li>
+        </ul>
       </div>
       <div>
-        <b>ฉบับก่อนหน้า:</b><br>
-        <a href="archive/2026-10-29.html">29 ต.ค. 2569</a> ·
-        <a href="archive/2026-10-28.html">28 ต.ค. 2569</a> ·
-        <a href="archive/2026-10-27.html">27 ต.ค. 2569</a>
+        <h4>ฉบับย้อนหลัง</h4>
+        <ul>
+          <li><a href="archive/2026-10-30.html">วันศุกร์ที่ 30 ตุลาคม 2569 (ฉบับที่ 4)</a></li>
+          <li><a href="archive/2026-10-29.html">วันพฤหัสบดีที่ 29 ตุลาคม 2569 (ฉบับที่ 3)</a></li>
+          <li><a href="archive/2026-10-28.html">วันพุธที่ 28 ตุลาคม 2569 (ฉบับที่ 2)</a></li>
+          <li><a href="archive/2026-10-27.html">วันอังคารที่ 27 ตุลาคม 2569 (ฉบับที่ 1)</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+    <div class="credit">Morning Brief · รวบรวมเมื่อวันเสาร์ที่ 31 ตุลาคม พ.ศ. 2569 เวลาประมาณ 07:30 น. ตามเวลาไทย (ICT) · จัดพิมพ์โดย ทีม Morning Brief · ข่าวทุกชิ้นอ้างอิงแหล่งที่เปิดอ่านในวันตีพิมพ์</div>
+  </div>
 
 </div>
 </body>
