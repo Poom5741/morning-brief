@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief — ฉบับวันอังคารที่ 3 พฤศจิกายน พ.ศ. 2569 (เล่มที่ 1 ฉบับที่ 6)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:wght@500;600;700;900&family=Noto+Serif+Thai:wght@400;500;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; color:#1a1a1a;
+    font-family:'Noto Serif Thai','Old Standard TT',Georgia,serif;
+    background:#f4efe4;
+    background-image:radial-gradient(ellipse at top,#f7f2e7 0%,#f1e9d7 60%,#ece2cc 100%);
+  }
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;
+    background-image:radial-gradient(rgba(26,26,26,.05) 1px,transparent 1px);background-size:4px 4px}
+  .page{max-width:1160px;margin:0 auto;padding:22px 26px 44px;position:relative}
+  a{color:#1a1a1a}
+
+  /* ===== มาสต์เฮด ===== */
+  .masthead{text-align:center;border-top:4px double #1a1a1a;padding-top:12px}
+  .topline{font-size:12px;letter-spacing:3px;font-weight:600}
+  .masthead h1{font-family:'Chonburi','Trirong',serif;font-weight:400;font-size:58px;line-height:1.1;margin:6px 0 0;letter-spacing:1px}
+  .tagline{font-family:'Trirong',serif;font-size:14px;letter-spacing:2.5px;margin:4px 0 10px;border-bottom:4px double #1a1a1a;padding-bottom:10px}
+  .dateline{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;border-bottom:1px solid #1a1a1a;
+    font-family:'Trirong',serif;font-size:14.5px;padding:7px 0;letter-spacing:.3px}
+
+  /* ===== หน้าหนึ่ง ===== */
+  .front{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:16px}
+  .lead{grid-column:1/3;grid-row:1;padding-right:22px;border-right:1px solid #1a1a1a}
+  .sidebar{grid-column:3;grid-row:1/span 2;padding-left:22px}
+  .story2{grid-column:1;grid-row:2;padding:16px 22px 0 0;border-right:1px solid #1a1a1a;margin-top:4px}
+  .story3{grid-column:2;grid-row:2;padding:16px 22px 0 0;border-right:1px solid rgba(26,26,26,.4);margin-top:4px}
+  h2.head{font-family:'Trirong',serif;font-weight:900;font-size:33px;line-height:1.25;margin:0 0 8px}
+  h3.head{font-family:'Trirong',serif;font-weight:700;font-size:20px;line-height:1.35;margin:0 0 6px}
+  .byline{font-style:italic;font-size:12.5px;color:#4a4438;margin:0 0 10px}
+  p{font-size:14.5px;line-height:1.78;margin:0 0 10px;text-align:justify}
+  .lead p:first-of-type::first-letter{font-family:'Trirong',serif;font-size:50px;font-weight:700;float:left;line-height:.95;padding:5px 8px 0 0}
+  .jumpline{font-size:12.5px;font-weight:600;letter-spacing:.5px}
+  .jumpline a{text-decoration:none;border-bottom:1px solid #1a1a1a}
+  .readmore{font-weight:700;font-size:13px}
+  .readmore a{text-decoration:none;border-bottom:1px solid #1a1a1a;margin-right:10px;white-space:nowrap}
+  .unconfirmed{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.5px;border:1px solid #1a1a1a;padding:1px 6px;margin:0 0 8px}
+
+  /* ===== กล่องข้าง ===== */
+  .tldr{border:2px solid #1a1a1a;padding:14px 16px 8px;background:rgba(26,26,26,.035)}
+  .tldr h2{font-family:'Trirong',serif;font-size:17px;letter-spacing:4px;text-align:center;margin:0 0 10px;border-bottom:1px solid #1a1a1a;padding-bottom:8px}
+  .tldr ul{margin:0;padding-left:18px}
+  .tldr li{font-size:13.5px;line-height:1.62;margin-bottom:9px;text-align:justify}
+  .weather{margin-top:14px;border:1px solid #1a1a1a;padding:10px 12px;font-size:12.5px;text-align:center;font-style:italic;line-height:1.7}
+
+  /* ===== แผงข่าว ===== */
+  .kicker{font-family:'Trirong',serif;font-size:15px;font-weight:700;letter-spacing:6px;text-align:center;
+    border-top:3px double #1a1a1a;border-bottom:1px solid #1a1a1a;padding:8px 0;margin:30px 0 16px}
+  .cols{column-count:3;column-gap:26px;column-rule:1px solid rgba(26,26,26,.35)}
+  .cols article{break-inside:avoid;margin:0 0 6px;padding:6px 0 12px}
+  .cols article + article{border-top:1px solid rgba(26,26,26,.25)}
+
+  /* ===== ตารางตลาด ===== */
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:4px}
+  th{font-family:'Trirong',serif;font-size:12.5px;letter-spacing:1.5px;text-align:left;
+    border-top:2px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:9px 10px}
+  td{border-bottom:1px solid rgba(26,26,26,.3);padding:9px 10px;vertical-align:top}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  td.num{font-family:'Old Standard TT','Noto Serif Thai',serif;font-size:15px}
+  .neg{color:#8a1c1c;font-weight:700}
+  .pos{color:#1f5c33;font-weight:700}
+  .mnote{font-size:12px;font-style:italic;color:#4a4438;margin-top:8px}
+
+  footer{margin-top:32px;border-top:4px double #1a1a1a;padding-top:12px;text-align:center;font-size:12.5px;line-height:1.9}
+  footer a{text-decoration:none;border-bottom:1px solid #1a1a1a;margin:0 4px}
+
+  @media (max-width:760px){
+    .masthead h1{font-size:40px}
+    .front{grid-template-columns:1fr}
+    .lead,.story2,.story3,.sidebar{grid-column:auto;grid-row:auto;border-right:none;border-left:none;padding:14px 0 0;margin:0}
+    .lead{padding-top:0}
+    .sidebar{border-top:1px solid #1a1a1a;margin-top:16px;padding-left:0}
+    .cols{column-count:1}
+    h2.head{font-size:26px}
+    table{font-size:13px}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="topline">ฟีดข่าวรายวัน · ประเทศไทยและโลกในหน้าเดียว</div>
+    <h1>Morning Brief</h1>
+    <div class="tagline">เทคโนโลยี · เอไอ · คริปโตและเว็บ3 · เศรษฐกิจไทย</div>
+    <div class="dateline">
+      <span>กรุงเทพฯ — วันอังคารที่ 3 พฤศจิกายน พ.ศ. 2569</span>
+      <span>เล่มที่ 1 ฉบับที่ 6</span>
+      <span>1 USD ≈ 32.46–34.00 THB</span>
+      <span>กรุงเทพฯ เมฆมาก 27°</span>
+    </div>
+  </header>
+
+  <main class="front">
+    <article class="lead">
+      <h2 class="head">Marvell กว้าน Lumentum 115,000 ล้านดอลลาร์ ขึ้นแท่นหนึ่งในดีลซื้อกิจการใหญ่ที่สุดของวงการเทค</h2>
+      <p class="byline">โดย ทีม Morning Brief · ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+      <p>Marvell ผู้ออกแบบชิปเฉพาะทางรายใหญ่ ลงนามข้อตกลงซื้อกิจการ Lumentum ผู้ผลิตชิปสารออปติกและอุปกรณ์เครือข่าย ด้วยการแลกหุ้นล้วน มูลค่าองค์กรรวมหนี้แตะ 115,000 ล้านดอลลาร์ (มูลค่าส่วนของผู้ถือหุ้นราว 80,000 ล้านดอลลาร์) โดยแลก 4.5 หุ้น Marvell ต่อหุ้น Lumentum 1 หุ้น ทำสถิติใหญ่กว่าดีล Microsoft–Activision Blizzard (68,700 ล้านดอลลาร์) และ Dell–EMC (67,000 ล้านดอลลาร์)</p>
+      <p>จุดที่วงการจับตาคือทั้งสองบริษัทมีผู้ถือหุ้นรายใหญ่ร่วมกันคือ Nvidia ซึ่งเมื่อเดือนมีนาคมที่ผ่านมาฉีดเงินลงทุน 2,000 ล้านดอลลาร์เข้า Lumentum เพื่อหนุนงานวิจัยเลเซอร์ขั้นสูงและการขยายโรงงาน และอีก 2,000 ล้านดอลลาร์เข้า Marvell เพื่อเสริมสายชิปและโครงข่ายออปติก Marvell ระบุว่าการรวมกันครั้งนี้จะผลักดันบริษัทขึ้นเป็นผู้นำด้านการเชื่อมต่อข้อมูลเพื่อเอไอ ตั้งแต่ระดับชิปจนถึงดาต้าเซ็นเตอร์ โดยคาดว่าดีลจะปิดในครึ่งแรกของปี 2028 หากได้รับความเห็นชอบจากผู้ถือหุ้นและหน่วยงานกำกับดูแล</p>
+      <p class="jumpline">อ่านต่อ → <a href="#tech">เทคโนโลยี</a> · <a href="#crypto">คริปโต/เว็บ3</a> · <a href="#thai">ไทย</a> · <a href="#markets">ตลาด</a></p>
+    </article>
+
+    <article class="story2">
+      <h3 class="head">Anthropic เผยในเอกสารเสนอขายหุ้นว่าใกล้เข้าเกณฑ์ "เอไอพัฒนาตัวเอง" (RSI)</h3>
+      <p class="byline">โดย ทีม Morning Brief · ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+      <p>เอกสารแก้ไข S-1A ของ Anthropic แจ้งเตือนว่าบริษัทอาจบรรลุนิยาม "ความก้าวหน้าที่เร่งอัตราอย่างมากจากเอไอ" ตามนโยบาย Responsible Scaling Policy ในเร็ววันนี้ ขณะที่ยืนยันว่าโมเดลปัจจุบันยังไม่ข้ามเส้น RSI (recursive self-improvement) และจะคงให้มนุษย์กำกับการพัฒนาโมเดลรุ่นหน้า บริษัทยอมรับว่าเคยใช้เอไอช่วยพัฒนาโมเดลใหม่โดยไม่ทันรับรู้การก้าวกระโดดของความสามารถ และเตือนว่าการใช้เอไอสร้างเอไออาจก่อความเสี่ยงด้านความปลอดภัย หากความก้าวหน้าเร็วเกินกว่ามาตรการป้องกันจะตามทัน นักสังเกตการณ์ชี้ว่าเนื้อหาใน S-1 ทำหน้าที่ทั้งการเปิดเผยข้อมูลและการตลาดในเวลาเดียวกัน</p>
+      <p class="readmore"><a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">อ่านต้นฉบับ →</a></p>
+    </article>
+
+    <article class="story3">
+      <h3 class="head">New York Times นำสำนักข่าวสายอื่นฟ้องเบราว์เซอร์ Brave กรณีขูดเนื้อหา</h3>
+      <p class="byline">โดย ทีม Morning Brief · ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+      <p>กลุ่มสำนักข่าวนำโดย New York Times ยื่นฟ้องบริษัทเบราว์เซอร์ Brave จากข้อกล่าวหาว่าละเมิดเนื้อหาด้วยการขูดข้อมูลไปใช้โดยไม่ได้รับอนุญาต ตามรายงานของ TechCrunch เมื่อวันที่ 2 พ.ย. คดีนี้สะท้อนความตึงเครียดล่าสุดระหว่างอุตสาหกรรมสื่อกับแพลตฟอร์มที่นำเนื้อหาไปใช้ในยุคเอไอ โดยข้อเรียกร้องเต็มรูปแบบคาดว่าจะชัดเจนขึ้นเมื่อคดีเข้าสู่กระบวนการพิจารณา</p>
+      <p class="readmore"><a href="https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/">อ่านต้นฉบับ →</a></p>
+    </article>
+
+    <aside class="sidebar">
+      <div class="tldr">
+        <h2>วันนี้ต้องรู้</h2>
+        <ul>
+          <li>Marvell ซื้อกิจการ Lumentum 115,000 ล้านดอลลาร์ — หนึ่งในดีลใหญ่สุดของวงการเทค</li>
+          <li>Anthropic เตือนในเอกสารเสนอขายหุ้นว่าใกล้เข้าเกณฑ์ "เอไอพัฒนาตัวเอง" (RSI)</li>
+          <li>เกาหลีเหนือปฏิเสธอยู่เบื้องหลังแฮ็ก Binance 6,300 ล้านดอลลาร์ ขณะที่ FBI และนักสืบบล็อกเชนยืนยันรอยกลุ่ม TraderTraitor</li>
+          <li>Roblox เลือกไทยเป็น 1 ใน 4 ประเทศแรกของโลก เปิดตัวเครื่องมือสร้างเกมเอไอ "Build"</li>
+          <li>SET ปิด 1,507.20 จุด (−0.75%) จับตาการเลือกตั้งกลางเทอมสหรัฐในวันนี้</li>
+        </ul>
+      </div>
+      <div class="weather">อากาศวันนี้ — กรุงเทพฯ เมฆมาก 27° · เชียงใหม่ ฝนฟ้า 25° · ภูเก็ต ฝนฟ้า 27°<br>(openweathermap ผ่าน Bangkok Post · 3 พ.ย. 2569)</div>
+    </aside>
+  </main>
+
+  <section id="tech">
+    <h2 class="kicker">เทคโนโลยี</h2>
+    <div class="cols">
+      <article>
+        <h3 class="head">ต้นทุนชิปหน่วยความจำพุ่ง Apple อุ้มสต๊อกโต 154% พร้อมบอกว่า "คาดเดายาก" ว่าข้อจำกัด iPhone จะคลายเมื่อไหร่</h3>
+        <p class="byline">ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+        <p>รายงานระบุว่าสินค้าคงคลังของ Apple พุ่งขึ้นถึง 154% ขณะราคาชิปหน่วยความจำสูงขึ้นต่อเนื่อง และบริษัทระบุว่า "คาดการณ์ได้ยาก" ว่าข้อจำกัดด้านอุปทานของ iPhone จะทุเลาลงเมื่อใด ปัจจัยชิปหน่วยความจำจึงกลายเป็นตัวแปรสำคัญของสมาร์ตโฟนรุ่นถัดไป</p>
+        <p class="readmore"><a href="https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/">อ่านต้นฉบับ →</a><a href="https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/">บทความเกี่ยว iPhone →</a></p>
+      </article>
+      <article>
+        <h3 class="head">เยอรมนีเตือน iPhone ของสมาชิกรัฐสภาอาจถูกแทรกสปายแวร์</h3>
+        <p class="byline">ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+        <span class="unconfirmed">รายงานเบื้องต้น ยังยืนยันไม่ได้</span>
+        <p>ทางการเยอรมนีรายงานว่า iPhone ของสมาชิกรัฐสภาบางรายอาจถูกแฮ็กด้วยสปายแวร์ ตามรายงานของ TechCrunch เมื่อวันที่ 2 พ.ย. ยังไม่มีการยืนยันผู้ก่อเหตุหรือขอบเขตความเสียหายฉบับสมบูรณ์</p>
+        <p class="readmore"><a href="https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/">อ่านต้นฉบับ →</a></p>
+      </article>
+      <article>
+        <h3 class="head">ไซเบอร์โจมตีระลอกใหม่ถล่มระบบตู้แช่ซูเปอร์มาร์เก็ตยุโรป อาหารเสียหายข้ามประเทศ</h3>
+        <p class="byline">ที่มา: TechCrunch · 2 พ.ย. 2569</p>
+        <p>คลื่นการโจมตีไซเบอร์ลูกใหม่เข้าโจมตีระบบตู้ทำความเย็นของซูเปอร์มาร์เก็ตในยุโรป ก่อความเสียหายให้อาหารจำนวนมากหลายประเทศ ตามรายงานของ TechCrunch เมื่อวันที่ 2 พ.ย. ย้ำว่าระบบพื้นฐานของหน่วยค้าปลีกก็เป็นเป้าหมายของแฮ็กเกอร์ได้เช่นกัน</p>
+        <p class="readmore"><a href="https://techcrunch.com/2026/11/02/a-fresh-wave-of-cyberattacks-has-hit-europes-supermarket-refrigerators-destroying-food-across-countries/">อ่านต้นฉบับ →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="crypto">
+    <h2 class="kicker">คริปโต/เว็บ3</h2>
+    <div class="cols">
+      <article>
+        <h3 class="head">เกาหลีเหนือสวน FBI ปฏิเสธอยู่เบื้องหลังแฮ็ก Binance 6,300 ล้านดอลลาร์ พร้อมชี้ฟางสหรัฐโดยไม่มีหลักฐาน</h3>
+        <p class="byline">ที่มา: Cointelegraph · 3 พ.ย. 2569</p>
+        <p>คิม โย จง น้องสาวของผู้นำเกาหลีเหนือ แถลงผ่านสำนักข่าว KCNA เมื่อวันอังคาร ปฏิเสธความเกี่ยวข้องกับการแฮ็ก Binance มูลค่า 6,300 ล้านดอลลาร์ เรียกข้อกล่าวหาของ FBI ว่าเป็นวาทกรรมที่มุ่งทำลายภาพลักษณ์นานาชาติของประเทศ พร้อมเดาว่าสหรัฐอาจอยู่เบื้องหลังเอง — โดยไม่มีหลักฐานใดรองรับ <span class="unconfirmed">รายงานเบื้องต้น ยังยืนยันไม่ได้</span></p>
+        <p>ขณะที่ฝั่งนักสืบมีข้อสรุปชัดกว่า: TRM Labs ระบุด้วยความมั่นใจสูงว่าการโจมตีเป็นฝีมือกลุ่ม TraderTraitor ของเกาหลีเหนือ ชี้ร่องรอยการเตรียมการล่วงหน้าและการใช้ Tornado Cash ทั้ง Chainalysis และ ZachXBT เชื่อมโยงการขโมยกับแฮ็กเกอร์เกาหลีเหนือเช่นกัน และ ZachXBT พบว่าเงินจากคดี Binance กับคดี Bitget ถูกปะปนกันที่ที่อยู่เดียวกันหลังผ่าน THORChain</p>
+        <p class="readmore"><a href="https://cointelegraph.com/news/north-korea-denies-role-in-63b-binance-hack-points-finger-at-us">อ่านต้นฉบับ →</a></p>
+      </article>
+      <article>
+        <h3 class="head">รอบสะสางหลังแฮ็กครั้งใหญ่ที่สุด: Binance เทถุง SAFU เกือบครึ่ง เติมสินทรัพย์แล้ว 95% ขณะเงินไหลออกสุทธิ 5,800 ล้านดอลลาร์</h3>
+        <p class="byline">ที่มา: Cointelegraph · 2 พ.ย. 2569</p>
+        <p>Binance เผยว่าถุงเงินกองทุนคุ้มครองผู้ใช้ (SAFU) เหลือ Bitcoin ราว 7,500 เหรียญ มูลค่าราว 583 ล้านดอลลาร์ ลดลงจากเดิมราว 15,000 เหรียญ หลังถอน 7,499 เหรียญไปชดเชยความเสียหายจากแฮ็ก 6,300 ล้านดอลลาร์เมื่อวันพฤหัสฯ การเติมสินทรัพย์ที่ได้รับผลกระทบทำได้ถึงราว 95% แล้ว (จาก 90% ก่อนหน้า) พร้อมเปิดถอนเงินเป็นระลอกตั้งแต่วันอาทิตย์ ทั้งนี้เงินไหลออกสุทธิพุ่งไป 5,800 ล้านดอลลาร์ ซึ่งยังเป็นเพียงเศษเสี้ยวของสินทรัพย์ลูกค้าราว 171,000 ล้านดอลลาร์</p>
+        <p>ด้าน THORChain ผู้ดำเนินการโหนดหยุด swaps ชั่วคราวบนสินทรัพย์ 10 เครือข่าย รวม Bitcoin, Ethereum, Solana และ Tron หลังพบบั๊ก block reorg ซึ่งบังเอิญทำให้การฟอกเงินของกลุ่มแฮ็กเกอร์ช้าลง ส่วน Mercado Bitcoin ของบราซิลหยุดรับฝาก–ถอนหลังนักวิเคราะห์ประเมินว่าโดนขโมยเกิน 46 ล้านดอลลาร์</p>
+        <p class="readmore"><a href="https://cointelegraph.com/news/what-happened-in-crypto-today">อ่านต้นฉบับ →</a><a href="https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack">เงินไหลออก →</a><a href="https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers">THORChain →</a></p>
+      </article>
+      <article>
+        <h3 class="head">นิวเจอร์ซีย์ยกคำสั่งห้าม staking ลบบทลงโทษ 5 ล้านดอลลาร์ ทาง Coinbase โล่ง ขณะ Morgan Stanley ฟันเป้าราคาหุ้น 50%</h3>
+        <p class="byline">ที่มา: Cointelegraph · 2 พ.ย. 2569</p>
+        <p>รัฐนิวเจอร์ซีย์ยกเลิกคำสั่งห้าม staking และถอนบทลงโทษ 5 ล้านดอลลาร์ เปิดทางให้ Coinbase กลับมาเปิดบริการ staking แก่ผู้ใช้ในรัฐได้อีกครั้ง ขณะเดียวกันในฝั่งวอลล์สตรีท Morgan Stanley ลดเป้าราคาหุ้น Coinbase ลง 50% เหลือ 120 ดอลลาร์ และปรับลดคำแนะนำ จากยอดซื้อขายที่ช้าลงและผลกระทบสะเทือนจากแฮ็ก Binance</p>
+        <p class="readmore"><a href="https://cointelegraph.com/news/new-jersey-coinbase-staking">อ่านต้นฉบับ →</a><a href="https://cointelegraph.com/news/morgan-stanley-cuts-coinbase-target-to-120-as-earnings-recovery-outlook-weakens">เป้าราคา Coinbase →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="thai">
+    <h2 class="kicker">ไทย</h2>
+    <div class="cols">
+      <article>
+        <h3 class="head">Roblox เลือกไทยเป็น 1 ใน 4 ประเทศแรกของโลก เปิดตัวเครื่องมือสร้างเกมด้วยเอไอ "Build"</h3>
+        <p class="byline">ที่มา: Bangkok Post · 3 พ.ย. 2569</p>
+        <p>Roblox เลือกไทยร่วมกับนิวซีแลนด์ สิงคโปร์ และเซอร์เบีย เปิดตัว Build เครื่องมือสร้างเกมด้วยเอไอที่แปลงข้อความบรรยายภาษาธรรมชาติให้กลายเป็นเกมที่เล่นได้ภายในไม่กี่นาที โดยไม่ต้องมีพื้นฐานเขียนโค้ด ใช้งานแกนหลักฟรีผ่านแอปมือถือ งานเปิดตัวจัดขึ้นที่กรุงเทพฯ ในงาน UNBOX ROBLOX โดยบริษัทระบุว่าไทยเด่นเรื่องวัฒนธรรมความคิดสร้างสรรค์ของครีเอเตอร์ แพลตฟอร์มมีผู้ใช้ต่อวัน 138 ล้านคนทั่วโลกในไตรมาส 3 โดย 30% อยู่ในเอเชียแปซิฟิก และเกมที่สร้างด้วยเอไอเกือบทั้งหมดสองเกมติดท็อป 20 ยอดเล่นพร้อมกันของแพลตฟอร์ม</p>
+        <p class="readmore"><a href="https://www.bangkokpost.com/business/general/3347580/roblox-chooses-thailand-for-ai-game-developer-launch">อ่านต้นฉบับ →</a></p>
+      </article>
+      <article>
+        <h3 class="head">ร่างแก้กฎหมายส่งเสริมอุตสาหกรรมเกมกลับสู่จุดเริ่มต้น เสี่ยงเลื่อนบังคับใช้ออกไปอีก</h3>
+        <p class="byline">ที่มา: Bangkok Post · 3 พ.ย. 2569</p>
+        <p>ร่างแก้ไข พ.ร.บ. ส่งเสริมอุตสาหกรรมเกม (Game Industry Promotion Act) กลับไปเริ่มใหม่เพราะต้องปรับแก้ครั้งใหญ่ ก่อนความกังวลว่าการบังคับใช้กฎหมายจะล่าช้าออกไปอีก ตามรายงานของ Bangkok Post เมื่อเช้าวันที่ 3 พ.ย. ซึ่งกระทบกำหนดการของผู้ประกอบการเกมไทยที่รอกลไลสนับสนุนจากกฎหมาย</p>
+        <p class="readmore"><a href="https://www.bangkokpost.com/business/general/3347630/game-industry-act-faces-major-revisions">อ่านต้นฉบับ →</a></p>
+      </article>
+      <article>
+        <h3 class="head">เลือกตั้งกลางเทอมสหรัฐวันนี้ นักวิเคราะห์เห็นผลบวกต่อไทยและการค้าโลก</h3>
+        <p class="byline">ที่มา: Bangkok Post · 3 พ.ย. 2569</p>
+        <p>การเลือกตั้งกลางเทอมของสหรัฐในวันนี้ (3 พ.ย.) อาจเป็นข่าวดีของไทยและการค้าโลก เพราะหากฝั่งรัฐสภาเข้มแข็งขึ้นในบทบาทตรวจสอบถ่วงดุล ความไม่แน่นอนของนโยบายรัฐบาลทรัมป์จะลดลง และช่วยบรรเทาความผันผวนของตลาด ตามการวิเคราะห์ที่รายงานผ่าน Bangkok Post</p>
+        <p class="readmore"><a href="https://www.bangkokpost.com/business/general/3347560/analysts-see-benefits-from-us-midterms">อ่านต้นฉบับ →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="markets">
+    <h2 class="kicker">ตลาด</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>รายการ</th>
+          <th class="num">ราคาล่าสุด</th>
+          <th class="num">เปลี่ยนแปลง</th>
+          <th class="num">%</th>
+          <th>ที่มา · วันที่</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ดัชนี SET</td>
+          <td class="num">1,507.20</td>
+          <td class="num neg">−11.39</td>
+          <td class="num neg">−0.75%</td>
+          <td>settrade.com · 3 พ.ย.</td>
+        </tr>
+        <tr>
+          <td>ดัชนี SET50</td>
+          <td class="num">1,024.01</td>
+          <td class="num neg">−9.65</td>
+          <td class="num neg">−0.93%</td>
+          <td>settrade.com · 3 พ.ย.</td>
+        </tr>
+        <tr>
+          <td>ดัชนี SET100</td>
+          <td class="num">2,206.79</td>
+          <td class="num neg">−17.41</td>
+          <td class="num neg">−0.78%</td>
+          <td>settrade.com · 3 พ.ย.</td>
+        </tr>
+        <tr>
+          <td>USD/THB (ซื้อ/ขาย)</td>
+          <td class="num">32.46 / 34.00</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td>Bangkok Bank · 2 พ.ย.</td>
+        </tr>
+        <tr>
+          <td>ทองคำแท่ง บาทน้ำหนัก (ซื้อ/ขาย)</td>
+          <td class="num">62,200 / 62,400</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td>GoldTraders · 3 พ.ย.</td>
+        </tr>
+        <tr>
+          <td>BTC</td>
+          <td class="num">≈ 77,700 USD</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td>ประมาณจาก 7,500 BTC = 583 ล้าน USD · Cointelegraph · 2 พ.ย.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mnote">ตารางนี้เป็นการทบทวนข้อมูลจากแหล่งที่อ้างอิงเท่านั้น ไม่ใช่คำแนะนำการลงทุน · % ของดัชนี SET คำนวณเทียบราคาปิดครั้งก่อน (SET 1,518.59 · SET50 1,033.66 · SET100 2,224.20) · รายงานของ Cointelegraph ระบุว่า BTC เสี่ยงหลุมระดับ 76,000 ดอลลาร์</p>
+  </section>
+
+  <footer>
+    <div><strong>Morning Brief</strong> · ฉบับวันอังคารที่ 3 พฤศจิกายน พ.ศ. 2569 · เล่มที่ 1 ฉบับที่ 6 · รวบรวมเมื่อเวลา 07:36 น. ตามเวลาไทย</div>
+    <div>แหล่งข่าว: TechCrunch · Cointelegraph · Bangkok Post · ข้อมูลตลาดและอากาศ: settrade.com, Bangkok Bank, GoldTraders, openweathermap (ผ่านหน้าแรก Bangkok Post)</div>
+    <div>ฉบับย้อนหลัง:
+      <a href="archive/2026-10-31.html">31 ต.ค. 2569</a> ·
+      <a href="archive/2026-10-30.html">30 ต.ค. 2569</a> ·
+      <a href="archive/2026-10-29.html">29 ต.ค. 2569</a> ·
+      <a href="archive/2026-10-28.html">28 ต.ค. 2569</a> ·
+      <a href="archive/2026-10-27.html">27 ต.ค. 2569</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
