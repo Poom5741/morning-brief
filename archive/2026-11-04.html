@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning Brief — วันพุธที่ 4 พฤศจิกายน พ.ศ. 2569 (เล่มที่ 1 ฉบับที่ 7)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:wght@500;600;700;900&family=Noto+Serif+Thai:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4efe4; --ink:#1a1a1a; --rule:#1a1a1a; --faint:#6b6255;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,252,240,.55), rgba(0,0,0,0) 60%),
+      repeating-linear-gradient(0deg, rgba(120,100,60,.025) 0 2px, rgba(0,0,0,0) 2px 4px),
+      var(--paper);
+    color:var(--ink);
+    font-family:"Noto Serif Thai","Trirong","Old Standard TT",serif;
+    line-height:1.62;
+  }
+  .page{max-width:1160px; margin:0 auto; padding:22px 26px 40px;}
+  a{color:var(--ink);}
+  /* ---------- Masthead ---------- */
+  .masthead{text-align:center; border-bottom:4px double var(--rule); padding-bottom:12px;}
+  .masthead .motto{
+    display:flex; justify-content:space-between; font-size:11.5px; letter-spacing:.14em;
+    color:var(--faint); text-transform:uppercase; border-bottom:1px solid var(--rule); padding-bottom:5px;
+  }
+  .masthead h1{
+    font-family:"Chonburi","Trirong",serif; font-size:56px; font-weight:400;
+    letter-spacing:.01em; margin:14px 0 4px; line-height:1.1;
+  }
+  .masthead .sub{font-style:italic; font-size:14px; color:#403a30;}
+  .dateline{
+    margin-top:12px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    padding:6px 0; font-size:13px; letter-spacing:.06em;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 18px;
+    font-family:"Noto Serif Thai",serif;
+  }
+  .ticker{
+    border-bottom:1px solid var(--rule); padding:6px 0; font-size:12.5px;
+    display:flex; justify-content:center; flex-wrap:wrap; gap:4px 0;
+    font-family:"Old Standard TT","Noto Serif Thai",serif; color:#332e26;
+  }
+  .ticker b{font-weight:700;}
+  .ticker span{padding:0 12px; border-right:1px solid rgba(26,26,26,.35); white-space:nowrap;}
+  .ticker span:last-child{border-right:none;}
+  .down{font-weight:700;}
+  /* ---------- Front grid ---------- */
+  .front{
+    display:grid; grid-template-columns:2.05fr 1fr; gap:0 30px;
+    padding:18px 0 6px; border-bottom:1px solid var(--rule);
+  }
+  .front .lead-main{padding-right:30px; border-right:1px solid var(--rule);}
+  .kicker{
+    font-size:12px; letter-spacing:.22em; text-transform:uppercase; font-weight:700;
+    color:var(--ink); margin-bottom:6px;
+  }
+  .kicker::before{content:""; display:inline-block; width:26px; height:2px; background:var(--ink); vertical-align:middle; margin-right:8px;}
+  h2.headline{font-family:"Trirong",serif; font-weight:900; line-height:1.22; margin:4px 0 8px;}
+  .lead-main h2.headline{font-size:34px;}
+  .byline{font-style:italic; font-size:13px; color:#45403a; margin-bottom:10px;}
+  .body p{margin-bottom:9px; text-align:justify; hyphens:auto;}
+  .lead-main .body p:first-of-type::first-letter{
+    font-family:"Trirong",serif; font-size:3.3em; font-weight:700;
+    float:left; line-height:.86; padding:4px 8px 0 0;
+  }
+  .src{font-size:13px; margin-top:4px;}
+  .src a{font-weight:600; text-decoration:none; border-bottom:1px solid var(--ink);}
+  .note{font-size:12.5px; color:var(--faint); font-style:italic; margin-top:6px;}
+  /* ---------- Need-to-know box ---------- */
+  .needtoknow{
+    border:2px solid var(--ink); padding:14px 16px; background:rgba(255,252,242,.5);
+  }
+  .needtoknow h3{
+    font-family:"Trirong",serif; font-size:19px; text-align:center; letter-spacing:.12em;
+    border-bottom:3px double var(--ink); padding-bottom:6px; margin-bottom:10px; font-weight:700;
+  }
+  .needtoknow ul{list-style:none;}
+  .needtoknow li{font-size:13.6px; margin-bottom:9px; padding-left:16px; position:relative; text-align:justify;}
+  .needtoknow li::before{content:"■"; position:absolute; left:0; top:1px; font-size:9px;}
+  .needtoknow .wx{border-top:1px solid rgba(26,26,26,.5); margin-top:8px; padding-top:8px; font-size:12px; color:#45403a; text-align:center;}
+  /* ---------- Lead 2 (in right column) ---------- */
+  .lead2{margin-top:20px;}
+  .lead2 h2.headline{font-size:21px;}
+  .lead2 .body p{font-size:13.8px;}
+  /* ---------- Sections ---------- */
+  section{padding:16px 0 6px; border-bottom:1px solid var(--rule);}
+  .sec-head{
+    display:flex; align-items:baseline; gap:14px; border-top:4px double var(--rule);
+    padding-top:8px; margin-bottom:12px;
+  }
+  .sec-head h2{
+    font-family:"Trirong",serif; font-size:24px; font-weight:900; letter-spacing:.1em;
+  }
+  .sec-head .tag{font-style:italic; font-size:12.5px; color:var(--faint);}
+  .cols{column-count:3; column-gap:28px; column-rule:1px solid rgba(26,26,26,.55);}
+  .story{break-inside:avoid; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid rgba(26,26,26,.35);}
+  .cols .story:last-child{border-bottom:none;}
+  .story h3{font-family:"Trirong",serif; font-size:18.5px; font-weight:700; line-height:1.3; margin-bottom:6px;}
+  .story .body p{font-size:13.6px; margin-bottom:7px;}
+  .story .byline{margin-bottom:6px;}
+  /* ---------- Shorts board ---------- */
+  .shorts{border:2px solid var(--ink); margin:16px 0 6px; padding:14px 18px;}
+  .shorts h3{
+    font-family:"Trirong",serif; font-size:18px; text-align:center; letter-spacing:.16em;
+    border-bottom:3px double var(--ink); padding-bottom:5px; margin-bottom:10px;
+  }
+  .shorts ul{column-count:2; column-gap:26px; list-style:none;}
+  .shorts li{font-size:13px; margin-bottom:8px; padding-left:14px; position:relative; text-align:justify; break-inside:avoid;}
+  .shorts li::before{content:"✦"; position:absolute; left:0; top:0; font-size:10px;}
+  /* ---------- Markets ---------- */
+  table.markets{width:100%; border-collapse:collapse; font-size:13.5px;}
+  table.markets caption{
+    caption-side:top; text-align:left; font-family:"Trirong",serif; font-weight:900;
+    font-size:22px; letter-spacing:.08em; padding-bottom:8px;
+  }
+  table.markets th{
+    border-top:3px double var(--ink); border-bottom:1px solid var(--ink);
+    font-size:12px; letter-spacing:.1em; text-transform:uppercase; padding:6px 8px; text-align:left;
+  }
+  table.markets td{border-bottom:1px solid rgba(26,26,26,.35); padding:6px 8px; vertical-align:top;}
+  td.num, th.num{text-align:right; font-family:"Old Standard TT","Noto Serif Thai",serif; white-space:nowrap;}
+  td .m{color:var(--faint); font-size:11.5px;}
+  .neg{color:#7a1c1c;} .pos{color:#14532d;}
+  /* ---------- Footer ---------- */
+  footer{padding:16px 0 0; font-size:12px; color:#45403a;}
+  footer .rule{border-top:4px double var(--rule); margin-bottom:10px;}
+  footer p{margin-bottom:5px;}
+  footer a{font-weight:600;}
+  .disclaimer{font-style:italic;}
+  /* ---------- Responsive ---------- */
+  @media (max-width:700px){
+    .page{padding:14px 12px 30px;}
+    .masthead h1{font-size:38px;}
+    .front{grid-template-columns:1fr;}
+    .front .lead-main{padding-right:0; border-right:none; margin-bottom:18px;}
+    .cols, .shorts ul{column-count:1;}
+    .lead-main h2.headline{font-size:26px;}
+  }
+  @media (min-width:701px) and (max-width:980px){
+    .cols{column-count:2;}
+    .shorts ul{column-count:2;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="motto">
+      <span>ฉบับประจำวัน · โดย ทีม Morning Brief</span>
+      <span>ราคาอ้างอิงตามแหล่งที่ระบุ · ไม่ใช่คำแนะนำการลงทุน</span>
+    </div>
+    <h1>Morning Brief</h1>
+    <div class="sub">หนังสือพิมพ์สรุปข่าว เทคโนโลยี · เอไอ · คริปโต/เว็บ3 · ไทย — ประจำทุกเช้า 07:30 น.</div>
+    <div class="dateline">
+      <span>กรุงเทพฯ — วันพุธที่ 4 พฤศจิกายน พ.ศ. 2569</span>
+      <span>เล่มที่ 1 ฉบับที่ 7</span>
+      <span>สร้างเมื่อ 07:30 น. ตามเวลาไทย</span>
+    </div>
+    <div class="ticker">
+      <span><b>SET</b> 1,491.01 <b class="neg">−16.19 (−1.07%)</b></span>
+      <span><b>SET50</b> 1,015.17 <b class="neg">−8.84</b></span>
+      <span><b>USD/THB</b> 32.45/33.99</span>
+      <span><b>ทองแท่ง</b> 62,300/62,500 บาท</span>
+      <span><b>BTC</b> ≈76,000–77,700 USD</span>
+      <span><b>RUNE</b> ≈0.64 USD <b class="pos">+15%</b></span>
+    </div>
+  </header>
+
+  <main class="front">
+    <article class="lead-main">
+      <div class="kicker">หน้าหนึ่ง · เอไอ</div>
+      <h2 class="headline">Anthropic เปิดตัวโครงการโอเพนซอร์ส “FlashProve” พิสูจน์ตัวตนโมเดล AI ด้วยหลักฐานเข้ารหัสลับ</h2>
+      <div class="byline">โดย ทีม Morning Brief — ที่มาหลัก: TechCrunch, 3 พฤศจิกายน 2569</div>
+      <div class="body">
+        <p>Anthropic เปิดเผยว่ากำลังพัฒนาระบบโอเพนซอร์สชื่อ FlashProve สำหรับตรวจยืนยันว่าผลลัพธ์หนึ่ง ๆ ถูกสร้างจากโมเดล AI ตัวใดจริง ๆ โดยนำเสนอสิ่งที่ทีมวิจัยเรียกว่า “การอนุมานที่พิสูจน์ได้” (provable inference) — หลักฐานเชิงเข้ารหัสลับที่ให้คำรับประกันเชิงคณิตศาสตร์ว่าคำตอบที่ได้มาจากโมเดลที่ผู้ใช้คิดว่าใช้อยู่จริง</p>
+        <p>กลไกนี้เปรียบเสมือนลายเซ็นดิจิทัลของอีเมล แต่ใช้กับโมเดล AI ทั้งที่ตัวปลอมแปลงอาจเป็นตัวแล็บเจ้าของโมเดลเองก็ตาม ระบบถูกออกแบบมาป้องกันกรณีบริษัท AI แอบสลับไปใช้โมเดลราคาถูกกว่าเพื่อตัดต้นทุน หรืออ้างว่าใช้โมเดลระดับสูงกว่าเพื่ออวดผลงาน และยังใช้ตรวจคำกล่าวอ้างของบุคคลที่สามได้ เช่น ที่มาของการสแกนหาช่องโหว่ในไลบรารีซอฟต์แวร์</p>
+        <p>เงื่อนไขสำคัญคือแล็บต้องเผยแพร่ “ลายพิมพ์” (fingerprint) ของโมเดลแต่ละตัวไว้ล่วงหน้า โดยลายพิมพ์นี้ไม่เปิดเผยน้ำหนักโมเดล (weights) ซึ่งเป็นสินทรัพย์ลับของแล็บ และระบบถูกทำให้เบาพอที่จะตรวจสอบบนอุปกรณ์ของผู้ใช้เอง ทีมงานระบุว่านี่คืองานวิจักระหว่างทาง มีสเปกเทคนิคและโค้ดเผยแพร่บน GitHub แล้ว แต่ยังไม่มีแผนนำไปใช้งานจริงที่ Anthropic หรือแล็บอื่นในตอนนี้</p>
+        <p class="note">รายงานคู่ขนานของ TechCrunch ชี้ด้วยว่า Anthropic ยังเผชิญปริศนาด้านเศรษฐศาสตร์ต้นทุนการประมวลผล (compute) อยู่ไม่ยิ้ม</p>
+      </div>
+      <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/">TechCrunch: Anthropic is working on a system to prove AI models’ identity</a></p>
+    </article>
+
+    <div class="right-col">
+      <aside class="needtoknow">
+        <h3>วันนี้ต้องรู้</h3>
+        <ul>
+          <li>เลือกตั้งกลางเทอมสหรัฐฯ (3 พ.ย.): วุฒิสมาชิก Mark Warner รั้งที่นั่งเวอร์จิเนียได้ ส่วนการควบคุมสองสภายังรอผล — ตลาดคาดการณ์ให้เดโมแครต “กวาด” ทั้งสองสภาราว 75%</li>
+          <li>SET ปิดวันอังคาร 1,491.01 จุด หลุดระดับ 1,500 นักวิเคราะห์ชี้ความเสี่ยงจากสงครามและความตึงเครียดการค้าโลก</li>
+          <li>THORChain เปิดสวอปคืนแล้ว 10 เครือข่ายหลังหยุดจากบั๊กโอนคืนซ้ำ — RUNE เด้งราว 15% แต่ BNB Chain/Cosmos/Solana ยังพัก</li>
+          <li>ครม. อนุมัติเลื่อนภาษีสรรพสามิต EV นำเข้าทั้งคันจาก 10% เป็น 35% เริ่ม ม.ค. ปีหน้า — สภาอุตสาหกรรมคาดท้ายปีลูกค้ารีบซื้อก่อน</li>
+          <li>Anthropic เปิดตัว FlashProve โอเพนซอร์สพิสูจน์ว่าผลลัพธ์ AI มาจากโมเดลใดจริง</li>
+        </ul>
+        <div class="wx">อากาศวันนี้: กรุงเทพฯ เมฆมาก 28°/28° · เชียงใหม่ ฝน 25°/25° · ภูเก็ต ฝน 25°/25° (openweathermap, 4 พ.ย.)</div>
+      </aside>
+
+      <article class="lead2">
+        <div class="kicker">หน้าหนึ่ง · การเมืองสหรัฐฯ × คริปโต</div>
+        <h2 class="headline">สหรัฐฯ ลงคะแนนเลือกตั้งกลางเทอม — วอร์เนอร์รั้งวุฒิเวอร์จิเนีย ตลาดจับตาใครคุมสภาซึ่งจะตัดทางร่างกฎหมายคริปโต</h2>
+        <div class="byline">โดย ทีม Morning Brief — ที่มาหลัก: Cointelegraph, 3–4 พฤศจิกายน 2569</div>
+        <div class="body">
+          <p>ชาวอเมริกันไปใช้สิทธิ์เมื่อวันอังคาร เลือกสภาผู้แทนราษฎรครบ 435 ที่นั่งและวุฒิสภา 35 ที่นั่ง ผลแรกคือ Mark Warner (เดโมแครต) เอาชนะรั้งที่นั่งวุฒิสมาชิกเวอร์จิเนีย ขณะที่เมื่อถึงเวลาคัดกรองข่าวเช้านี้ (07:30 น. ไทย) ผู้ควบคุมสภาทั้งสองยังไม่ชัด — รายงานเบื้องต้น ยังยืนยันไม่ได้</p>
+          <p>ตลาดคาดการณ์ Kalshi และ Polymarket ราคาโอกาสที่เดโมแครตกวาดทั้งสองสภาไว้ราว 75% และคว้าสภาล่างราว 93–94.5% โดยสัญญาที่ผูกกับการเลือกตั้งหมุนเวียนแล้วราว 1.9 พันล้านดอลลาร์ สูงสุดเป็นสถิติของรอบกลางเทอม</p>
+          <p>อุตสาหกรรมคริปโตทุ่มเงินหาเสียงราว 176 ล้านดอลลาร์ในรอบนี้ ผลวันนี้จะกำหนดทางเดินของร่าง CLARITY Act ที่ติดค้างในวุฒิสภา และหากเดโมแครตได้คุมสภาสักสภา การตรวจสอบธุรกิจคริปโตของตระกูลประธานธิบดีทรัมป์อาจถูกผลักให้ร้อนแรงขึ้น</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto">Cointelegraph: ผลสดกลางเทอม 2026</a> · <a href="https://cointelegraph.com/news/what-happened-in-crypto-today">สรุปวันนี้ในวงการคริปโต</a></p>
+      </article>
+    </div>
+  </main>
+
+  <section>
+    <div class="sec-head"><h2>เทคโนโลยี</h2><span class="tag">ข่าวสากล 24 ชั่วโมงล่าสุด · รวบรวม 4 พ.ย. 2569</span></div>
+    <div class="cols">
+      <article class="story">
+        <h3>Google เปิดให้โรงเรียนปิดเครื่องมือ AI ได้ — แต่ต้องแลกด้วยการเสีย Search ไปด้วยกัน</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: TechCrunch · Ars Technica</div>
+        <div class="body">
+          <p>Google ประกาศแนวทางใหม่สำหรับโรงเรียนระดับ K–12 ที่ใช้ผลิตภัณฑ์การศึกษาของบริษัท โดยตั้งค่าเริ่มต้นให้เครื่องมือ AI อยู่ในสถานะปิด และให้ผู้บริหารสถานศึกษาเป็นผู้เปิดใช้เองหลังพิจารณา แต่ข้อแลกเปลี่ยนคือการปิดเครื่องมือ AI ต้องปิดระบบค้นหา (Search) ไปด้วยเช่นกัน ทำให้สถานศึกษาต้องตัดสินใจยากระหว่างความปลอดภัยในห้องเรียนกับเครื่องมือพื้นฐานที่นักเรียนใช้จริง</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/">TechCrunch</a></p>
+      </article>
+
+      <article class="story">
+        <h3>Apple จำกัดแอปหาคู่และ “AI คู่สนทนา” ให้ใช้ได้เฉพาะผู้ใช้อายุ 18 ปีขึ้นไป</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: TechCrunch</div>
+        <div class="body">
+          <p>Apple เริ่มบังคับให้แอปหาคู่ (dating apps) และแอป AI ที่ทำหน้าที่เป็นเพื่อนคู่สนทนา (AI companions) เข้าถึงได้เฉพาะผู้ใช้อายุ 18 ปีขึ้นไป เป็นการขยายมาตรการควบคุมเนื้อหาตามช่วงอายุใน App Store ครอบคลุมหมวดแอปที่กำลังเติบโตเร็วและถูกตั้งคำถามเรื่องความปลอดภัยของผู้เยาว์</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/">TechCrunch</a></p>
+      </article>
+
+      <article class="story">
+        <h3>ศูนย์ข้อมูลหันไปใช้เครื่องยนต์เจ็ทรุ่นเก่า เติมพลังงานชั่วคราวขณะรอคิวต่อไฟฟ้าที่ยืดยาว</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: TechCrunch</div>
+        <div class="body">
+          <p>รายงานของ TechCrunch ชี้ว่าศูนย์ข้อมูลจำนวนหนึ่งเริ่มหันไปพึ่งเครื่องยนต์เจ็ทรุ่นเก่ามาใช้เป็นแหล่งพลังงานชั่วคราว เพราะคิวรอการเชื่อมต่อไฟฟ้าจากระบบสาธารณะยืดยาวขึ้นเรื่อย ๆ ตามดีมานด์ของงาน AI ที่โตเร็วกว่ากำลังผลิตและโครงข่ายสายส่งที่มีอยู่</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/">TechCrunch</a></p>
+      </article>
+
+      <article class="story">
+        <h3>โดรนยูเครนถล่มถึงใจ รัสเซียคิดย้ายศูนย์ข้อมูลลงใต้ดิน</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Ars Technica (อ้าง Vedomosti)</div>
+        <div class="body">
+          <p>การโจมตีด้วยโดรนของยูเครนทำความเสียหายให้ศูนย์ข้อมูลที่ใช้งานซูเปอร์คอมพิวเตอร์ AI ของรัสเซียหลายแห่ง กระทบบริการคลาวด์ของผู้ใช้ระดับล้านบัญชี ทั้ง Yandex, Sberbank, VKontakte และกระทรวงการคลังรัสเซีย ล่าสุด Rostelecom บริษัทโทรคมนาคมรัฐวิสาหกิจเปิดเผยแนวคิดย้ายศูนย์ข้อมูลบางส่วนลงใต้ดินผ่านการหารือกับบริษัทเหมืองนิกเกิล-พัลเลเดียม Norilsk ตามรายงานของหนังสือพิมพ์ Vedomosti ขณะที่ผู้ว่าการภูมิภาคหนึ่งเสนอใช้เหมืองถ่านหินเปิดหน้าผเก่าเป็นที่ตั้ง พร้อมปิดหน้าด้านบนด้วยสวนสาธารณะเป็นการพราง ฝั่งเครมลินยังออกข้อบังคับให้เจ้าของศูนย์ข้อมูลสำรองกำลังคอมพิวเตอร์ไว้ใช้ฉุกเฉินของรัฐด้วย</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://arstechnica.com/ai/2026/11/russia-looks-to-hide-data-centers-underground-as-ukrainian-drones-strike-back/">Ars Technica</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>คริปโต/เว็บ3</h2><span class="tag">เหตุการณ์ 24 ชั่วโมงล่าสุด · รวบรวม 4 พ.ย. 2569</span></div>
+    <div class="cols">
+      <article class="story">
+        <h3>THORChain เปิดสวอปคืน 10 เครือข่ายหลังบั๊กโอนคืนซ้ำ — RUNE เด้งราว 15%</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Cointelegraph (อ้าง CoinMarketCap)</div>
+        <div class="body">
+          <p>โปรโตคอลสวอปข้ามเชน THORChain คืนสถานะปกติใน 10 จาก 13 เครือข่ายภายนอก ได้แก่ Bitcoin, Ethereum, Bitcoin Cash, Dogecoin, Litecoin, Tron และ Zcash เป็นต้น ส่วน BNB Smart Chain, Cosmos Hub และ Solana ยังคงแสดงสถานะเตือน ราคา RUNE อยู่ราว 0.64 ดอลลาร์ บวกประมาณ 15% ใน 24 ชั่วโมง</p>
+          <p>สาเหตุการหยุดคือการจัดเรียงบล็อก (reorg) ของ Ethereum เพียงหนึ่งบล็อกเมื่อสุดสัปดาห์ ทำให้เงินฝาก 10 ETH ที่ระบบออกคืนให้ผู้ส่งไปแล้วหายไปจาก vault ระบบจึงสั่งคืนเงินซ้ำเป็น ETH ส่วนเกิน จนโปรโตคอลหยุดอัตโนมัติ ด้าน Chainalysis ระบุว่าการหยุดครั้งนี้บังเอิญช่วงชะงักความเคลื่อนไหวของเงินที่ถูกขโมยจากแฮ็ก Binance 6.3 พันล้านดอลลาร์ของแฮ็กเกอร์เกาหลีเหนือด้วย</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/markets/rune-rallies-15-as-thorchain-restarts-most-swaps-after-outage">Cointelegraph</a></p>
+      </article>
+
+      <article class="story">
+        <h3>Binance ไขปมแฮ็ก 6.3 พันล้านดอลลาร์: เริ่มจากสัมภาษณ์งานปลอม — เกาหลีเหนือปฏิเสธพร้อมชี้ฟางสหรัฐฯ</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Cointelegraph</div>
+        <div class="body">
+          <p>ผลสืบสวนของ Binance ระบุว่าผู้โจมตีใช้การสัมภาษณ์งานปลอมและเครื่องมือ AI ที่ถูกงัดข้อ เพื่อยึดเครื่องพนักงานและขโมยข้อมูลประจำตัว ก่อนเจาะโครงสร้างพื้นฐานกระเป๋าเงินของศูนย์ซื้อขาย Richard Teng ผู้บริหารร่วมของ Binance กล่าวว่า “นี่ไม่ใช่ความผิดพลาดหรือการเจาะรอบเดียว — แต่คือแคมเปญต่อเนื่องหลายเดือน”</p>
+          <p>ขณะเดียวกัน คิม โย จง น้องสาวผู้นำเกาหลีเหนือ ออกแถลงผ่านสำนักข่าว KCNA ปฏิเสธการเกี่ยวข้องกับแฮ็กครั้งนี้และคดี Bybit 1.5 พันล้านดอลลาร์เมื่อเดือนกุมภาพันธ์ 2568 พร้อมอ้างโดยไม่มีหลักฐานว่าสหรัฐฯ อาจอยู่เบื้องหลัง FBI ระบุก่อนหน้านี้ว่าการโจมตีเชื่อมโยงกับกลุ่มแฮ็กเกอร์ที่รัฐเกาหลีเหนือหนุนหลัง</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack">Cointelegraph: ที่มาการแฮ็ก</a> · <a href="https://cointelegraph.com/news/what-happened-in-crypto-today">แถลงปฏิเสธของเกาหลีเหนือ</a></p>
+      </article>
+
+      <article class="story">
+        <h3>Kraken อายัดบัญชีที่เกี่ยวข้องคดีลักทรัพย์คริปโตยุโรปกว่า 133 ล้านดอลลาร์</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Cointelegraph (อ้าง ZachXBT, Bitquery)</div>
+        <div class="body">
+          <p>ศูนย์ซื้อขาย Kraken อายัดบัญชีที่เชื่อมโยงกับการลักทรัพย์คริปโตกว่า 133 ล้านดอลลาร์จากหน่วยงานหนึ่งในสหภาพยุโรป และประสานผู้บังคับใช้กฎหมายเพื่อกู้คืนทรัพย์สิน โดยยืนยันว่าเหตุการณ์ไม่ได้เกิดจากระบบของ Kraken ถูกเจาะ นักสืบบล็อกเชน ZachXBT เปิดเผยยอดเพิ่มอีก 27 ล้านดอลลาร์จากที่รายงานครั้งแรก 106 ล้านดอลลาร์ ตามข้อมูล Bitquery เงินถูกถอนผ่านบัญชี Kraken, Crypto.com และ OKX และมีสเตเบิลคอยน์ราว 62.98 ล้านดอลลาร์ถูกแปลงเป็น ETH 27,553 หน่วยภายในราว 4 ชั่วโมง ฝั่ง Crypto.com ระบุว่าบล็อกการเคลื่อนย้ายทรัพย์สินที่เกี่ยวข้องแล้ว</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/news/zachxbt-eu-crypto-theft-133m-alleged-cover-up">Cointelegraph</a></p>
+      </article>
+
+      <article class="story">
+        <h3>IBIT ของ BlackRock โดนเงินไหลออกหนักสุดตั้งแต่เดือนมิถุนายน — กอง ETF Bitcoin สหรัฐฯ เปิดพฤศจิกายนด้วยยอดขายสุทธิ</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Cointelegraph</div>
+        <div class="body">
+          <p>กองทุน IBIT ของ BlackRock มีเงินไหลออก 405.3 ล้านดอลลาร์เมื่อวันจันทร์ สูงสุดตั้งแต่เดือนมิถุนายน ขณะที่กอง ETF Bitcoin สถานะสด (spot) ของสหรัฐฯ รวมกันเปิดเดือนพฤศจิกายนด้วยการไหลออกสุทธิราว 399 ล้านดอลลาร์ ขณะที่ราคา Bitcoin ยังยืนเหนือแนวรับระดับ 76,000 ดอลลาร์ในวันเดียวกัน นักวิเคราะห์มองว่าตลาดหุ้นกำลังตั้งรับภาวะ “รัฐบาลขัดแย้งกันเอง” จากเลือกตั้งกลางเทอม</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://cointelegraph.com/markets/blackrocks-ibit-biggest-bitcoin-etf-outflow-june">Cointelegraph: IBIT</a> · <a href="https://cointelegraph.com/markets/bitcoin-price-defends-76k-lows-as-analysis-sees-stocks-pricing-in-political-gridlock">ราคา BTC</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>ไทย</h2><span class="tag">ธุรกิจและเทคโนโลยีไทย · ที่มา: Bangkok Post, 3–4 พ.ย. 2569</span></div>
+    <div class="cols">
+      <article class="story">
+        <h3>ครม. เห็นชอบเลื่อนภาษีสรรพสามิต EV นำเข้าทั้งคันจาก 10% เป็น 35% เริ่ม ม.ค. ปีหน้า</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Bangkok Post</div>
+        <div class="body">
+          <p>คณะรัฐมนตรีอนุมัติเมื่อวันอังคารให้เพิ่มอัตราภาษีสรรพสามิตรถยนต์ไฟฟ้าแบตเตอรี (BEV) ที่นำเข้าทั้งคัน จาก 10% เป็น 35% โดยมีผลเริ่มเดือนมกราคมปีหน้า ตามที่รัฐมนตรีว่าการกระทรวงการคลังแจ้ง โดยระบุเป้าหมายเพื่อกระตุ้นการลงทุนและการผลิตในประเทศ ด้านสภาอุตสาหกรรมแห่งประเทศไทย (FTI) คาดว่ามาตรการนี้จะจุด “เซียนซื้อรถ” ปลายปี เพราะผู้บริโภครีบตัดสินใจก่อนอัตราใหม่มีผลในวันที่ 1 มกราคม</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/motoring/3347899/thailand-approves-steep-tax-hikes-on-imported-evs">ครม. อนุมัติ</a> · <a href="https://www.bangkokpost.com/business/general/3348119/ev-tax-hike-set-to-spur-buying-spree">มุม FTI</a></p>
+      </article>
+
+      <article class="story">
+        <h3>SET หลุด 1,500 จุด: ปิดวันอังคาร 1,491.01 ลบ 16.19 จุด — นักวิเคราะห์ชี้แรงกดดันจากสงครามและการค้าโลก</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Bangkok Post · settrade</div>
+        <div class="body">
+          <p>ดัชนีตลาดหลักทรัพย์ไทยปิดวันอังคารที่ 1,491.01 จุด ลดลง 16.19 จุด ร่วงผ่านระดับ 1,500 อย่างแรง นักวิเคราะห์มองว่าดัชนียังมีความเสี่ยงด้านขาลงต่อเนื่อง จากตลาดโลกที่แบกน้ำหนักความขัดแย้งด้วยอาวุธและความตึงเครียดด้านการค้า ขณะที่กลุ่ม SET50 ปิด 1,015.17 จุด และ SET100 อยู่ที่ 2,186.37 จุด</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3348214/global-headwinds-weigh-on-thai-bourse">Bangkok Post</a></p>
+      </article>
+
+      <article class="story">
+        <h3>GAC เปิดโรงงานแพ็กแบตเตอรีแห่งแรกในต่างประเทศที่ไทย — เริ่มผลิตแล้ววันอังคาร</h3>
+        <div class="byline">โดย ทีม Morning Brief — ที่มา: Bangkok Post</div>
+        <div class="body">
+          <p>กวางโจวออโตโมบิลคอร์ปอเรชัน (GAC) ประกาศว่าโรงงานแพ็กแบตเตอรีที่บริษัทพัฒนาเทคโนโลยีเองแห่งแรกนอกประเทศจีน เริ่มการผลิตที่ไทยแล้วเมื่อวันอังคาร ถือเป็นก้าวสำคัญของการย้ายห่วงโซ่อุปทาน EV มาตั้งฐานในไทย ท่ามกลางมาตรการภาษีที่รัฐบาลใช้ดันให้ผู้ผลิตย้ายสายการผลิตเข้าประเทศมากขึ้น</p>
+        </div>
+        <p class="src">อ่านต้นฉบับ → <a href="https://www.bangkokpost.com/business/general/3348006/gac-opens-first-overseas-battery-factory-in-thailand">Bangkok Post</a></p>
+      </article>
+    </div>
+
+    <aside class="shorts">
+      <h3>กระดานข่าวสั้น</h3>
+      <ul>
+        <li>CrowdStrike ทุ่มราว 500 ล้านดอลลาร์คว้าสตาร์ตอัปความปลอดภัย AI จำนวน 2 ราย กลางบูมตลาด “รักษาความปลอดภัยเอเจนต์ AI” (TechCrunch → <a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/">อ่านต่อ</a>)</li>
+        <li>สตาร์ตอัปอนุมาน AI “Fal” ดันมูลค่าบริษัทขึ้น 2 เท่าเป็น 16 พันล้านดอลลาร์ หลังดีมานด์โตแรง (TechCrunch → <a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/">อ่านต่อ</a>)</li>
+        <li>CFTC เปิดทางให้ซื้อขาย perpetual futures บนฐานหุ้นในตลาดสหรัฐฯ ขยายผลิตภัณฑ์ยอดนิยมจากวงการคริปโตสู่ตลาดดั้งเดิม (Cointelegraph → <a href="https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges">อ่านต่อ</a>)</li>
+        <li>ตลาดหลักทรัพย์มอสโกเตรียมเปิดซื้อขาย BTC, ETH และ USDT ตั้งแต่วันที่ 1 ธันวาคม ภายใต้กฎหมายใหม่ของรัสเซีย พร้อมเพดานการซื้อรายปีสำหรับนักลงทุนทั่วไป (Cointelegraph → <a href="https://cointelegraph.com/news/moscow-exchange-bitcoin-ether-usdt-trading-december">อ่านต่อ</a>)</li>
+        <li>SpaceX ร่วมกลุ่มผู้ออกหุ้นคัดค้านการเทรดหุ้นโทเคนไนซ์บนแพลตฟอร์ม OKXICE แม้การซื้อขายนอกชายฝั่งจะบูม (Cointelegraph → <a href="https://cointelegraph.com/news/spacex-tokenization-okxice">อ่านต่อ</a>)</li>
+        <li>ธนาคารแห่งประเทศไทยเตือนตลาดแรงงานเปราะบางขึ้น ว่างงานที่เพิ่มขึ้นอาจกดดันการบริโภคในประเทศ (Bangkok Post → <a href="https://www.bangkokpost.com/business/general/3348324/bot-sounds-alarm-on-fragile-labour-market">อ่านต่อ</a>)</li>
+        <li>หน่วยงานความมั่นคงไซเบอร์ของไทย (NCSA) ตั้งรับภัยไซเบอร์ระดับรุนแรง ประสาน NSC แลกเปลี่ยนข่าวกรองภัยคุกคาม พร้อมดันให้ผู้ประกอบการโครงสร้างพื้นฐานเสริมการควบคุมการเข้าถึง (Bangkok Post → <a href="https://www.bangkokpost.com/business/general/3348189/thailand-braces-for-highimpact-threats">อ่านต่อ</a>)</li>
+        <li>เทศกาลลอยโคมเชียงใหม่ปลายเดือนนี้ ททท. คาดนักท่องเที่ยวโต 20% เงินหมุนเวียน 2–2.5 พันล้านบาท (Bangkok Post → <a href="https://www.bangkokpost.com/business/general/3348284/sky-lantern-festival-poised-for-visitor-surge">อ่านต่อ</a>)</li>
+        <li>Netflix เพิ่มแท็บ Discover ที่ใช้ AI ช่วยแนะนำสิ่งที่ควรดูตามอารมณ์ของผู้ชม (TechCrunch → <a href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/">อ่านต่อ</a>)</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section>
+    <table class="markets">
+      <caption>ตลาด — สรุปประจำวัน (ข้อมูลอ้างอิงตามแหล่งที่ระบุ · ไม่ใช่คำแนะนำการลงทุน)</caption>
+      <thead>
+        <tr>
+          <th>ดัชนี / สินทรัพย์</th>
+          <th class="num">ราคาล่าสุด</th>
+          <th class="num">เปลี่ยนแปลง</th>
+          <th class="num">%</th>
+          <th>ที่มา (วันที่)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SET</td>
+          <td class="num">1,491.01</td>
+          <td class="num neg">−16.19</td>
+          <td class="num neg">−1.07%</td>
+          <td class="m">settrade (ปิด 3 พ.ย.; % คำนวณจากปิดก่อนหน้า 1,507.20)</td>
+        </tr>
+        <tr>
+          <td>SET50</td>
+          <td class="num">1,015.17</td>
+          <td class="num neg">−8.84</td>
+          <td class="num neg">−0.86%</td>
+          <td class="m">settrade (4 พ.ย.)</td>
+        </tr>
+        <tr>
+          <td>SET100</td>
+          <td class="num">2,186.37</td>
+          <td class="num neg">−20.42</td>
+          <td class="num neg">−0.93%</td>
+          <td class="m">settrade (4 พ.ย.)</td>
+        </tr>
+        <tr>
+          <td>USD/THB</td>
+          <td class="num">ซื้อ 32.45</td>
+          <td class="num">ขาย 33.99</td>
+          <td class="num">—</td>
+          <td class="m">Bangkok Bank (3 พ.ย.)</td>
+        </tr>
+        <tr>
+          <td>ทองแท่ง 96.5% (บาททองคำ)</td>
+          <td class="num">ซื้อ 62,300 บาท</td>
+          <td class="num">ขาย 62,500 บาท</td>
+          <td class="num">—</td>
+          <td class="m">GoldTraders (4 พ.ย.)</td>
+        </tr>
+        <tr>
+          <td>BTC</td>
+          <td class="num">≈76,000–77,700 USD</td>
+          <td class="num">—</td>
+          <td class="num">—</td>
+          <td class="m">ระดับแนวรับ/แนวต้านตามรายงาน Cointelegraph (3 พ.ย.; ไม่มีฟีดราคาตรง)</td>
+        </tr>
+        <tr>
+          <td>RUNE</td>
+          <td class="num">≈0.64 USD</td>
+          <td class="num pos">+15% / 24 ชม.</td>
+          <td class="num pos">+15%</td>
+          <td class="m">CoinMarketCap ผ่าน Cointelegraph (4 พ.ย.)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <div class="rule"></div>
+    <p><b>Morning Brief</b> — เล่มที่ 1 ฉบับที่ 7 · รวบรวมเมื่อ 07:30 น. วันพุธที่ 4 พฤศจิกายน พ.ศ. 2569 ตามเวลาไทย</p>
+    <p>แหล่งข่าว: TechCrunch · Ars Technica · Cointelegraph · Hacker News (hnrss.org) · Bangkok Post · settrade · Bangkok Bank · GoldTraders · openweathermap — ทุกข้อความตรวจย้อนไปยังแหล่งที่ดึงข้อมูลในรอบนี้</p>
+    <p>ฉบับย้อนหลัง: <a href="archive/2026-11-03.html">3 พ.ย. 2569 (ฉบับที่ 6)</a> · <a href="archive/2026-10-31.html">31 ต.ค. 2569 (ฉบับที่ 5)</a> · <a href="archive/2026-10-30.html">30 ต.ค. 2569 (ฉบับที่ 4)</a> · <a href="archive/2026-10-29.html">29 ต.ค. 2569 (ฉบับที่ 3)</a> · <a href="archive/2026-10-28.html">28 ต.ค. 2569 (ฉบับที่ 2)</a> · <a href="archive/2026-10-27.html">27 ต.ค. 2569 (ฉบับที่ 1)</a></p>
+    <p class="disclaimer">ฉบับนี้เป็นการสรุปข่าวเชิงข้อเท็จจริงเท่านั้น ไม่ใช่คำแนะนำการลงทุนหรือคำสัญญาด้านรายได้ · ข่าวที่ยังยืนยันไม่ได้จะระบุว่า “รายงานเบื้องต้น ยังยืนยันไม่ได้”</p>
+  </footer>
+
+</div>
+</body>
+</html>
