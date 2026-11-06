@@ -3,333 +3,182 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Morning Brief — เล่มที่ 1 ฉบับที่ 8 — วันพฤหัสบดีที่ 5 พฤศจิกายน พ.ศ. 2569</title>
-<meta name="description" content="หนังสือพิมพ์รายวัน สรุปข่าวเทคโนโลยี คริปโต/เว็บ3 และเศรษฐกิจไทย ประจำวันพฤหัสบดีที่ 5 พฤศจิกายน 2569">
+<title>Morning Brief — 6 พฤศจิกายน 2569</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Trirong:wght@500;600;700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Noto+Serif+Thai:wght@400;600;700&family=Trirong:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1a1a1a;--paper:#f4efe4;--muted:#5a544a;--rule:rgba(26,26,26,.9)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper) radial-gradient(ellipse at 20% 10%,rgba(255,255,255,.5),transparent 55%) radial-gradient(ellipse at 85% 90%,rgba(120,95,60,.10),transparent 60%);color:var(--ink);font-family:'Noto Serif Thai','Playfair Display',serif}
-.paper{max-width:1200px;margin:0 auto;padding:18px 24px 30px}
-a{color:var(--ink)}
-.masthead{border-top:3px double var(--rule);border-bottom:1px solid var(--rule);padding:14px 0 10px;text-align:center}
-.masthead h1{font-family:'Chonburi',serif;font-weight:400;font-size:clamp(2.1rem,6vw,3.4rem);letter-spacing:.04em;margin:0;line-height:1.1}
-.masthead .sub{font-size:.8rem;letter-spacing:.22em;font-weight:600;margin-top:6px;color:#3d382f}
-.dateline{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 18px;border-top:1px solid var(--rule);border-bottom:3px double var(--rule);padding:5px 2px;font-size:.76rem;font-weight:600;letter-spacing:.03em;color:#2d2921}
-.headline-grid{display:grid;grid-template-columns:2.65fr 1fr;gap:0 26px;margin-top:16px}
-.front{padding-right:2px}
-.kicker{display:block;font-family:'Trirong',serif;font-size:.72rem;font-weight:700;letter-spacing:.3em;color:#6b6357;margin-bottom:5px;text-transform:uppercase}
-.lead{border-bottom:1px solid rgba(26,26,26,.35);padding:10px 0 16px}
-.lead:last-child{border-bottom:none}
-.lead h2{font-family:'Trirong',serif;font-weight:700;font-size:clamp(1.42rem,3vw,1.95rem);line-height:1.3;margin:0 0 6px}
-.byline{font-style:italic;font-size:.78rem;color:var(--muted);margin:0 0 9px}
-p{font-size:.93rem;line-height:1.66;text-align:justify;margin:0 0 8px;hyphens:auto}
-.readmore{font-size:.8rem;font-weight:700;text-decoration:none;border-bottom:1px dotted #7a7264;white-space:nowrap}
-.readmore:hover{color:#4a4437}
-.dropcap::first-letter{font-family:'Trirong',serif;font-weight:700;font-size:3.3em;float:left;line-height:.83;padding:3px 9px 0 0}
-.mustknow{border:2px solid var(--ink);background:rgba(255,255,255,.28);padding:12px 15px 10px;margin-top:2px}
-.mustknow h3{font-family:'Trirong',serif;text-align:center;font-size:1.02rem;letter-spacing:.24em;font-weight:700;margin:0 0 10px;border-bottom:3px double var(--rule);padding-bottom:8px}
-.mustknow ul{margin:0;padding-left:1.15em}
-.mustknow li{font-size:.85rem;line-height:1.58;margin-bottom:9px;text-align:left}
-.weather{border:1px solid var(--rule);padding:10px 12px;margin-top:14px;text-align:center;font-size:.8rem;line-height:1.55}
-.weather .temp{font-family:'Trirong',serif;font-size:1.7rem;font-weight:700}
-.weather .src{display:block;font-size:.68rem;color:var(--muted);margin-top:4px}
-.section{border-top:3px double var(--rule);margin-top:24px;padding-top:8px}
-.section h2.kicker{font-size:1.02rem;letter-spacing:.42em;text-align:center;margin:0 0 4px}
-.section .rule-note{text-align:center;font-size:.72rem;color:var(--muted);margin-bottom:10px}
-.stories3{column-count:3;column-gap:26px;column-rule:1px solid rgba(26,26,26,.3)}
-.story{break-inside:avoid;border-bottom:1px solid rgba(26,26,26,.3);padding:10px 0 12px;margin-bottom:12px}
-.stories3 .story:last-child,.stories3 .story:nth-last-child(1):nth-child(odd){border-bottom:none}
-.story h3{font-family:'Trirong',serif;font-weight:700;font-size:1.07rem;line-height:1.36;margin:0 0 5px}
-.story.big h3{font-size:1.22rem}
-.tag{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.18em;border:1px solid #7a7264;padding:1px 6px;margin-bottom:6px;color:#55503f}
-.split{display:grid;grid-template-columns:1.9fr 1fr;gap:0 30px;margin-top:24px;border-top:3px double var(--rule);padding-top:8px}
-.shortbox h2.kicker{font-size:.95rem;letter-spacing:.34em;text-align:center;margin-bottom:8px}
-.shorts{column-count:2;column-gap:22px;column-rule:1px dotted rgba(26,26,26,.45);font-size:.85rem}
-.shorts div{break-inside:avoid;padding:7px 0 8px;border-bottom:1px dotted rgba(26,26,26,.4);line-height:1.58;text-align:justify}
-.shorts div:last-child{border-bottom:none}
-.shorts b{font-family:'Trirong',serif}
-table{width:100%;border-collapse:collapse;font-size:.87rem}
-th{font-family:'Trirong',serif;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:7px 8px;text-align:left;font-size:.78rem;letter-spacing:.1em}
-td{border-bottom:1px solid rgba(26,26,26,.28);padding:7px 8px;vertical-align:top;line-height:1.45}
-td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.up{color:#1a6b3a;font-weight:700}
-.down{color:#9d2020;font-weight:700}
-.tbl-src{font-size:.72rem;color:var(--muted);margin-top:8px;line-height:1.6}
-.disclaimer{font-size:.72rem;color:var(--muted);border:1px dotted #7a7264;padding:6px 9px;margin-top:10px;text-align:center}
-footer{border-top:3px double var(--rule);margin-top:26px;padding-top:10px;text-align:center;font-size:.76rem;color:#3d382f;line-height:1.7}
-footer .arch a{margin:0 6px;text-decoration:none;border-bottom:1px dotted #7a7264}
-@media (max-width:980px){.headline-grid{grid-template-columns:1fr}.mustknow{margin-top:16px}.stories3{column-count:2}.split{grid-template-columns:1fr}}
-@media (max-width:700px){.paper{padding:14px 14px 24px}.stories3,.shorts{column-count:1}.dateline{font-size:.7rem}}
+:root{--paper:#f4efe4;--ink:#1a1a1a;--muted:#665e52;--rule:#29251f;--accent:#7d1f1f}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 10%,#fffaf0aa,transparent 35%),linear-gradient(115deg,#f4efe4,#eee5d4);color:var(--ink);font-family:"Noto Serif Thai",serif;line-height:1.65} .page{max-width:1240px;margin:auto;padding:22px 30px 28px} header{text-align:center;border-top:4px double var(--rule);border-bottom:4px double var(--rule);padding:9px 0 7px;margin-bottom:14px}.mast{font:700 3.55rem/1.1 "Chonburi",serif;letter-spacing:.02em}.dateline{font-size:.86rem;letter-spacing:.06em;margin-top:4px}.edition{color:var(--muted);font-size:.8rem}.grid{display:grid;grid-template-columns:2fr 1.15fr 1fr;gap:0;border-bottom:1px solid var(--rule)}.col{padding:0 18px;border-right:1px solid var(--rule)}.col:first-child{padding-left:0}.col:last-child{border:0;padding-right:0}.kicker{font-size:.76rem;font-weight:700;letter-spacing:.11em;color:var(--accent);text-transform:uppercase;margin:2px 0 5px}.story{padding:0 0 13px;margin:0 0 14px;border-bottom:1px solid #777064}.story:last-child{border-bottom:0}.story h1,.story h2,.story h3{font-family:"Trirong",serif;line-height:1.25;margin:0 0 6px}.story h1{font-size:2rem}.story h2{font-size:1.34rem}.story h3{font-size:1.05rem}.story p{font-size:.94rem;text-align:justify;margin:5px 0}.lead p:first-of-type:first-letter{float:left;font:700 3.2rem/.8 "Trirong",serif;padding:.15rem .3rem 0 0}.byline{font-size:.74rem;color:var(--muted);font-style:italic}.read{font-size:.8rem;font-weight:700;color:var(--accent);text-decoration:none;white-space:nowrap}.read:hover{text-decoration:underline}.box{border:2px solid var(--rule);padding:12px 14px;margin:0 0 18px;background:#eee5d4}.box h2{font:700 1.25rem "Trirong",serif;margin:0 0 5px;border-bottom:1px solid var(--rule);padding-bottom:4px}.box ul{margin:7px 0 0;padding-left:1.2rem}.box li{font-size:.88rem;margin:4px 0}.label{display:inline-block;color:#fff;background:var(--accent);font-size:.68rem;padding:0 6px;margin-right:4px;letter-spacing:.05em}.section{margin-top:22px;border-top:3px double var(--rule);padding-top:10px}.section h2{font:700 1.75rem "Trirong",serif;margin:0 0 10px}.section-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.section-grid .story{padding:0 16px;border-right:1px solid var(--rule)}.section-grid .story:first-child{padding-left:0}.section-grid .story:last-child{border-right:0;padding-right:0}.markets{margin-top:22px;border-top:3px double var(--rule);padding-top:10px}.markets h2{font:700 1.75rem "Trirong",serif;margin:0 0 6px}.markets table{width:100%;border-collapse:collapse;font-size:.9rem}.markets th,.markets td{padding:7px 8px;border-bottom:1px solid #777064;text-align:left}.markets th{background:#e4dac8;font-weight:700}.down{color:#8c2626}.up{color:#1c624a}.note{font-size:.75rem;color:var(--muted);margin-top:6px}.shorts{columns:2;column-gap:28px;border-top:1px solid var(--rule);padding-top:12px}.short{break-inside:avoid;margin:0 0 12px}.short h3{font:700 1rem "Trirong",serif;margin:0}.short p{font-size:.82rem;margin:2px 0}.footer{border-top:4px double var(--rule);margin-top:22px;padding-top:9px;display:flex;justify-content:space-between;gap:16px;font-size:.74rem;color:var(--muted)}.footer a{color:var(--accent)}
+@media(max-width:900px){.page{padding:16px}.grid{grid-template-columns:1.5fr 1fr}.grid .col:nth-child(3){grid-column:1/-1;border-top:1px solid var(--rule);border-right:0;margin-top:12px;padding:12px 0 0}.section-grid{grid-template-columns:1fr 1fr}.section-grid .story:nth-child(2){border-right:0}.section-grid .story:last-child{grid-column:1/-1;border-top:1px solid #777064;padding:12px 0 0;margin-top:12px}}
+@media(max-width:700px){.page{padding:12px}.mast{font-size:2.35rem}.dateline{font-size:.72rem}.grid,.section-grid{display:block}.col,.grid .col:nth-child(3),.section-grid .story,.section-grid .story:last-child{border-right:0;border-top:1px solid var(--rule);padding:14px 0;margin:0}.col:first-child{border-top:0;padding-top:0}.story h1{font-size:1.7rem}.shorts{columns:1}.footer{display:block}.footer div{margin:4px 0}}
 </style>
 </head>
 <body>
-<div class="paper">
+<main class="page">
+<header>
+  <div class="mast">Morning Brief</div>
+  <div class="dateline">กรุงเทพฯ — วันศุกร์ที่ 6 พฤศจิกายน พ.ศ. 2569 — เล่มที่ 1 ฉบับที่ 9</div>
+  <div class="edition">หนังสือพิมพ์ข่าวเทคโนโลยี เอไอ คริปโต/เว็บ3 และไทย</div>
+</header>
 
-<div class="masthead">
-<h1>MORNING BRIEF</h1>
-<div class="sub">หนังสือพิมพ์รายวัน · เทคโนโลยี · คริปโต/เว็บ3 · เศรษฐกิจไทย · จัดพิมพ์ 07:30 น. ตามเวลาไทย</div>
-</div>
+<div class="grid">
+  <div class="col">
+    <article class="story lead">
+      <div class="kicker">เทคโนโลยี · ข่าวนำ</div>
+      <h1>OpenAI เปิดโมเดลไซเบอร์ หลัง AI ช่วยพบช่องโหว่ร้ายแรงในระบบ Linux</h1>
+      <div class="byline">โดย ทีม Morning Brief · แหล่งข่าว TechCrunch</div>
+      <p>OpenAI เปิดตัว ChatGPT Cyber ให้ผู้ใช้ระดับสูงในโครงการ Daybreak Red ซึ่งมุ่งให้นักวิจัยค้นหาและพัฒนาการแก้ไขช่องโหว่ด้านความปลอดภัย ขณะที่นักวิจัยอิสระใช้ GPT 5.6 Sol พบช่องโหว่ที่อาจเปิดทางยึดเซิร์ฟเวอร์ Ubuntu ได้ ก่อนโครงการ Debian ออกแพตช์ และยังไม่มีหลักฐานว่าถูกโจมตีจริง</p>
+      <p>OpenAI ระบุว่าเครื่องมือของบริษัทสแกนเคอร์เนล Linux พบประเด็นที่อาจเป็นช่องโหว่ 948 รายการ และพบช่องโหว่ใหม่ 81 รายการใน Firefox พร้อมประกาศงบ 1 พันล้านดอลลาร์สหรัฐสนับสนุนผู้เชี่ยวชาญไซเบอร์ โจทย์ใหญ่คือการเร่งแพตช์ให้ทันความสามารถของผู้โจมตี</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <div class="kicker">เอเจนต์ผู้บริโภค</div>
+      <h2>Airbnb กำหนดเปิดเอเจนต์วางแผนท่องเที่ยวในครึ่งแรกปี 2027</h2>
+      <div class="byline">โดย ทีม Morning Brief · แหล่งข่าว TechCrunch</div>
+      <p>Airbnb ประกาศว่าจะเปิดเอเจนต์ท่องเที่ยวที่ออกแบบเฉพาะทางในครึ่งแรกของปี 2027 แทนการใช้หน้าตาแชตทั่วไป ระบบจะประกอบแผนที่ ภาพถ่าย การเปรียบเทียบ ปฏิทิน และกำหนดการแบบสร้างขึ้นตามคำถาม และช่วยจัดการการจอง การคืนเงิน และการสนับสนุนตลอดทริป</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
 
-<div class="dateline">
-<span>กรุงเทพฯ — วันพฤหัสบดีที่ 5 พฤศจิกายน พ.ศ. 2569</span>
-<span>เล่มที่ 1 ฉบับที่ 8</span>
-<span>SET 1,502.09 (+0.74%)</span>
-<span>BTC ≈ 78,000 USD</span>
-<span>กรุงเทพฯ ฝนตก 29°C</span>
-</div>
+  <div class="col">
+    <aside class="box">
+      <h2>วันนี้ต้องรู้</h2>
+      <ul>
+        <li>BTC ร่วงมากกว่า 6% แตะจุดต่ำระหว่างวันที่ 75,463 ดอลลาร์สหรัฐ เมื่อ 5 พ.ย.</li>
+        <li>Core Scientific คาดยุติการขุด Bitcoin ภายในสิ้นปี 2026 แล้วหันเป็นศูนย์ข้อมูล AI</li>
+        <li>ไทยเตรียมพิจารณานโยบายส่งเสริม EV ระยะที่ 3 พร้อมเงื่อนไขชิ้นส่วนในประเทศ</li>
+        <li>Google ชี้โรงเรียนเลือกปิด Gemini ได้ แต่สามารถปิด Search ที่มี AI ได้ด้วย</li>
+      </ul>
+    </aside>
+    <article class="story">
+      <div class="kicker">นโยบายแพลตฟอร์ม</div>
+      <h2>Google คลายความสับสน: โรงเรียนยังใช้ Search ได้ แม้ปิด Gemini</h2>
+      <div class="byline">โดย ทีม Morning Brief · แหล่งข่าว Ars Technica</div>
+      <p>Google ชี้แจงว่าสถานศึกษาที่ใช้บริการ Google สามารถเลือกเปิดหรือปิดผลิตภัณฑ์ AI รวมถึง Gemini ได้ และยังคง Search ไว้สำหรับนักเรียน หากต้องการปิด AI ทั้งหมด โรงเรียนก็สามารถปิด Search สำหรับบัญชีนักเรียนได้เช่นกัน หลังนโยบายใหม่ทำให้ผู้ปกครองและครูวิจารณ์ว่าอาจบังคับใช้ AI</p>
+      <a class="read" href="https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <div class="kicker">แพลตฟอร์มสังคม</div>
+      <h2>Meta เปิดวิดีโอคุยกับอวตาร Muse ให้ผู้ใช้สหรัฐฯ</h2>
+      <div class="byline">โดย ทีม Morning Brief · แหล่งข่าว TechCrunch</div>
+      <p>Meta เปิดฟีเจอร์ Muse Voice ให้ผู้ใช้สหรัฐฯ ทุกคนโทรและวิดีโอคุยกับเอเจนต์ Muse ได้ อวตารจะใช้สีหน้าและท่าทางประกอบเสียงสนทนา ปัจจุบันรองรับมือถือ เว็บ และ Mac และมีแผนขยายไปยังแว่น AI กับอุปกรณ์ Muse Charm</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
 
-<div class="headline-grid">
-<div class="front">
-
-<div class="lead">
-<span class="kicker">เลือกตั้งกลางเทอมสหรัฐ</span>
-<h2>เดโมแครตกุมสองสภาคองเกรสสมบูรณ์ เปิดทางสอบธุรกิจคริปโตของตระกูลทรัมป์</h2>
-<p class="byline">โดย ทีม Morning Brief · จากการรายงานของ Cointelegraph (อ้างอิง Associated Press)</p>
-<p class="dropcap">พรรคเดโมแครตคว้าเสียงข้างมากในวุฒิสภาสหรัฐที่ 54 ที่นั่ง เทียบรีพับลิกัน 44 ที่นั่ง ขณะเดียวกันก็ยึดสภาผู้แทนราษฎรคืนได้ที่ 228 ต่อ 139 ที่นั่ง ทำให้กุมทั้งสองสภาเป็นครั้งแรกในรอบหลายปี โดยตัวแทน Hakeem Jeffries มีทางขึ้นดำรงตำแหน่งประธานสภาผู้แทนราษฎร จุดเปลี่ยนเด่นได้แก่ เชอรอด บราวน์ อดีตวุฒิสมาชิกโอไฮโอและนักวิจารณ์คริปโตตัวฉกาจ เอาชนะผู้ดำรงตำแหน่ง Jon Husted ในสนามที่อุตสาหกรรมทุ่มเงินหาเสียงกว่า 63 ล้านดอลลาร์ ทรอย แจ็กสัน เอาชนะ ซูซาน คอลลินส์ ในเมน และ เจมส์ ทาลาริโก คว้าที่นั่งวุฒิสภาเท็กซัส เป็นตัวแทนเดโมแครตคนแรกที่ชนะเลือกตั้งระดับมลรัฐในเท็กซัสนับตั้งแต่ปี 2537</p>
-<p>ผลครั้งนี้เปลี่ยนภูมิทัศน์กฎหมายคริปโตสหรัฐโดยตรง: ร่าง CLARITY Act ที่ติดค้างในสภาต้องรอชะตาใหม่ ฝ่ายเดโมแครตจะได้ตำแหน่งประธานกรรมาธิการพร้อมอำนาจออกหมายเรียก ซึ่งรวมถึงการกำกับตรวจสอบธุรกิจของครอบครัวทรัมป์และการแต่งตั้งผู้บริหารหน่วยงานกำกับดูแล ด้านประธานาธิบดีทรัมป์แถลงผ่าน CBS News แสดงความยินดีและระบุพร้อมทำงานร่วมกันเพื่อประเทศ</p>
-<a class="readmore" href="https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto">อ่านต้นฉบับ (Cointelegraph) →</a>
-</div>
-
-<div class="lead">
-<span class="kicker">ชิปปิ้ง และ เอไอ</span>
-<h2>AMD ไตรมาสทำลายสถิติ รายได้ 13.4 พันล้านดอลลาร์ ธุรกิจเซิร์ฟเวอร์โตเกือบเท่าตัว</h2>
-<p class="byline">โดย ทีม Morning Brief · รายงานจาก Ars Technica</p>
-<p>AMD ปิดไตรมาส 3 ด้วยรายได้ทำสถิติใหม่ 13.4 พันล้านดอลลาร์ บวก 45% จากปีก่อน โดยกลุ่มธุรกิจศูนย์ข้อมูลพุ่ง 97% แตะระดับสถิติ 8.5 พันล้านดอลลาร์ จากยอดขายซีพียู EPYC และการเปิดตัว GPU ตระกูล Instinct MI450 ขณะที่กลุ่มธุรกิจเกมทรุดหนัก ส่วนกลุ่มผู้ใช้ทั่วไปทำรายได้ 2.95 พันล้านดอลลาร์ โต 7% นำโดยชิป Ryzen มือถือ</p>
-<p>จีน หู ซีอีโอฝ่ายการเงินของ AMD ระบุคำแนะนำไตรมาส 4 อยู่ที่ราว 17 พันล้านดอลลาร์ (บวกลบ 3%) ซึ่งหากนับจุดกึ่งกลางถือเป็นการเติบโตราว 66% จากปีก่อน และถ้าทั้ง AMD (17 พันล้าน) และ Intel (คำแนะนำ 15–16 พันล้าน) ลงตัวตามคาด จะเป็นครั้งแรกในประวัติศาสตร์ที่รายได้ AMD แซง Intel</p>
-<a class="readmore" href="https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/">อ่านต้นฉบับ (Ars Technica) →</a>
-</div>
-
-<div class="lead">
-<span class="kicker">บริษัทเทค</span>
-<h2>Canva ปลดพนักงานเกิน 1,200 คน กลางการเติบโตที่ชะลอตัว</h2>
-<p class="byline">โดย ทีม Morning Brief · รายงานจาก TechCrunch</p>
-<p>แพลตฟอร์มออกแบบกราฟิกรายใหญ่จากออสเตรเลียประกาศปลดพนักงานมากกว่า 1,200 คน ท่ามกลางอัตราการเติบโตที่ชะลอลง ตามรายงานของ TechCrunch เมื่อวันที่ 4 พฤศจิกายน นับเป็นการปรับโครงสร้างครั้งใหญ่ที่ส่อสัญญาณตลาดซอฟต์แวร์สร้างสรรค์เข้าสู่ช่วงกดต้นทุน หลังช่วงเวลาแห่งการขยายตัวอย่างรวดเร็วของเครื่องมือดีไซน์รุ่นใหม่ที่แย่งลูกค้ากันทั่วหน้า</p>
-<a class="readmore" href="https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth/">อ่านต้นฉบับ (TechCrunch) →</a>
-</div>
-
-</div>
-
-<aside>
-<div class="mustknow">
-<h3>วันนี้ต้องรู้</h3>
-<ul>
-<li>เดโมแครตกุมสภาผู้แทน (228–139) และวุฒิสภา (54–44) หลังเลือกตั้งกลางเทอมสหรัฐ — ทางเดินของร่าง CLARITY Act ครึ้มขึ้น และการตรวจสอบธุรกิจคริปโตของตระกูลทรัมป์จะเข้มขึ้น</li>
-<li>บิตคอยน์เด้งแตะราว 80,500 ดอลลาร์หลังผลเลือกตั้ง แต่ spot BTC ETF ยังไหลออกสุทธิรวม 1.16 พันล้านดอลลาร์ใน 3 วันทำการ</li>
-<li>AMD ทำสถิติรายได้ไตรมาส 13.4 พันล้านดอลลาร์ และคำแนะนำไตรมาสหน้าอาจแซง Intel เป็นครั้งแรกในประวัติศาสตร์</li>
-<li>แฮ็กเกอร์งัด Binance โอน SOL ที่ขโมยไปแล้วราว 81% ฟอกเงินผ่าน THORChain หลังเครือข่ายเปิดสวอปคืนเมื่อวันพุธ</li>
-<li>SET ปิดบวกกลับเหนือ 1,500 จุด (1,502.09 +0.74%) ส่วน S&amp;P ยืนยันเรตติ้งหนี้ไทย BBB+ วิวเสถียร</li>
-</ul>
-</div>
-<div class="weather">
-<div>สภาพอากาศกรุงเทพฯ</div>
-<div class="temp">29°C</div>
-<div>ฝนตก · เชียงใหม่ 26°C เมฆมาก · ภูเก็ต 25°C ฝนตก</div>
-<span class="src">ที่มา: openweathermap.org (5 พ.ย. 2569)</span>
-</div>
-</aside>
-</div>
-
-<div class="section">
-<h2 class="kicker">เทคโนโลยี</h2>
-<div class="rule-note">ชิป ความปลอดภัยไซเบอร์ และอุตสาหกรรม AI รอบ 24 ชั่วโมง</div>
-<div class="stories3">
-
-<div class="story">
-<span class="tag">อุปสงค์ AI กระทบซัพพลาย</span>
-<h3>อุปสงค์ AI ชิงความจุโรงงาน ซัพพลายเออร์ชิป ROM หลักของนินเทนโดถอนตัวจากวงการเกม</h3>
-<p>แมครอนิกซ์ (Macronix) ผู้ผลิตชิปความจำแบบ ROM รายหลักของนินเทนโดสำหรับแผ่นเกมกล่องสวิตช์ ประกาศในงบไตรมาส 3 ว่าการผลิต ROM "ถึงจุดสิ้นสุด" และจะค่อย ๆ ถอนตัวจากอุตสาหกรรมเกม เพราะความจุโรงงานที่ติดเพดาน 25,000 แผ่นเวเฟอร์ต่อเดือนถูกดึงไปผลิตชิป NOR/NAND และ eMMC ที่กำไรสูงกว่าจากกระแส AI ส่วน ROM หดตัว 39% ในหนึ่งปี เหลือเพียง 5% ของธุรกิจ นักวิเคราะห์ชี้แผ่นเกมกล่องของนินเทนโดจะหาซัพพลายชิปส่วนนี้ยากขึ้น ท่ามกลางการลงทุนความจุใหม่ 1.2 พันล้านดอลลาร์ที่ต้องรอเกินหนึ่งปี</p>
-<a class="readmore" href="https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/">อ่านต้นฉบับ →</a>
+  <div class="col">
+    <article class="story">
+      <div class="kicker">ความปลอดภัย</div>
+      <h2>ช่องโหว่ “*sshole” เปิดทางล็อกอิน Linux บางการตั้งค่าโดยไม่ต้องมีรหัสผ่าน</h2>
+      <div class="byline">โดย ทีม Morning Brief · แหล่งข่าว Ars Technica</div>
+      <p>Ars Technica รายงานช่องโหว่เก่าในการทำงานร่วมกันของ OpenSSH กับ musl ซึ่งกระทบ Alpine Linux และอาจกระทบระบบอื่นที่มีการตั้งค่าเดียวกัน ผู้โจมตีที่เข้าถึงพอร์ต SSH สามารถล็อกอินบัญชีที่ตรงเงื่อนไขได้ด้วยการส่งรหัสผ่านยาวเกิน 256 ตัวอักษร ผู้ดูแลระบบควรตรวจสอบบัญชีแบบไร้รหัสผ่านและสิทธิ์ sudo/doas</p>
+      <a class="read" href="https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <div class="kicker">ข่าวสั้น</div>
+      <h3>Rivet เสนอระบบ Actors สำหรับงานเอเจนต์</h3>
+      <p>โพสต์บน Hacker News อธิบายระบบออร์เคสเตรเตอร์โอเพนซอร์สที่ใช้หน่วยความจำถาวรและพื้นที่เก็บข้อมูล S3 สำหรับงานเอเจนต์ ข่าวนี้เป็นข้อมูลจากผู้พัฒนาและยังไม่ได้ตรวจสอบอิสระ</p>
+      <a class="read" href="https://hnrss.org/frontpage">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
 </div>
 
-<div class="story">
-<span class="tag">ความปลอดภัยไซเบอร์</span>
-<h3>แฮ็กเกอร์ที่สันนิษฐานว่าสายรัสเซียใช้ช่องโหว่ iOS/Android ดักเว็บไซต์จับผู้ใช้ทั่วไป</h3>
-<p>นักวิจัยระบุด้วยความเชื่อมั่นระดับปานกลางถึงสูงว่าการโจมตีครั้งนี้อยู่เบื้องหลังหน่วยข่าวกรองต่างประเทศของรัสเซีย โดยฉีดจาวาสคริปต์ลงเว็บไซต์หลายร้อยแห่ง รวมถึงโดเมนปลอม america250.holiday ที่ทำหน้าที่พร็อกซีรับ-ส่งของเว็บ america250.org เมื่อผู้ใช้ iPhone หรือ Android เข้าชม ระบบจะพรูดเครื่องแล้วส่งเพย์โหลด DarkSword ตามแพลตฟอร์ม เพื่อขโมยคุกกี้เบราว์เซอร์ บางกรณีขโมยรหัส Wi-Fi และข้อมูลเครื่องเต็มรูปแบบ ทั้งที่ช่องโหว่ที่ใช้ถูกแพตช์ไปแล้ว</p>
-<a class="readmore" href="https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/">อ่านต้นฉบับ →</a>
-</div>
+<section class="section">
+  <h2>เทคโนโลยี</h2>
+  <div class="section-grid">
+    <article class="story">
+      <h3>ความเสี่ยงจาก AI ขยับจากห้องทดลองสู่โครงสร้างพื้นฐาน</h3>
+      <p>กรณีช่องโหว่ใน Linux ทำให้เห็นว่าระบบ AI ช่วยค้นหาบั๊กที่มนุษย์อาจมองข้ามได้เร็วขึ้น ขณะเดียวกันผู้ดูแลต้องเร่งตรวจสอบโค้ดและออกแพตช์ก่อนเครื่องมือแบบเดียวกันจะถูกใช้โดยผู้ไม่หวังดี</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>เอเจนต์ท่องเที่ยวจะต้องขาย “ประสบการณ์” ไม่ใช่แค่คำตอบ</h3>
+      <p>Airbnb ระบุว่าผู้เดินทางจำนวนมากยังสนุกกับการค้นหาและเปรียบเทียบที่พัก บริษัทจึงเลือกหน้าตาแบบสร้างตามบริบทแทนการให้แชตบอตตอบเป็นข้อความยาว และตั้งใจเชื่อมบริการหลังการจองเข้ากับเอเจนต์</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>Meta ขยับ Muse จากแชตสู่การสนทนาแบบมีตัวตน</h3>
+      <p>อวตารเคลื่อนไหวได้ของ Muse เป็นความพยายามทำให้เอเจนต์ AI รู้สึกเป็นคู่สนทนามากขึ้น ฟีเจอร์เสียงและวิดีโอจะถูกนำไปต่อยอดกับอุปกรณ์สวมใส่ที่บริษัทวางแผนเปิดตัวก่อนสิ้นปี</p>
+      <a class="read" href="https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
+</section>
 
-<div class="story">
-<span class="tag">ศูนย์ข้อมูล</span>
-<h3>Google เททุนเพิ่ม 15 พันล้านดอลลาร์ในมาเลเซีย ปี 2027–2028</h3>
-<p>Google ประกาศลงทุนเพิ่ม 15 พันล้านดอลลาร์ในมาเลเซียระหว่างปี 2569–2570 ครอบคลุมอาคารศูนย์ข้อมูล พลังงานสะอาด การเสริมความมั่นคงด้านน้ำ และการพัฒนาทักษะแรงงาน ตอกย้ำสนามแข่งโครงสร้างพื้นฐาน AI ในภูมิภาคเอเชียตะวันออกเฉียงใต้</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348620/google-to-invest-another-15-billion-in-malaysia">อ่านต้นฉบับ →</a>
-</div>
+<section class="section">
+  <h2>คริปโต/เว็บ3</h2>
+  <div class="section-grid">
+    <article class="story">
+      <h3>Core Scientific เตรียมเลิกขุด Bitcoin หันทำโครงสร้างพื้นฐาน AI</h3>
+      <p>บริษัทคาดยุติการขุด Bitcoin ภายในไตรมาส 4 ปี 2026 และเข้าสู่ปี 2027 ในฐานะผู้ให้บริการศูนย์ข้อมูลความหนาแน่นสูง รายได้จากการขุดไตรมาส 3 อยู่ที่ 17.5 ล้านดอลลาร์สหรัฐ หรือ 7.5% ของรายได้รวม 232.9 ล้านดอลลาร์สหรัฐ ขณะที่บริการโคโลเคชันมีสัดส่วนหลัก</p>
+      <a class="read" href="https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>BTC ร่วงแตะ 75,463 ดอลลาร์สหรัฐ ท่ามกลางแรงขายสินทรัพย์เสี่ยง</h3>
+      <p>Cointelegraph รายงานว่า BTC ลดลงมากกว่า 6% เมื่อ 5 พ.ย. ขณะที่ Nasdaq Composite ลดลง 4.2% และ S&amp;P 500 ลดลง 2.7% รายงานระบุว่าการชำระสถานะในตลาดคริปโตเกือบ 500 ล้านดอลลาร์สหรัฐเกิดขึ้นในชั่วโมงแรกของการซื้อขายสหรัฐฯ</p>
+      <a class="read" href="https://cointelegraph.com/markets/bitcoin-price-crashes-7-week-low-stocks-election-gains">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>ไทยเตรียมบล็อก Bitget วันที่ 5 ธันวาคม กรณีให้บริการไร้ใบอนุญาต</h3>
+      <div class="byline"><span class="label">รายงานเบื้องต้น ยังยืนยันไม่ได้</span> โดย ทีม Morning Brief · แหล่งข่าว Cointelegraph</div>
+      <p>Cointelegraph รายงานว่า ก.ล.ต. ไทยยื่นเรื่องทางอาญาต่อผู้ดำเนินการ Bitget และเตรียมบล็อกเว็บไซต์กับแอปตั้งแต่ 5 ธันวาคม กรณีซื้อขายคริปโตโดยไม่มีใบอนุญาต เนื้อหานี้อ้างอิงสรุปในฟีดข่าวและควรรอการยืนยันจากหน่วยงานไทย</p>
+      <a class="read" href="https://cointelegraph.com/news/thailand-block-bitget-in-december-over-unlicensed-crypto-trading">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
+</section>
 
-<div class="story">
-<span class="tag">พลังงาน × เอไอ</span>
-<h3>ชัยชนะของเดโมแครตสร้างเมฆหมอกต่อโอกาสศูนย์ข้อมูลกินไฟในสหรัฐ</h3>
-<p>รายงานจากกรุงวอชิงตันชี้ว่าชัยชนะของผู้สมัครเดโมแครตในหลายมลรัฐสำคัญบั่นทอนโอกาสของศูนย์ข้อมูลที่กินพลังงานสูง ซึ่งอาจทำให้การต่อยอด AI ที่แบกตลาดหุ้นสหรัฐมาสี่ปีช้าลง เพราะกติกาด้านพลังงานและสิ่งแวดล้อมในระดับมลรัฐจะเข้มขึ้นภายใต้ผู้ว่าและวุฒิสมาชิกชุดใหม่</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348639/democrat-victories-cloud-us-data-centre-outlook">อ่านต้นฉบับ →</a>
-</div>
+<section class="section">
+  <h2>ไทย</h2>
+  <div class="section-grid">
+    <article class="story">
+      <h3>Changan วางแผน 3 ปี เปิด 12 รุ่น เพิ่มชิ้นส่วนไทยเกิน 60%</h3>
+      <p>Changan วางแผนปี 2027–2029 เปิดรถใหม่ 12 รุ่น ตั้งเป้ายอดขาย 30,000 คันในปี 2026 เพิ่มสัดส่วนชิ้นส่วนที่จัดหาในประเทศจาก 50% เป็นมากกว่า 60% และขยายเครือข่ายบริการมากกว่า 150 แห่ง บริษัทระบุว่าลงทุนในไทยแล้วกว่า 1 หมื่นล้านบาท</p>
+      <a class="read" href="https://www.bangkokpost.com/business/motoring/3349735/changan-automobile-unveils-3year-expansion-plan">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>คลังศึกษานโยบาย EV ระยะที่ 3 — รถนำเข้าครบคันอาจเสียภาษีจริง 49%</h3>
+      <p>กระทรวงการคลังพิจารณาเงื่อนไขชิ้นส่วนในประเทศสำหรับมาตรการ EV ระยะที่ 3 หลังคณะรัฐมนตรีอนุมัติขึ้นภาษีสรรพสามิต EV นำเข้าครบคันเป็น 35% ตั้งแต่ปี 2027 จากอัตรา 10–15% เดิม โดยกระทรวงระบุว่าวิธีคำนวณแบบรวมภาษีอาจทำให้ภาระจริงอยู่ที่ 49%</p>
+      <a class="read" href="https://www.bangkokpost.com/business/motoring/3349560/ministry-mulls-third-phase-of-ev-promotion">อ่านต้นฉบับ →</a>
+    </article>
+    <article class="story">
+      <h3>ข้อเสนอ “Resilient PDP” ชูโซลาร์หลังคา 60 กิกะวัตต์</h3>
+      <p>นักวิชาการและกลุ่มวิจัยเสนอแผนไฟฟ้าทางเลือกที่เพิ่มเป้าหมายโซลาร์หลังคาเป็น 60 กิกะวัตต์ เทียบกับ 24.3 กิกะวัตต์ในแผนรัฐบาล พร้อมลดการพึ่งพา LNG และยกเลิกโรงไฟฟ้าก๊าซใหม่ ข้อเสนอยังเรียกร้องระบบกักเก็บพลังงานระยะ 6–8 ชั่วโมง</p>
+      <a class="read" href="https://www.bangkokpost.com/business/general/3349590/analysts-propose-cleaner-power-development-plan">อ่านต้นฉบับ →</a>
+    </article>
+  </div>
+</section>
 
-<div class="story">
-<span class="tag">อุปกรณ์</span>
-<h3>Nothing ยืนยันอุปกรณ์ลับ AI-first เปิดตัวเดือนหน้า</h3>
-<p>ซีอีโอคาร์ล เปย์ ยืนยันว่าอุปกรณ์ลับที่วางแนว "AI-first" ของ Nothing จะวางจำหน่ายในเดือนธันวาคมนี้ รายละเอียดผลิตภัณฑ์ยังถูกเก็บไว้เป็นปริศนา แต่ตำแหน่งที่วางไว้คือเครื่องมือที่ให้ AI เป็นแกนกลางของประสบการณ์ ไม่ใช่แอปเสริม</p>
-<a class="readmore" href="https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/">อ่านต้นฉบับ →</a>
-</div>
+<section class="markets">
+  <h2>ตลาด</h2>
+  <table>
+    <thead><tr><th>รายการ</th><th>ค่า/ระดับ</th><th>การเปลี่ยนแปลง</th><th>วันที่อ้างอิง</th></tr></thead>
+    <tbody>
+      <tr><td>SET</td><td>1,497.99</td><td class="down">−4.10</td><td>6 พ.ย. 2569</td></tr>
+      <tr><td>SET50</td><td>1,018.87</td><td class="down">−1.62</td><td>6 พ.ย. 2569</td></tr>
+      <tr><td>SET100</td><td>2,198.69</td><td class="down">−3.14</td><td>6 พ.ย. 2569</td></tr>
+      <tr><td>USD/THB</td><td>32.13 / 33.67</td><td>ซื้อ / ขาย</td><td>Bangkok Bank · 5 พ.ย. 2569</td></tr>
+      <tr><td>ทองคำแท่ง 96.5%</td><td>65,050 / 65,250 บาท</td><td>รับซื้อ / ขายออก</td><td>GoldTraders · 6 พ.ย. 2569</td></tr>
+      <tr><td>BTC</td><td>75,463 ดอลลาร์สหรัฐ</td><td class="down">จุดต่ำระหว่างวัน</td><td>5 พ.ย. 2569</td></tr>
+    </tbody>
+  </table>
+  <div class="note">ตารางเป็นการสรุปข้อเท็จจริงจากหน้าแรก Bangkok Post และข่าว Cointelegraph ไม่ใช่คำแนะนำการลงทุน</div>
+</section>
 
-<div class="story">
-<span class="tag">ผลประกอบการ</span>
-<h3>Snap สมาชิกจ่ายรายเดือนทะลุ 30 ล้าน แว่น Specs เริ่มส่งมอบปลายฤดูใบไม้ร่วง</h3>
-<p>Snap ประกาศยอดสมาชิกแบบจ่ายเงินรวมทุกแพ็กเกจ (Snapchat+, Lens+, Platinum และพื้นที่จัดเก็บ Memories) ทะลุ 30 ล้านรายแล้ว พร้อมผลประกอบการไตรมาส 3 ปี 2569 ด้านอีวาน สปีเกิล ซีอีโอย้ำบนคอลที่ว่าแว่น AR รุ่น Specs จะเริ่มจัดส่ง "ปลายฤดูใบไม้ร่วงนี้" ซึ่งเดือนพฤศจิกายนแล้วหมายถึงเวลาไม่มากก่อนจะเลยคำสัญญา</p>
-<a class="readmore" href="https://techcrunch.com/2026/11/04/snapchat-surpasses-30m-paid-subscribers/">อ่านต้นฉบับ →</a>
-</div>
+<section class="section">
+  <h2>กระดานข่าวสั้น</h2>
+  <div class="shorts">
+    <article class="short"><h3>Apple เริ่มทดสอบเครื่องมือ AI ในจีน</h3><p>Bangkok Post รายงานการเปิดตัวแบบทดลองหลังล่าช้าสองปี เพื่อไล่ตามผู้ผลิตสมาร์ตโฟนท้องถิ่น</p><a class="read" href="https://www.bangkokpost.com/business/general/3348711/apple-ai-tools-arrives-in-china-after-2year-delay">อ่านต้นฉบับ →</a></article>
+    <article class="short"><h3>ผู้จัดการสินทรัพย์ Amundi แปลงกองทุนดัชนีเป็นโทเคนบน Ethereum</h3><p>กองทุนให้การเข้าถึงดัชนีบริษัท 600 แห่งในยุโรปผ่านหุ้นประเภทใหม่บนบล็อกเชน</p><a class="read" href="https://cointelegraph.com/news/amundi-tokenizes-european-equity-index-fund-ethereum">อ่านต้นฉบับ →</a></article>
+    <article class="short"><h3>Binance และ Deribit เพิกถอนกุญแจ API ของ SignalPlus หลังคำเชิญ Teams ปลอม</h3><p>Cointelegraph รายงานการเจาะคอมพิวเตอร์วิศวกร ความเสียหายน้อยกว่า 82,000 ดอลลาร์สหรัฐ และบริษัทรับปากชดเชยเต็มจำนวน</p><a class="read" href="https://cointelegraph.com/news/binance-deribit-revoke-signalplus-api-keys-after-fake-teams-attack">อ่านต้นฉบับ →</a></article>
+    <article class="short"><h3>ราคาข้าวไทยและเวียดนามแตะระดับสูงสุดเกือบสองปี</h3><p>Bangkok Post ระบุว่าความกังวลด้านอุปทานและอุปสงค์ที่แข็งแรงหนุนราคาในสัปดาห์นี้</p><a class="read" href="https://www.bangkokpost.com/business/general/3349336/thai-vietnam-rice-prices-hit-near-two-year-highs">อ่านต้นฉบับ →</a></article>
+  </div>
+</section>
 
-</div>
-</div>
-
-<div class="section">
-<h2 class="kicker">คริปโต / เว็บ3</h2>
-<div class="rule-note">รายงานการฟอกเงินหลังแฮ็ก Binance กระแสเงิน ETF และระเบียบใหม่จากผลเลือกตั้ง</div>
-<div class="stories3">
-
-<div class="story big">
-<span class="tag">ตามรอยแฮ็ก Binance</span>
-<h3>แฮ็กเกอร์ Binance ฟอก SOL ไปแล้ว 81% ส่วนใหญ่ผ่าน THORChain ที่เพิ่งเปิดสวอปคืน</h3>
-<p>กลุ่มผู้โจมตีเบื้องหลังแฮ็ก Binance มูลค่า 6.3 พันล้านดอลลาร์ ย้าย Solana ที่ขโมยไปแล้วราว 81% เหลือในกระเป๋าเครือข่าย 182,443 SOL (ประมาณ 16.9 ล้านดอลลาร์) จากทั้งหมด 970,522 SOL ตามข้อมูล Arkham แนวทางคือขาย SOL เป็น USDC สะพานข้ามไป Ethereum เพื่อซื้อ ETH แล้วสลับเป็น BTC ผ่าน THORChain ซึ่งเปิดสวอปคืนวันพุธบนเครือข่าย Bitcoin, Ethereum และอีกหลายเครือข่าย หลังหยุดให้บริการตั้งแต่วันเสาร์จากบั๊กคืนเงินที่ตามมาเมื่อ Ethereum เกิด block reorg ช่วงสั้น ๆ</p>
-<p>Chainalysis ประเมินว่าการหยุดของ THORChain ช่วยเลื่อนจังหวะการฟอกเงินออกไป ก่อนหน้านั้นมูลค่าราว 500 ล้านดอลลาร์ไหลผ่าน Tron ด้วยการโอนซ้ำระหว่างกระเป๋า และคาดว่าราว 54% ของธุรกรรมกว่า 47,600 รายการบน Tron และ Solana เป็นการทำงานอัตโนมัติ ด้าน Binance เติมโทเคนคืนผู้ใช้แล้ว 98% เมื่อวันอังคารและรับความเสียหายเข้าตัวเอง ส่วน FBI ระบุผู้ก่อเหตุคือกลุ่ม TraderTraitor ของเกาหลีเหนือ และเรียกร้องผู้ให้บริการคริปโตรวมถึงผู้ประกอบการ THORNode ปิดกั้นธุรกรรมที่เกี่ยวข้อง ขณะที่คิม โย จง ปฏิเสธข้อกล่าวหาว่าเป็น "วาทกรรมไร้สาระ"</p>
-<a class="readmore" href="https://cointelegraph.com/news/binance-hackers-move-81-stolen-solana-route-thorchain">อ่านต้นฉบับ (Cointelegraph) →</a>
-</div>
-
-<div class="story">
-<span class="tag">ตลาด</span>
-<h3>บิตคอยน์เด้งแตะ 80,500 ดอลลาร์หลังผลกลางเทอม หลังแตะฐาน 7 สัปดาห์ที่ 75,618</h3>
-<p>ราคาบิตคอยน์พุ่งไปทาง 80,500 ดอลลาร์กลางวันพุธ ขณะหุ้นสหรัฐรับข่าวชัยชนะของเดโมแครตและราคาน้ำมันดิบร่วง หลังก่อนหน้านี้แตะฐานต่ำสุด 7 สัปดาห์ที่ 75,618 ดอลลาร์ และมีการชำระบัญชีสถานะซื้อกลับ (long liquidation) ในตลาดคริปโตรวม 24 ชั่วโมงเกือบ 300 ล้านดอลลาร์</p>
-<a class="readmore" href="https://cointelegraph.com/markets/bitcoin-price-us-stocks-rally-midterm-election-result">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">กระแสเงิน ETF</span>
-<h3>spot BTC ETF ไหลออกสุทธิ 1.16 พันล้านดอลลาร์ใน 3 วัน Bitwise เรียกแค่ "risk-off ระยะสั้น"</h3>
-<p>นักลงทุนดึงเงินออกจาก ETF บิตคอยน์สหรัฐอีก 116 ล้านดอลลาร์เมื่อวันอังคาร รวมตั้งแต่วันศุกร์เป็น 1.16 พันล้านดอลลาร์ (643 ล้าน / 399 ล้าน / 116 ล้าน ตามลำดับ — อัตราไหลออกช้าลงชัด) ตามข้อมูล SoSoValue อ็องเดร ดรากอช หัวหน้าฝ่ายวิจัย Bitwise มองว่าเกี่ยวกับบรรยากาศ risk-off ระยะสั้น ไม่ใช่การถอนตัวเชิงโครงสร้าง โดยสถาบันส่วนใหญ่คงสถานะไว้ ดัชนี Fear &amp; Greed ฟื้นจาก 26 มาที่ 34 ยังโซน "กลัว" และราคาอยู่ราว 78,000 ดอลลาร์ช่วงตีพิมพ์ (CoinGecko)</p>
-<a class="readmore" href="https://cointelegraph.com/markets/bitcoin-etf-shed-1-16-billion-bitwise-short-term-risk-off">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">การเมืองคริปโต</span>
-<h3>โทเคนตระกูลทรัมป์ร่วงหนักสุดในกลุ่ม 100 อันดับ ขณะสหประชาคมคริปโตวางแผนปี 2028</h3>
-<p>โทเคน TRUMP อย่างเป็นทางการและโทเคนของ World Liberty Financial ร่วงหนักที่สุดในคริปโต 100 อันดับแรกเมื่อวันพุธ ทั้งที่ BTC และ ETH เด้งกลับ ด้านสหประชาคมคริปโตที่ใช้จ่ายเกิน 176 ล้านดอลลาร์ในเลือกตั้งกลางเทอมครั้งนี้ เตรียมวาง "แผนที่ใหม่" สู่เลือกตั้งปี 2028 ภายใต้คองเกรสที่เดโมแครตคุมทั้งสองสภา พร้อมรับมือโอกาสการกวดขันตรวจสอบอุตสาหกรรมที่สูงขึ้น</p>
-<a class="readmore" href="https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms">อ่านต้นฉบับ 1 →</a> · <a class="readmore" href="https://cointelegraph.com/news/crypto-superpac-midterms">อ่านต้นฉบับ 2 →</a>
-</div>
-
-<div class="story">
-<span class="tag">เทคโนโลยีเครือข่าย</span>
-<h3>Ethereum ตั้งเป้าปลอดภัยจากควอนตัมและ AI ภายใน ธ.ค. 2028 เร็วกว่าแผนเดิมหนึ่งปี</h3>
-<p>จัสติน เดรก นักวิจัย Ethereum ระบุว่าความหวังของทีมคือให้เครือข่ายผ่านการเปลี่ยนผ่านทั้งแบบ post-quantum และ post-AI ภายในเดือนธันวาคม 2028 เร็วกว่าเป้าหมายเดิมที่วางไว้หนึ่งปี สะท้อนความเร่งจังหวะเตรียมรับเครื่องควอนตัมของโครงสร้างพื้นฐานบล็อกเชนสายใหญ่</p>
-<a class="readmore" href="https://cointelegraph.com/news/ethereum-post-quantum-transition-2028-target">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">ระเบียบรัฐ</span>
-<h3>ฝรั่งเศสเดินหน้าให้รายงานคริปโตในกระเป๋า self-custody ตั้งแต่ 100,000 ยูโร</h3>
-<p>ฝรั่งเศสอนุมัติหลักการแก้ไขที่บังคับผู้เสียภาษีรายงานสินทรัพย์คริปโตในกระเป๋าถือครองเอง (self-custody) ที่มีมูลค่าตั้งแต่ 100,000 ยูโร (ประมาณ 112,000 ดอลลาร์) ขึ้นไป อย่างไรก็ดีมาตรการนี้ยังต้องรอดผ่านกระบวนการพิจารณางบประมาณก่อนบังคับใช้จริง</p>
-<a class="readmore" href="https://cointelegraph.com/news/france-approves-amendment-self-custodied-crypto-wallets-100k">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">ความปลอดภัย</span>
-<h3>Mercado Bitcoin เปิดให้ดูสินทรัพย์วันจันทร์และรับผิดชอบความเสียหาย ขณะ BitMart ยอมรับทีมรักษาความปลอดภัยขาดคน</h3>
-<p>Mercado Bitcoin ประกาศเปิดใหม่เป็นระยะเริ่มวันจันทร์ โดยลูกค้าจะดูสินทรัพย์ได้ก่อน ส่วนการถอนและเทรดยังระงับระหว่างตรวจสอบความปลอดภัย และแพลตฟอร์มจะรับผิดชอบความเสียหายเอง ขณะเดียวกันก่อตั้ง BitMart เปิดใจว่าทีมรักษาความปลอดภัย "ขาดคนอย่างรุนแรง" กลางการปรับโครงสร้าง หลังนักวิเคราะห์พบการโอนที่น่าสงสัยซึ่งอาจเชื่อมโยงกับแฮ็กของ Mercado Bitcoin</p>
-<a class="readmore" href="https://cointelegraph.com/news/mercado-bitcoin-phased-reopening-to-begin-monday-pledges-to-cover-losses">อ่านต้นฉบับ →</a>
-</div>
-
-</div>
-</div>
-
-<div class="split">
-<div>
-<h2 class="kicker">ไทย</h2>
-<div class="stories3" style="column-count:2">
-
-<div class="story">
-<span class="tag">เศรษฐกิจมหภาค</span>
-<h3>S&amp;P ยืนยันเรตติ้งหนี้ประเทศไทย BBB+ วิวระยะยาวเสถียร</h3>
-<p>S&amp;P Global Ratings ยืนยันเครดิตเรตติ้งหนี้ประเทศไทยระดับ BBB+ พร้อมวิวระยะยาว "เสถียร" กระทรวงการคลังแจ้งเมื่อวันพุธ เป็นสัญญาณความน่าเชื่อถือด้านบัญชีสาธารณะกลางปีที่การเมืองสหรัฐเปลี่ยนทิศ</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348675/sp-affirms-thailands-bbb-credit-rating">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">ทุนไหล</span>
-<h3>ธุรกิจไทยรับข่าวเดโมแครตกุมสองสภาอย่างบวก มองเช็กแอนด์บาแลนซ์เปิดทางทุนไหลเข้าไทย</h3>
-<p>ผู้บริหารธุรกิจและนักวิเคราะห์หุ้นไทยมองผลเลือกตั้งกลางเทอมสหรัฐในแง่บวก เห็นว่าชัยชนะกวาดของเดโมแครตเปิดโอกาสมีเช็กแอนด์บาแลนซ์นโยบายของรัฐบาลทรัมป์แข็งแรงขึ้น และปูทางให้ทุนไหลเข้าตลาดไทยมากขึ้น</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348781/thai-firms-cheer-rejection-of-trump">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">ท่องเที่ยว</span>
-<h3>ททท. ปั้นตลาดยุโรป ตั้งเป้ารายได้ท่องเที่ยวโต 5–7% ปีหน้า</h3>
-<p>การท่องเที่ยวแห่งประเทศไทยเดินเกมเจาะตลาดยุโรปเป็นรายประเทศ ออกแบบผลิตภัณฑ์ให้ตรงรสนิยมแต่ละกลุ่ม เพื่อผลักดันรายได้ท่องเที่ยวโต 5–7% ในปีหน้า ท่ามกลางความตึงเครียดในตะวันออกกลาง โดยร่วมงาน World Travel Market ที่จัดสัปดาห์นี้พร้อมผู้ประกอบการไทย</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348941/tat-targets-european-market-to-boost-tourism-revenue-by-57-next-year">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">พลังงาน</span>
-<h3>รัฐจัดงบเหลือ 1 แสนล้านบาทจากพ.ร.ก. กู้ 4 แสนล้าน หนุนขนส่งสีเขียว</h3>
-<p>ภาครัฐเตรียมใช้เงินที่เหลือ 1 แสนล้านบาทจากพ.ร.ก. การเงินฉุกเฉินวงเงิน 4 แสนล้านบาท หนุนการเปลี่ยนผ่านพลังงานในภาคขนส่ง นายเอกนิติ ภูริพัฒนกุล เดินหน้าส่งเสริมการลงทุนขนส่งสีเขียว เพื่อลดการพึ่งพาน้ำมันและแรงกดดันด้านค่าใช้จ่ายพลังงานของประชาชน</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348856/ekniti-promotes-green-transport-outlays">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">พลังงาน</span>
-<h3>PTT ฝันใหญ่สู่เทรดเดอร์ LNG ชั้นนำของโลก ท่ามกลางสนามพลังงานผันผวน</h3>
-<p>พีทีที ย้ำแผนแปรรูปตัวเป็นผู้ค้าก๊าซธรรมชาติเหลว (LNG) ระดับแนวหน้าของโลก ต่อเนื่องแม้ความไม่แน่นอนด้านพลังงานจากความขัดแย้งทางภูมิรัฐศาสตร์จะสูงขึ้น ตามการเปิดเผยของ กงกระพัน อินทรจักร ประธานเจ้าหน้าที่บริหาร</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3348911/ptt-targets-transformation-into-a-major-lng-player">อ่านต้นฉบับ →</a>
-</div>
-
-<div class="story">
-<span class="tag">สินค้าโภคภัณฑ์</span>
-<h3>รัฐเร่งงัดมาตรการคุมตลาดยางพารา พร้อมเฝ้าแรงขายทองจากความไม่แน่นอน</h3>
-<p>ภาครัฐยกระดับการดูแลราคายางพารา ผ่านการคุมปริมาณการผลิต เสริมระบบตลาด และการคุมมาตรฐานคุณภาพยางไทยให้ตอบโจทย์อุปสงค์โลก ขณะที่ YLG Bullion เตือนทองคำอาจเจอแรงขายกลับมาจากความไม่แน่นอนหลังเดโมแครตชนะทั้งสองสภาสหรัฐ และความกังวลว่าความขัดแย้งตะวันออกกลางจะลุกลาม</p>
-<a class="readmore" href="https://www.bangkokpost.com/business/general/3349056/state-ups-efforts-to-protect-rubber-prices">อ่านต้นฉบับ →</a>
-</div>
-
-</div>
-</div>
-
-<div class="shortbox">
-<h2 class="kicker">ตลาด</h2>
-<table>
-<tr><th>ดัชนี / สินทรัพย์</th><th class="num">ราคา (บาท/ดอลลาร์)</th><th class="num">เปลี่ยนแปลง</th><th>ที่มา (วันที่)</th></tr>
-<tr><td>ดัชนี SET</td><td class="num">1,502.09</td><td class="num up">+11.08 (+0.74%)</td><td>settrade.com (5 พ.ย.)</td></tr>
-<tr><td>ดัชนี SET50</td><td class="num">1,020.49</td><td class="num up">+5.32 (+0.52%)</td><td>settrade.com (5 พ.ย.)</td></tr>
-<tr><td>ดัชนี SET100</td><td class="num">2,201.83</td><td class="num up">+15.46 (+0.71%)</td><td>settrade.com (5 พ.ย.)</td></tr>
-<tr><td>อัตราแลกเปลี่ยน USD/THB</td><td class="num">32.38 / 33.92</td><td class="num">ซื้อ / ขาย</td><td>ธนาคารกรุงเทพ (4 พ.ย.)</td></tr>
-<tr><td>ทองคำแท่ง (1 บาททองคำ 96.5%)</td><td class="num">64,200 / 64,400</td><td class="num">ซื้อ / ขาย</td><td>GoldTraders (5 พ.ย.)</td></tr>
-<tr><td>บิตคอยน์ (BTC)</td><td class="num">≈ 78,000</td><td class="num">ช่วงวัน 75,618–80,500</td><td>Cointelegraph / CoinGecko (4 พ.ย.)</td></tr>
-</table>
-<p class="tbl-src">หมายเหตุ: ตัวเลข SET เป็นราคาปิดล่าสุด (ปิดก่อนหน้า 1,491.01) ส่วน % คำนวณจากปิดก่อนหน้า ราคา BTC ไม่มีฟีดราคาตรง จึงอ้างอิงช่วงระดับราคาจากรายงานข่าว ข้อมูลสภาพอากาศและอัตราแลกเปลี่ยนรวบรวมจากหน้าแรก bangkokpost.com</p>
-<div class="disclaimer">ตารางนี้เป็นการรวบรวมตัวเลขจริงประกอบข่าวเท่านั้น ไม่ใช่คำแนะนำการลงทุนในทุกรูปแบบ</div>
-</div>
-</div>
-
-<div class="section">
-<h2 class="kicker">กระดานข่าวสั้น</h2>
-<div class="rule-note">ข่าวรองที่ต้องรู้จากรอบ 24 ชั่วโมง</div>
-<div class="shorts">
-<div><b>Apple งดเททุน AI ในระดับรายคน —</b> รายงาน Bloomberg ผ่าน The Verge ระบุ Apple ลดเพดานการใช้จ่าย AI ของวิศวกรจาก 300 เหลือ 200 ดอลลาร์ต่อวัน และวางแผนลดเพิ่มอีก <a class="readmore" href="https://www.theverge.com/">theverge.com →</a></div>
-<div><b>Waymo ปรับความสัมพันธ์กับ Uber เมื่อ ม.ค. 2028 —</b> ยืนยันจะจัดระเบียบความร่วมมือระหว่างสองบริษัทใหม่ในเดือนมกราคม ปี 2571 <a class="readmore" href="https://techcrunch.com/2026/11/04/waymo-confirms-its-shaking-up-its-uber-relationship-in-january-2028/">อ่านต่อ →</a></div>
-<div><b>Meta ซื้อสตาร์ตอัป Conductor —</b> เครื่องมือช่วยวิศวกรควบคุมเอเจนต์ AI หลายตัวพร้อมกัน Conductor Cloud จะปิดให้บริการ 20 พ.ย. <a class="readmore" href="https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/">อ่านต่อ →</a></div>
-<div><b>Sequoia ถอยหลังย่อขนาด —</b> บริษัท VC รายใหญ่เดินย้อนการขยายธุรกิจที่สะสมมากว่า 20 ปี <a class="readmore" href="https://techcrunch.com/2026/11/04/sequoia-hits-rewind-undoing-20-years-of-expansion/">อ่านต่อ →</a></div>
-<div><b>DreamHost โดนขโมยข้อมูลยาวหลายเดือน —</b> แฮ็กเกอร์ลักไฟล์และกล่องจดหมายลูกค้าระหว่างการบุกที่กินเวลานานหลายเดือน <a class="readmore" href="https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/">อ่านต่อ →</a></div>
-<div><b>DuckDuckGo เปิดตัวสู่โรงเรียน —</b> ยื่นข้อเสนอต่อสถาบันการศึกษา จี้จุดอ่อนนโยบาย AI ของ Google Search ที่โดนวิพากษ์ <a class="readmore" href="https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/">อ่านต่อ →</a></div>
-<div><b>VMware คืนสนาม SMB —</b> เปิดตัว vSphere Express เวอร์ชวลไลเซชันระดับล่างรองรับถึง 128 คอร์ หลังลูกค้ารายย่อยเซ็งแพ็กเกจใหญ่ที่แพง <a class="readmore" href="https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/">อ่านต่อ →</a></div>
-<div><b>ธนาคารฝรั่งเศสโดนไซเบอร์โจมตี —</b> Crédit Mutuel Arkéa เผยเกิดธุรกรรมฉ้อโกงจากการโจมตี รายงานข่าวระบุมูลค่าราว 133 ล้านดอลลาร์ (118 ล้านยูโร) <a class="readmore" href="https://www.bangkokpost.com/business/general/3348644/french-bank-says-cyberattack-caused-fraudulent-transactions">อ่านต่อ →</a></div>
-<div><b>Revolut มูลค่ากระโดด 53% —</b> การขายหุ้นรอบใหม่ดันมูลค่าบริษัทไปที่ 115 พันล้านดอลลาร์ เตรียมเปิดธนาคารในสหรัฐ <a class="readmore" href="https://techcrunch.com/2026/11/04/revoluts-valuation-jumps-53-to-115b-in-new-share-sale-as-it-prepares-to-launch-us-bank/">อ่านต่อ →</a></div>
-<div><b>OpenAI เล็งเลือกตั้งปี 2028 แล้ว —</b> รายงานชี้บริษัทเริ่มวางก้าวมีส่วนร่วมในการเมืองสหรัฐล่วงหน้าถึงรอบเลือกตั้งประธานาธิบดีปี 2571 <a class="readmore" href="https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/">อ่านต่อ →</a></div>
-</div>
-</div>
-
-<footer>
-รวบรวมและจัดพิมพ์เมื่อวันที่ 5 พฤศจิกายน พ.ศ. 2569 เวลา 07:30 น. ตามเวลาไทย · โดย ทีม Morning Brief<br>
-แหล่งข่าว: TechCrunch · Ars Technica · The Verge · Cointelegraph · Bangkok Post · Hacker News (ทุกข้อเท็จจริงตรวจสอบจากหน้าที่เปิดอ่านในรอบนี้)<br>
-ฉบับย้อนหลัง:
-<span class="arch"><a href="archive/2026-11-04.html">4 พ.ย. (ฉบับที่ 7)</a> · <a href="archive/2026-11-03.html">3 พ.ย. (ฉบับที่ 6)</a> · <a href="archive/2026-10-31.html">31 ต.ค. (ฉบับที่ 5)</a> · <a href="archive/2026-10-30.html">30 ต.ค. (ฉบับที่ 4)</a> · <a href="archive/2026-10-29.html">29 ต.ค. (ฉบับที่ 3)</a></span>
+<footer class="footer">
+  <div>รวบรวมเมื่อ 07:30 น. ตามเวลาไทย · ฉบับที่ 9</div>
+  <div>แหล่งข่าว: Hacker News, TechCrunch, Ars Technica, Cointelegraph, Bangkok Post</div>
+  <div><a href="archive/2026-11-05.html">ฉบับก่อนหน้า</a> · <a href="archive/">คลังฉบับทั้งหมด</a></div>
 </footer>
-
-</div>
+</main>
 </body>
 </html>
